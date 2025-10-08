@@ -35,12 +35,14 @@
   },
   "name":"COMP490-CyberhuntGame",
   "resources":[
+    {"id":{"name":"main_menu","path":"rooms/main_menu/main_menu.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
   ],
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
     {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"roomId":{"name":"main_menu","path":"rooms/main_menu/main_menu.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[
