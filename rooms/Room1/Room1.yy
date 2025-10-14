@@ -13,8 +13,8 @@
   ],
   "name":"Room1",
   "parent":{
-    "name":"COMP490-CyberhuntGame",
-    "path":"COMP490-CyberhuntGame.yyp",
+    "name":"Rooms",
+    "path":"folders/Rooms.yy",
   },
   "parentRoom":null,
   "physicsSettings":{
