@@ -35,6 +35,7 @@
   },
   "name":"COMP490-CyberhuntGame",
   "resources":[
+    {"id":{"name":"f_mainMenu","path":"fonts/f_mainMenu/f_mainMenu.yy",},},
     {"id":{"name":"main_menu","path":"rooms/main_menu/main_menu.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
   ],
