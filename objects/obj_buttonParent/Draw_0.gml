@@ -8,7 +8,7 @@ draw_self();
 /// @DnDHash : 58D8D974
 /// @DnDArgument : "font" "f_mainMenu"
 /// @DnDSaveInfo : "font" "f_mainMenu"
-draw_set_font(f_mainMenu);
+draw_set_font(f_comicSans);
 
 /// @DnDAction : YoYo Games.Drawing.Set_Alignment
 /// @DnDVersion : 1.1

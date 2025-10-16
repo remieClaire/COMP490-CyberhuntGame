@@ -1,6 +1,6 @@
 {
   "$GMFont":"",
-  "%Name":"f_mainMenu",
+  "%Name":"f_comicSans",
   "AntiAlias":0,
   "applyKerning":0,
   "ascender":29,
@@ -117,7 +117,7 @@
   "last":0,
   "lineHeight":37,
   "maintainGms1Font":false,
-  "name":"f_mainMenu",
+  "name":"f_comicSans",
   "parent":{
     "name":"Fonts",
     "path":"folders/Fonts.yy",
@@ -134,7 +134,10 @@
   "sdfSpread":8,
   "size":20.0,
   "styleName":"Regular",
-  "textureGroupId":null,
+  "textureGroupId":{
+    "name":"Default",
+    "path":"texturegroups/Default",
+  },
   "TTFName":"",
   "usesSDF":false,
 }
