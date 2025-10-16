@@ -1,13 +1,13 @@
 {
   "$GMObject":"",
-  "%Name":"obj_buttonSettings",
+  "%Name":"obj_buttonLvl4",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":4,"eventType":6,"isDnD":true,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_buttonSettings",
+  "name":"obj_buttonLvl4",
   "overriddenProperties":[
-    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_buttonParent","path":"objects/obj_buttonParent/obj_buttonParent.yy",},"propertyId":{"name":"buttonText","path":"objects/obj_buttonParent/obj_buttonParent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"Settings",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_buttonParent","path":"objects/obj_buttonParent/obj_buttonParent.yy",},"propertyId":{"name":"buttonText","path":"objects/obj_buttonParent/obj_buttonParent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"Level 4",},
   ],
   "parent":{
     "name":"Objects",
@@ -35,8 +35,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_mainMenubtn",
-    "path":"sprites/spr_mainMenubtn/spr_mainMenubtn.yy",
+    "name":"spr_levelbtn",
+    "path":"sprites/spr_levelbtn/spr_levelbtn.yy",
   },
   "spriteMaskId":null,
   "visible":true,

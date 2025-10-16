@@ -1,7 +1,7 @@
 {
   "$GMRoom":"v1",
   "%Name":"rm_mainMenu",
-  "creationCodeFile":"",
+  "creationCodeFile":"rooms/rm_mainMenu/RoomCreationCode.gml",
   "inheritCode":false,
   "inheritCreationOrder":false,
   "inheritLayers":false,
@@ -10,7 +10,7 @@
     {"name":"inst_2B380F3C","path":"rooms/rm_mainMenu/rm_mainMenu.yy",},
     {"name":"inst_6356E618","path":"rooms/rm_mainMenu/rm_mainMenu.yy",},
   ],
-  "isDnd":false,
+  "isDnd":true,
   "layers":[
     {"$GMRInstanceLayer":"","%Name":"Instances","depth":0,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"$GMRInstance":"v2","%Name":"inst_15B5C3E7","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_15B5C3E7","objectId":{"name":"obj_buttonStart","path":"objects/obj_buttonStart/obj_buttonStart.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":4.5,"scaleY":3.0,"x":640.0,"y":224.0,},
