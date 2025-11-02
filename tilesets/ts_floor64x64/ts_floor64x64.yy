@@ -1,15 +1,15 @@
 {
   "$GMTileSet":"v1",
-  "%Name":"t_lab64x64",
+  "%Name":"ts_floor64x64",
   "autoTileSets":[],
   "macroPageTiles":{
     "SerialiseHeight":6,
-    "SerialiseWidth":4,
-    "TileCompressedData":[-4,0,16,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,-4,0,],
+    "SerialiseWidth":5,
+    "TileCompressedData":[-11,0,19,1,2,3,4,0,5,6,7,8,0,9,10,11,12,0,13,14,15,16,],
     "TileDataFormat":1,
   },
-  "name":"t_lab64x64",
-  "out_columns":8,
+  "name":"ts_floor64x64",
+  "out_columns":6,
   "out_tilehborder":2,
   "out_tilevborder":2,
   "parent":{
@@ -19,10 +19,10 @@
   "resourceType":"GMTileSet",
   "resourceVersion":"2.0",
   "spriteId":{
-    "name":"spr_lab64x64",
-    "path":"sprites/spr_lab64x64/spr_lab64x64.yy",
+    "name":"spr_floorTileset",
+    "path":"sprites/spr_floorTileset/spr_floorTileset.yy",
   },
-  "spriteNoExport":false,
+  "spriteNoExport":true,
   "textureGroupId":{
     "name":"Default",
     "path":"texturegroups/Default",
@@ -35,5 +35,5 @@
   "tileWidth":64,
   "tilexoff":0,
   "tileyoff":0,
-  "tile_count":68,
+  "tile_count":34,
 }
