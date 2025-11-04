@@ -7,23 +7,36 @@ var _down = keyboard_check(vk_down);
 var _xinput = (_right - _left)*my_speed; // 1 if going right, -1 if going left 
 var _yinput = (_down - _up)*my_speed; //1 for down, -1 for up
 
-//Horizontal collision
-//if collision -> add no movement
-//while no collision -> move
-if (place_meeting(x, y, tilemap_walls)) { //if collision
-	while (!place_meeting(x+sign(_xinput), y, tilemap_walls)) { //while no collision
-		x += sign(_xinput); //move
-	}
-	_xinput = 0; //add no movement
-}
-x += _xinput;
+//Handling collision - collision works by predicting collision and preventing it from happening
+//*Note: sign returns either 1, -1, or 0 depending on if the argument is a positive or negative number
 
-//Vertical collision
-if (place_meeting(x, y, tilemap_walls)) { 
-	while (!place_meeting(x, y+sign(_yinput), tilemap_walls)) {
-		y += sign(_yinput);
+//if collision is about to happen (i.e. if in x + _xinput steps, collision will occur)
+if (place_meeting(x+_xinput, y+_yinput, tilemap_walls)) { 
+	
+	//if no future collision on x-axis, allow horizontal movement
+	if (!place_meeting(x+_xinput, y, tilemap_walls)) {
+		x += _xinput;
 	}
-	_yinput = 0;
+	//if no future collision on y-axis, allow vertical movement
+	else if (!place_meeting(x, y+_yinput, tilemap_walls)) {
+		y += _yinput;
+	}
+	
+	//if both fail (aka if collision is about to happen), do "pixel-perfect" collision
+	else {
+		//while no future collission on x-axis, move as close as possible 
+		while (!place_meeting(x+sign(_xinput), y, tilemap_walls)) { 
+			x += sign(_xinput); 
+		}
+		//while no future collision on y-axis, move as close as possible 
+		while (!place_meeting(x, y+sign(_yinput), tilemap_walls)) {
+			y += sign(_yinput);
+		}
+	}
 }
-y += _yinput;
+//otherwise, if no future collision is detected, move as normal
+else {	
+	x += _xinput;
+	y += _yinput;
+}
 
