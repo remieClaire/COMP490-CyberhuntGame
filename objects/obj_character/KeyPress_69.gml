@@ -1,10 +1,12 @@
+//DO NOT CHANGE
+
 //checks if an object is within 40 pixels of the character's "line of sight" & returns the object
 var _interact = collision_line(
 	x, 
 	y, 
 	x + lengthdir_x(40, direction), 
 	y + lengthdir_y(40, direction), 
-	obj_machine, 
+	obj_objParent, 
 	true, 
 	false);
 
