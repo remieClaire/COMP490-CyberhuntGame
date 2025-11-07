@@ -1,18 +1,17 @@
 {
   "$GMObject":"",
-  "%Name":"obj_shelf1",
-  "eventList":[],
+  "%Name":"obj_objParent",
+  "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":10,"eventType":7,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
-  "name":"obj_shelf1",
+  "name":"obj_objParent",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
     "path":"folders/Objects.yy",
   },
-  "parentObjectId":{
-    "name":"obj_objParent",
-    "path":"objects/obj_objParent/obj_objParent.yy",
-  },
+  "parentObjectId":null,
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -31,9 +30,9 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_shelf1",
-    "path":"sprites/spr_shelf1/spr_shelf1.yy",
+    "name":"spr_objParent",
+    "path":"sprites/spr_objParent/spr_objParent.yy",
   },
   "spriteMaskId":null,
-  "visible":true,
+  "visible":false,
 }
