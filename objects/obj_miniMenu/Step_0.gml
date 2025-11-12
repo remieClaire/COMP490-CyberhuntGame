@@ -1,0 +1,54 @@
+hover += keyboard_check_pressed(vk_down) - keyboard_check_pressed(vk_up); //down: +1, up: -1
+
+
+//decide what to do when hover is below 0 or over the maximum
+if (hover > optionsCount-1) hover = 0; //wraps around to first option if greater than options
+if (hover < 0) hover = optionsCount-1; //wraps around to last option if less than 0
+
+//keep track of player choices
+var selected2;
+if (keyboard_check_pressed(ord("E"))) {
+	if (!firstOptionChosen) {
+		selected = hover; //get first option
+		firstOptionChosen = true;
+	
+	}
+	else {
+		selected2 = hover; //get second option
+		switchOrder(selected, selected2); //pass to switchOrder function in mini menu script
+		firstOptionChosen = false;
+	}
+
+}
+
+//confirm player choices
+var correct = true;
+if (keyboard_check_pressed(vk_enter)) {
+	var correct_options =
+	[
+		["Add Key"],
+		["Mix Column"],
+		["Shift Rows"],
+		["Substitution"],
+		["Add Final Key"]
+	];
+	
+	
+	for (j=0; j<optionsCount; j++) {
+		if (options[j][0] != correct_options[j][0]) {
+			correct = false;
+			break;
+		}
+	}
+	
+	if (correct) {
+		description = "Correct!"
+		alarm[0] = 120;
+	}
+	else {
+		description = "Try again"
+	}
+		
+}
+
+

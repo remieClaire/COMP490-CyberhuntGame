@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"s_Mini_Menu_Script",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"s_Mini_Menu_Script",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
