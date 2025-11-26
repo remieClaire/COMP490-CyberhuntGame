@@ -1,9 +1,9 @@
 {
   "$GMScript":"v1",
-  "%Name":"s_Mini_Menu_Script",
+  "%Name":"s_Lvl2script",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"s_Mini_Menu_Script",
+  "name":"s_Lvl2script",
   "parent":{
     "name":"Scripts",
     "path":"folders/Scripts.yy",

@@ -1,22 +1,18 @@
 {
   "$GMObject":"",
-  "%Name":"obj_machine",
+  "%Name":"obj_matrixBorder",
   "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":10,"eventType":7,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":2,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_machine",
+  "name":"obj_matrixBorder",
   "overriddenProperties":[],
   "parent":{
     "name":"obj_lvl2objects",
     "path":"folders/Objects/obj_lvl2objects.yy",
   },
-  "parentObjectId":{
-    "name":"obj_objParent",
-    "path":"objects/obj_objParent/obj_objParent.yy",
-  },
+  "parentObjectId":null,
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -35,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_machine",
-    "path":"sprites/spr_machine/spr_machine.yy",
+    "name":"spr_matrixBorder",
+    "path":"sprites/spr_matrixBorder/spr_matrixBorder.yy",
   },
   "spriteMaskId":null,
   "visible":true,

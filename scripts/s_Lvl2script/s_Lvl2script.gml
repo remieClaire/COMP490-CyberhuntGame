@@ -1,3 +1,4 @@
+//Lvl2 part 1
 function miniMenu(_x, _y, _options, _description = -1){
 	with (instance_create_depth(_x, _y, -999, obj_miniMenu)) {
 		
@@ -38,4 +39,21 @@ function switchOrder(_option1, _option2){
 	options[_option1][0] = options[_option2][0]; //switch first value with second value
 	options[_option2][0] = temp; //put second value into first value's place
 }
+
+//Lvl2 part 2
+function hideRoom() {
+	floorTile = layer_get_id("Tiles_floor");
+	collisionTile = layer_get_id("Tiles_collision");
 	
+	layer_set_visible(floorTile, false);
+	layer_set_visible(collisionTile, false);
+	
+	with (obj_objParent) {
+		visible = false;
+	}
+}
+
+function Block(_block_id, _value) constructor {
+	block_id = _block_id;
+	value = _value;
+}

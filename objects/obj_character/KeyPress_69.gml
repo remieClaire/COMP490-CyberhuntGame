@@ -4,8 +4,8 @@
 var _interact = collision_line(
 	x, 
 	y, 
-	x + lengthdir_x(40, direction), 
-	y + lengthdir_y(40, direction), 
+	x + lengthdir_x(50, direction), 
+	y + lengthdir_y(50, direction), 
 	obj_objParent, 
 	true, 
 	false);

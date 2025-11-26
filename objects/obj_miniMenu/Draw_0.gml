@@ -7,7 +7,7 @@ draw_set_valign(fa_top);
 
 //draw menu options one at a time
 var _desc = !(description == -1); //check if description exists
-for (l = 0; l < (optionsCount + _desc); l++) { //loop through options +1 if description, +1 if footer
+for (l = 0; l < (optionsCount + _desc); l++) { //loop through options +1 if description
 	draw_set_colour(c_white);
 	
 	//if there's a description, draw the text

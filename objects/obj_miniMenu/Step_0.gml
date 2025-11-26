@@ -44,11 +44,10 @@ if (keyboard_check_pressed(vk_enter)) {
 	if (correct) {
 		description = "Correct!"
 		alarm[0] = 120;
+		global.part1Solved = true;
 	}
 	else {
 		description = "Try again"
 	}
 		
 }
-
-
