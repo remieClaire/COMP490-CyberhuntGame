@@ -2,13 +2,13 @@ hover += (keyboard_check_pressed(vk_down)*4) - (keyboard_check_pressed(vk_up)*4)
 hover += keyboard_check_pressed(vk_right) - keyboard_check_pressed(vk_left); //right: +1, left: -1
 
 //decide what to do when hover is below 0 or over the maximum
-if (hover > 15) hover = 15;
+var max_index = array_length(blockArr) - 1;
+if (hover > max_index) hover = max_index;
 if (hover < 0) hover = 0;
 
 if (hover >= 0 && hover < array_length(blockArr)) {
 	userChoice = hover;
 }
-
 
 //handling user input
 if (keyboard_string != "") { //store string if input not blank

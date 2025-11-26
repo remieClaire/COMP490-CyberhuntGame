@@ -5,12 +5,11 @@ block = {
 }
 
 blockArr = obj_matrixBorder.blockArray;
-block = new Block(obj_matrixBorder.blockCount, 0);
-show_debug_message(string(obj_matrixBorder.blockCount));
+block = new Block(id, 0);
 array_push(blockArr, block);
 
 //User input
 hover = 0;
-userChoice = -1;
+userChoice = 0;
 keyboard_string = "";
 userText = "";
