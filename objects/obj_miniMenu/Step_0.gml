@@ -21,7 +21,7 @@ if (keyboard_check_pressed(ord("E"))) {
 
 }
 
-//confirm player choices
+//Confirm & check player choices
 var correct = true;
 if (keyboard_check_pressed(vk_enter)) {
 	var correct_options =
@@ -44,7 +44,10 @@ if (keyboard_check_pressed(vk_enter)) {
 	if (correct) {
 		description = "Correct!"
 		alarm[0] = 120;
-		global.part1Solved = true;
+		global.puzzleSequence = 2;
+		with (obj_machine) {
+			event_user(2);
+		}
 	}
 	else {
 		description = "Try again"

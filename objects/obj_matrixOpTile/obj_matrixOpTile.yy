@@ -1,14 +1,11 @@
 {
   "$GMObject":"",
-  "%Name":"obj_miniMenu",
+  "%Name":"obj_matrixOpTile",
   "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":2,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_miniMenu",
+  "name":"obj_matrixOpTile",
   "overriddenProperties":[],
   "parent":{
     "name":"obj_lvl2objects",
@@ -28,13 +25,15 @@
   "physicsShape":1,
   "physicsShapePoints":[],
   "physicsStartAwake":true,
-  "properties":[],
+  "properties":[
+    {"$GMObjectProperty":"v2","%Name":"hexValue","filters":[],"listItems":[],"multiselect":false,"name":"hexValue","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"","varType":2,},
+  ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_dialogueBox",
-    "path":"sprites/spr_dialogueBox/spr_dialogueBox.yy",
+    "name":"spr_matrixTile",
+    "path":"sprites/spr_matrixTile/spr_matrixTile.yy",
   },
   "spriteMaskId":null,
   "visible":true,

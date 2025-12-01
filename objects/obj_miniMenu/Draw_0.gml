@@ -1,9 +1,20 @@
-draw_sprite_stretched(spr_miniMenu, 0, x-margin, y-margin, fullWidth, fullHeight);
+if (!instance_exists(self)) exit;
 
+//Box variables
+var _dx = 0;
+var _dy = gui_h * 0.7; //70% of weight down vertically
+var _boxw = gui_w; 
+//height of box minus y position (i.e. box will cover remaining 30% of area vertically)
+var _boxh = gui_h - _dy; 
+
+//draw the box
+draw_sprite_stretched(spr_dialogueBox, 0, _dx, _dy, _boxw, _boxh);
+
+//Text setup
 draw_set_colour(c_white);
 draw_set_font(f_comicSans);
-draw_set_halign(fa_left);
-draw_set_valign(fa_top);
+
+_dx += 16;
 
 //draw menu options one at a time
 var _desc = !(description == -1); //check if description exists
@@ -12,7 +23,7 @@ for (l = 0; l < (optionsCount + _desc); l++) { //loop through options +1 if desc
 	
 	//if there's a description, draw the text
 	if (l == 0) && (_desc) {
-		draw_text(x, y, description);
+		draw_text(_dx, _dy, description);
 	}
 	
 	else {
@@ -21,7 +32,7 @@ for (l = 0; l < (optionsCount + _desc); l++) { //loop through options +1 if desc
 			draw_set_colour(c_yellow); //change it's color to yellow
 			_str = hovermarker+_str; //add * next to the option
 		}
-		draw_text(x, y + l * heightLine, _str); //redraw the text
+		draw_text(_dx, _dy + l * heightLine, _str); //redraw the text
 	}
 	
 }

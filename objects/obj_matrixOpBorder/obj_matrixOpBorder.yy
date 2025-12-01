@@ -1,14 +1,12 @@
 {
   "$GMObject":"",
-  "%Name":"obj_miniMenu",
+  "%Name":"obj_matrixOpBorder",
   "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":2,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_miniMenu",
+  "name":"obj_matrixOpBorder",
   "overriddenProperties":[],
   "parent":{
     "name":"obj_lvl2objects",
@@ -33,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_dialogueBox",
-    "path":"sprites/spr_dialogueBox/spr_dialogueBox.yy",
+    "name":"spr_matrixBorder",
+    "path":"sprites/spr_matrixBorder/spr_matrixBorder.yy",
   },
   "spriteMaskId":null,
   "visible":true,
