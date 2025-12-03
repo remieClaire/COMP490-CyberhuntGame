@@ -16,6 +16,10 @@ function Block(_block_id, _value) constructor {
 	block_id = _block_id;
 	value = _value;
 }
+function Arrow(_arrow_id, _value) constructor {
+	arrow_id = _arrow_id;
+	value = _value;
+}
 	
 //Lvl2 part 1
 function miniMenu(_x, _y, _options, _description = -1){
@@ -91,4 +95,54 @@ function showRoom() {
 	with (obj_objParent) {
 		visible = true;
 	}
+}
+
+//Lvl 2 part 5
+function mouseClick(_arr, _obj) {
+	arr = _arr;
+	obj = _obj;
+	
+	if (mouse_check_button_pressed(mb_left)) {
+		var arrowClicked = instance_position(mouse_x, mouse_y, obj);
+		if (arrowClicked) {
+			for (var b = 0; b < array_length(arr); b++) {
+				if (arr[b].arrow_id == arrowClicked) {
+					show_debug_message(string(arrowClicked));
+					arr[b].value++;
+				}
+			}
+		}
+	}
+	
+}
+
+function reverse(_arr, _start, _end) {
+	arr = _arr;
+	s = _start;
+	e = _end;
+	
+	while (s < e) {
+		var temp = arr[s];
+		arr[s] = arr[e];
+		arr[e] = temp;
+		s++;
+		e--;
+	}
+}
+function rotateleftArr(_arr, _turn, _row) {
+	arr = _arr;
+	turn = _turn;
+	row = _row;
+	
+	turn = turn mod 3;
+	
+	//reverse first t elements
+	reverse(arr, row, row-(turn-1)); 
+	
+	//reverse remaining t elements
+	reverse(arr, row+turn, (row+3)-turn);
+	
+	//reverse entire array
+	reverse(arr, row, row+3);
+	
 }

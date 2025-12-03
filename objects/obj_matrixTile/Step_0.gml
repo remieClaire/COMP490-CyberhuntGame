@@ -24,13 +24,15 @@ if (keyboard_check_pressed(vk_space) && userText != "") {
 //Confirm and check player answers 
 var correct = false;
 //check puzzle 2/8
-if (keyboard_check_pressed(vk_enter) && global.puzzleSequence != 3) { 
+if (keyboard_check_pressed(vk_enter) && global.puzzleSequence == 2) { 
 	
 	correct = checkAnswer(correctInputArr); //check if user input is correct
 	if (correct) { //if answer is correct
+		show_debug_message("correct!");
+		
 		global.puzzleSequence = 3;
 		correct = false; //reset correct
-		with (obj_machine) {
+		with (obj_machine) { //call obj_machine to start Part 3
 			event_user(3);
 		}
 	}
@@ -39,26 +41,27 @@ if (keyboard_check_pressed(vk_enter) && global.puzzleSequence != 3) {
 	}
 	
 }
-/*
-else if (keyboard_check_pressed(vk_enter) && !global.part3Solved) { //if puzzle part 3/8 is correct
+
+else if (keyboard_check_pressed(vk_enter) && global.puzzleSequence == 3) { //if puzzle part 3/8 is correct
 	correct = checkAnswer(correctXorArr);
 	if (correct) {
-		global.part3Solved = true;
 		show_debug_message("correct!");
+		
+		global.puzzleSequence = 4;
 		correct = false;
-		with (obj_machine) { //call obj_machine to start Part 3
-			event_user(0);
+		with (obj_machine) { //call obj_machine to start Part 4
+			event_user(4);
 		}
 	}
 	else {
 		show_debug_message("try again");
 	}
-	
 }
-else if (global.initiateMultMatrix) {
+
+
+if (global.initiateMultMatrix) {
 	for (var i = 0; i < array_length(blockArr); i++) {
 		blockArr[i].value = correctMultArr[i];
 	}
-	global.part4Solved = true;
+	global.puzzleSequence = 5;
 }
-*/

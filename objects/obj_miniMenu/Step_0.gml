@@ -43,7 +43,7 @@ if (keyboard_check_pressed(vk_enter)) {
 	
 	if (correct) {
 		description = "Correct!"
-		alarm[0] = 120;
+		alarm[0] = 100;
 		global.puzzleSequence = 2;
 		with (obj_machine) {
 			event_user(2);

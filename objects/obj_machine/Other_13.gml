@@ -1,3 +1,4 @@
+//ADD KEY (FIRST XOR)
 /*TO ADD:
 *pull up key inserts on side
 *player must drag and drop key in
