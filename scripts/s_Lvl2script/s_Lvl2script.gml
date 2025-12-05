@@ -109,6 +109,7 @@ function mouseClick(_arr, _obj) {
 				if (arr[b].arrow_id == arrowClicked) {
 					show_debug_message(string(arrowClicked));
 					arr[b].value++;
+					break;
 				}
 			}
 		}
@@ -123,26 +124,27 @@ function reverse(_arr, _start, _end) {
 	
 	while (s < e) {
 		var temp = arr[s];
-		arr[s] = arr[e];
+		arr[s] = _arr[e];
 		arr[e] = temp;
 		s++;
 		e--;
 	}
+	
 }
 function rotateleftArr(_arr, _turn, _row) {
 	arr = _arr;
 	turn = _turn;
-	row = _row;
+	row = _row*4;
 	
-	turn = turn mod 3;
-	
-	//reverse first t elements
-	reverse(arr, row, row-(turn-1)); 
-	
-	//reverse remaining t elements
-	reverse(arr, row+turn, (row+3)-turn);
+	turn = turn mod 4;
 	
 	//reverse entire array
 	reverse(arr, row, row+3);
+	
+	//reverse first t elements
+	reverse(arr, row, row+turn-1); 
+	
+	//reverse remaining t elements
+	reverse(arr, row+turn, row+3); 
 	
 }
