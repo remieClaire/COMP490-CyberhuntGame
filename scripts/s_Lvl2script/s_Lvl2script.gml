@@ -1,5 +1,5 @@
 function checkAnswer(_arr2) {
-	arr1 = obj_matrixBorder.blockArray;
+	arr1 = obj_matrixTile.blockArr;
 	arr2 = _arr2;
 	arr1_length = array_length(arr1);
 	arr2_length = array_length(arr2);
@@ -16,8 +16,12 @@ function Block(_block_id, _value) constructor {
 	block_id = _block_id;
 	value = _value;
 }
-function Arrow(_arrow_id, _value) constructor {
-	arrow_id = _arrow_id;
+function Arrow(_obj_id, _value) constructor {
+	obj_id = _obj_id;
+	value = _value;
+}
+function Dial(_obj_id, _value) constructor {
+	obj_id = _obj_id;
 	value = _value;
 }
 	
@@ -98,7 +102,7 @@ function showRoom() {
 }
 
 //Lvl 2 part 5
-function mouseClick(_arr, _obj) {
+function mouseClickArrow(_arr, _obj) {
 	arr = _arr;
 	obj = _obj;
 	
@@ -106,10 +110,8 @@ function mouseClick(_arr, _obj) {
 		var arrowClicked = instance_position(mouse_x, mouse_y, obj);
 		if (arrowClicked) {
 			for (var b = 0; b < array_length(arr); b++) {
-				if (arr[b].arrow_id == arrowClicked) {
-					show_debug_message(string(arrowClicked));
+				if (arr[b].obj_id == arrowClicked) {
 					arr[b].value++;
-					break;
 				}
 			}
 		}
@@ -123,28 +125,48 @@ function reverse(_arr, _start, _end) {
 	e = _end;
 	
 	while (s < e) {
-		var temp = arr[s];
-		arr[s] = _arr[e];
-		arr[e] = temp;
+		var temp = arr[s].value;
+		arr[s].value = arr[e].value;
+		arr[e].value = temp;
 		s++;
 		e--;
 	}
 	
 }
 function rotateleftArr(_arr, _turn, _row) {
-	arr = _arr;
+	//arr = _arr;
 	turn = _turn;
 	row = _row*4;
 	
 	turn = turn mod 4;
 	
-	//reverse entire array
-	reverse(arr, row, row+3);
-	
 	//reverse first t elements
-	reverse(arr, row, row+turn-1); 
+	reverse(_arr, row, row+turn-1); 
 	
 	//reverse remaining t elements
-	reverse(arr, row+turn, row+3); 
+	reverse(_arr, row+turn, row+3); 
+	
+	//reverse entire array
+	reverse(_arr, row, row+3);
+
+}
+
+//Lvl 2 part 6
+function mouseClickDial(_arr, _obj) {
+	arr = _arr;
+	obj = _obj;
+	
+	if (mouse_check_button_pressed(mb_left)) {
+		var dialClicked = instance_position(mouse_x, mouse_y, obj);
+		if (dialClicked) {
+			for (var b = 0; b < array_length(arr); b++) {
+				if (arr[b].obj_id == dialClicked) {
+					arr[b].value++;
+					arr[b].value = arr[b].value % 16;
+					return dialClicked;
+				}
+			}
+		}
+	}
 	
 }

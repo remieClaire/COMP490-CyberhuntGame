@@ -58,6 +58,7 @@ else if (keyboard_check_pressed(vk_enter) && global.puzzleSequence == 3) { //if 
 	}
 }
 else if (keyboard_check_pressed(vk_enter) && global.puzzleSequence == 5) {
+	show_debug_message("keyboard check called");
 	correct = checkAnswer(correctShiftArr);
 	
 	if (correct) {
@@ -65,8 +66,24 @@ else if (keyboard_check_pressed(vk_enter) && global.puzzleSequence == 5) {
 		
 		global.puzzleSequence = 6;
 		correct = false;
-		with (obj_machine) { //call obj_machine to start Part 4
+		with (obj_machine) { //call obj_machine to start Part 6
 			event_user(6);
+		}
+	}
+	else {
+		show_debug_message("try again");
+	}
+}
+else if (keyboard_check_pressed(vk_enter) && global.puzzleSequence == 6) {
+	correct = checkAnswer(correctSubArr);
+	
+	if (correct) {
+		show_debug_message("correct!");
+		
+		global.puzzleSequence = 7;
+		correct = false;
+		with (obj_machine) { //call obj_machine to start Part 7
+			event_user(7);
 		}
 	}
 	else {
@@ -75,9 +92,11 @@ else if (keyboard_check_pressed(vk_enter) && global.puzzleSequence == 5) {
 }
 
 
+
 if (global.initiateMultMatrix) {
 	for (var i = 0; i < array_length(blockArr); i++) {
 		blockArr[i].value = correctMultArr[i];
 	}
 	global.puzzleSequence = 5;
+	global.initiateMultMatrix = false;
 }

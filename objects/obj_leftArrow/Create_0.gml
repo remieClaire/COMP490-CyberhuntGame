@@ -1,6 +1,6 @@
 //Arrow structure
 arrow = {
-	arrow_id: -1,
+	obj_id: -1,
 	value: 0
 }
 left_arr = obj_matrixBorder.leftArrowArray;

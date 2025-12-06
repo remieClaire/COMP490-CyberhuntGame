@@ -1,13 +1,14 @@
 {
   "$GMObject":"",
-  "%Name":"obj_machineScreen",
+  "%Name":"obj_subBytesDial",
   "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":4,"eventType":6,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_machineScreen",
+  "name":"obj_subBytesDial",
   "overriddenProperties":[],
   "parent":{
     "name":"obj_lvl2objects",
@@ -32,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_machineScreen",
-    "path":"sprites/spr_machineScreen/spr_machineScreen.yy",
+    "name":"spr_subBytesDial",
+    "path":"sprites/spr_subBytesDial/spr_subBytesDial.yy",
   },
   "spriteMaskId":null,
   "visible":true,
