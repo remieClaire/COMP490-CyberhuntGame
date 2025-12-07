@@ -40,6 +40,8 @@
   "name":"COMP490-CyberhuntGame",
   "resources":[
     {"id":{"name":"f_comicSans","path":"fonts/f_comicSans/f_comicSans.yy",},},
+    {"id":{"name":"obj_aesInputBox","path":"objects/obj_aesInputBox/obj_aesInputBox.yy",},},
+    {"id":{"name":"obj_arrayBorder","path":"objects/obj_arrayBorder/obj_arrayBorder.yy",},},
     {"id":{"name":"obj_buttonContinue","path":"objects/obj_buttonContinue/obj_buttonContinue.yy",},},
     {"id":{"name":"obj_buttonLvl1","path":"objects/obj_buttonLvl1/obj_buttonLvl1.yy",},},
     {"id":{"name":"obj_buttonLvl2","path":"objects/obj_buttonLvl2/obj_buttonLvl2.yy",},},
@@ -83,6 +85,8 @@
     {"id":{"name":"rm_settings","path":"rooms/rm_settings/rm_settings.yy",},},
     {"id":{"name":"s_dialogueScripts","path":"scripts/s_dialogueScripts/s_dialogueScripts.yy",},},
     {"id":{"name":"s_Lvl2script","path":"scripts/s_Lvl2script/s_Lvl2script.yy",},},
+    {"id":{"name":"spr_aesInputBox","path":"sprites/spr_aesInputBox/spr_aesInputBox.yy",},},
+    {"id":{"name":"spr_arrayBorder","path":"sprites/spr_arrayBorder/spr_arrayBorder.yy",},},
     {"id":{"name":"spr_cabinetFront","path":"sprites/spr_cabinetFront/spr_cabinetFront.yy",},},
     {"id":{"name":"spr_cabinetSide","path":"sprites/spr_cabinetSide/spr_cabinetSide.yy",},},
     {"id":{"name":"spr_character","path":"sprites/spr_character/spr_character.yy",},},

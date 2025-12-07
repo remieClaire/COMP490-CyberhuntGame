@@ -6,6 +6,10 @@ obj_matrixOpBorder.invMultiplyArray = [ "2f", "e8", "94", "1a",
 										"c3", "67", "b2", "5d",
 										"8e", "41", "f6", "39",
 										"7c", "d5", "06", "ba"];
+obj_matrixOpBorder.finalXorArray = [ "2a", "e7", "91", "5c",
+									"b3", "48", "0f", "d6",
+									"7e", "c4", "16", "89",
+									"a2", "5b", "f0", "3d"];
 
 //Generate the tiles inside the border
 for (var i = 0; i < 4; i++) {
@@ -22,7 +26,10 @@ for (var i = 0; i < 4; i++) {
 		}
 		else if (global.puzzleSequence == 4) {
 			tile.hexValue = obj_matrixOpBorder.invMultiplyArray[index];
-			
+
+		}
+		else if (global.puzzleSequence == 7) {
+			tile.hexValue = obj_matrixOpBorder.finalXorArray[index];
 		}
 		
 	}

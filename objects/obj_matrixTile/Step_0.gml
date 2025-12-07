@@ -58,7 +58,6 @@ else if (keyboard_check_pressed(vk_enter) && global.puzzleSequence == 3) { //if 
 	}
 }
 else if (keyboard_check_pressed(vk_enter) && global.puzzleSequence == 5) {
-	show_debug_message("keyboard check called");
 	correct = checkAnswer(correctShiftArr);
 	
 	if (correct) {
@@ -90,6 +89,22 @@ else if (keyboard_check_pressed(vk_enter) && global.puzzleSequence == 6) {
 		show_debug_message("try again");
 	}
 }
+else if (keyboard_check_pressed(vk_enter) && global.puzzleSequence == 7) {
+	correct = checkAnswer(correctFinalXorArr);
+	
+	if (correct) {
+		show_debug_message("correct!");
+		
+		global.puzzleSequence = 8;
+		correct = false;
+		with (obj_machine) { //call obj_machine to start Part 8
+			event_user(8);
+		}
+	}
+	else {
+		show_debug_message("try again");
+	}
+}
 
 
 
@@ -98,5 +113,6 @@ if (global.initiateMultMatrix) {
 		blockArr[i].value = correctMultArr[i];
 	}
 	global.puzzleSequence = 5;
-	global.initiateMultMatrix = false;
 }
+
+if (instance_exists(obj_aesInputBox)) exit;
