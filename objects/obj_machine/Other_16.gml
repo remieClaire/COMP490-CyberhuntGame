@@ -11,7 +11,7 @@ var y_place = room_height/2;
 instance_destroy(obj_matrixOpBorder);
 instance_destroy(obj_matrixOpTile);
 
-instance_destroy(obj_leftArrow);
+instance_destroy(obj_rightArrow);
 
 //creating inv. sub. matrix
 //bring up machine screen 

@@ -133,12 +133,16 @@ function reverse(_arr, _start, _end) {
 	}
 	
 }
-function rotateleftArr(_arr, _turn, _row) {
+function rotaterightArr(_arr, _turn, _row) {
 	//arr = _arr;
 	turn = _turn;
 	row = _row*4;
 	
 	turn = turn mod 4;
+	
+	//reverse entire array
+	reverse(_arr, row, row+3);
+
 	
 	//reverse first t elements
 	reverse(_arr, row, row+turn-1); 
@@ -146,9 +150,7 @@ function rotateleftArr(_arr, _turn, _row) {
 	//reverse remaining t elements
 	reverse(_arr, row+turn, row+3); 
 	
-	//reverse entire array
-	reverse(_arr, row, row+3);
-
+	
 }
 
 //Lvl 2 part 6

@@ -18,5 +18,4 @@ if (_interact != noone) {
 		event_user(0);
 	}
 		
-}
-	
+}	

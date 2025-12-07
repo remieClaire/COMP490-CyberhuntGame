@@ -1,15 +1,6 @@
-obj_matrixOpBorder.xorArray = [ "a7", "3c", "5b", "82",
-								"4f", "d1", "96", "2e",
-								"73", "b8", "41", "cf",
-								"9d", "6a", "e4", "15"];
-obj_matrixOpBorder.invMultiplyArray = [ "2f", "e8", "94", "1a",
-										"c3", "67", "b2", "5d",
-										"8e", "41", "f6", "39",
-										"7c", "d5", "06", "ba"];
-obj_matrixOpBorder.finalXorArray = [ "2a", "e7", "91", "5c",
-									"b3", "48", "0f", "d6",
-									"7e", "c4", "16", "89",
-									"a2", "5b", "f0", "3d"];
+XORKey2 = ["2A","E7", "91","5C","B3","48","0F","D6","7E","C4","16","89","A2","B5","F0","3D"];
+invMultiplyArray = ["0E","0B","0D","09","09","0E","0B","0D","0D","09","0E","0B","0B","0D","09","0E"];
+XORKey1 = ["A7","3C","5B","82","4F","D1","96","2E","73","B8","41","CF","9D","6A","E4","15"];
 
 //Generate the tiles inside the border
 for (var i = 0; i < 4; i++) {
@@ -22,14 +13,14 @@ for (var i = 0; i < 4; i++) {
 					);
 		var index = i*4+j;
 		if (global.puzzleSequence == 3) {
-			tile.hexValue = obj_matrixOpBorder.xorArray[index];
+			tile.hexValue = XORKey2[index];
 		}
 		else if (global.puzzleSequence == 4) {
-			tile.hexValue = obj_matrixOpBorder.invMultiplyArray[index];
+			tile.hexValue = invMultiplyArray[index];
 
 		}
 		else if (global.puzzleSequence == 7) {
-			tile.hexValue = obj_matrixOpBorder.finalXorArray[index];
+			tile.hexValue = XORKey1[index];
 		}
 		
 	}

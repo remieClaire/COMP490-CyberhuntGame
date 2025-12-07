@@ -1,5 +1,5 @@
 //global variable(s)
-global.puzzleSequence = 1;
+global.puzzleSequence = 4;
 //flags for puzzle part 3
 global.initiateMultMatrix = false;
 

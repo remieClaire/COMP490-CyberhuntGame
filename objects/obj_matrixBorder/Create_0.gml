@@ -1,6 +1,5 @@
-obj_matrixBorder.blockArray = [];
-obj_matrixBorder.leftArrowArray = [];
-obj_matrixBorder.rightArrowArray = [];
+blockArray = [];
+rightArrowArray = [];
 
 //Generate the tiles inside the border
 for (var i = 0; i < 4; i++) {

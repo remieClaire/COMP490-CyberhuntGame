@@ -1,13 +1,13 @@
 {
   "$GMObject":"",
-  "%Name":"obj_leftArrow",
+  "%Name":"obj_rightArrow",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":4,"eventType":6,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":32,"eventType":9,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_leftArrow",
+  "name":"obj_rightArrow",
   "overriddenProperties":[],
   "parent":{
     "name":"obj_lvl2objects",
@@ -32,8 +32,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_leftArrow",
-    "path":"sprites/spr_leftArrow/spr_leftArrow.yy",
+    "name":"spr_rightArrow",
+    "path":"sprites/spr_rightArrow/spr_rightArrow.yy",
   },
   "spriteMaskId":null,
   "visible":true,
