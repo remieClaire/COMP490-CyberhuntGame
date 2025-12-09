@@ -1,14 +1,17 @@
-correct = checkAnswer(correctXorArr);
+if (currentPuzzle == 3) {
+	correct = checkAnswer(correctXorArr);
 
-if (correct) { //if answer is correct
-	show_debug_message("correct!");
+	if (correct) { 
+		show_debug_message("correct!");
 		
-	global.puzzleSequence = 4;
-	correct = false; //reset correct
-	with (obj_machine) { //call obj_machine to start Part 4
-		event_user(0);
+		global.puzzleSequence = 4;
+		correct = false; 
+		resetBoolean();
+		with (obj_machine) { 
+			event_user(0);
+		}
 	}
-}
-else {
-	show_debug_message("try again");
+	else {
+		//show_debug_message("try again");
+	}
 }

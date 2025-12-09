@@ -25,12 +25,13 @@ if (keyboard_string != "") { //store string if input not blank
 //clear input only if space pressed & input not already blank
 if (keyboard_check_pressed(vk_shift) && userText != "") { 
 	keyboard_string = "";
+	currentPuzzle = global.puzzleSequence;
 }
 
-//Confirm and check player answers 
+//Main event cases
 var submit = keyboard_check_pressed(vk_enter);
 var correct = false;
-//Main event cases
+//check player answers upon submission
 if (submit && global.puzzleSequence == 2) { 
 	event_user(2);
 }

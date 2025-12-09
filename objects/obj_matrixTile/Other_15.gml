@@ -1,14 +1,16 @@
-correct = checkAnswer(correctShiftArr);
+if (currentPuzzle == 5) {
+	correct = checkAnswer(correctShiftArr);
 	
-if (correct) {
-	show_debug_message("correct!");
+	if (correct) {
+		show_debug_message("correct!");
 		
-	global.puzzleSequence = 6;
-	correct = false;
-	with (obj_machine) { //call obj_machine to start Part 6
-		event_user(0);
+		global.puzzleSequence = 6;
+		correct = false;
+		with (obj_machine) { //call obj_machine to start Part 6
+			event_user(0);
+		}
 	}
-}
-else {
-	show_debug_message("try again");
+	else {
+		//show_debug_message("try again");
+	}
 }

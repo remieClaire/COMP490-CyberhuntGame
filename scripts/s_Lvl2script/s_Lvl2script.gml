@@ -1,14 +1,26 @@
+//GENERAL USE
+//checks user's answer after each submission
 function checkAnswer(_arr2) {
 	arr2 = _arr2;
+	
+	var pass = true;
 
 	for (var i = 0; i < array_length(obj_matrixTile.blockArr); i++) {
 		if (string_trim(obj_matrixTile.blockArr[i].value) != string_trim(arr2[i])) {
-			return false;
+			pass = false;
+			obj_matrixTile.blockArr[i].boolean = false;
 		}	
 	}
-	return true;
+	return pass;
 }
-
+//resets each block's boolean value back to "correct"
+function resetBoolean() {
+	for (var i = 0; i < array_length(obj_matrixTile.blockArr); i++) {
+		blockArr[i].boolean = true;
+	}
+	return;
+}
+//rebuilds state matrix (for when player leaves puzzle in between steps)
 function recreateMatrix(_arr2) {
 	arr2 = _arr2;
 	
@@ -19,9 +31,11 @@ function recreateMatrix(_arr2) {
 	return;
 }
 
-function Block(_block_id, _value) constructor {
+//CONSTRUCTORS
+function Block(_block_id, _value, _boolean) constructor {
 	block_id = _block_id;
 	value = _value;
+	boolean = _boolean;
 }
 function Arrow(_obj_id, _value) constructor {
 	obj_id = _obj_id;
@@ -32,7 +46,9 @@ function Dial(_obj_id, _value) constructor {
 	value = _value;
 }
 	
-//Lvl2 part 1
+//LEVEL SPECIFIC FUNCTIONS
+//LVL 2 EVENT1: reverse engineer
+//creates mini menu that player must unscramble
 function miniMenu(_x, _y, _options, _description = -1){
 	with (instance_create_depth(_x, _y, -999, obj_miniMenu)) {
 		
@@ -68,7 +84,7 @@ function miniMenu(_x, _y, _options, _description = -1){
 	}
 	
 }
-
+//switches order of options when player is unscrambling
 function switchOrder(_option1, _option2){
 	//change array
 	var temp = options[_option1][0]; //hold first value
@@ -76,8 +92,9 @@ function switchOrder(_option1, _option2){
 	options[_option2][0] = temp; //put second value into first value's place
 }
 
-//Lvl2 part 2
-function hideRoom() {
+//LVL 2 EVENT2: input state matrix
+//hides room so user can see puzzle components better
+function hideRoom() { 
 	floorTile = layer_get_id("Tiles_floor");
 	collisionTile = layer_get_id("Tiles_collision");
 	
@@ -89,7 +106,8 @@ function hideRoom() {
 	}
 }
 
-//Lvl2 part 4
+//LVL 2 EVENT4: multiply inverse matrix
+//reveals room (user interaction with room needed for this event)
 function showRoom() {
 	floorTile = layer_get_id("Tiles_floor");
 	collisionTile = layer_get_id("Tiles_collision");
@@ -108,7 +126,8 @@ function showRoom() {
 	}
 }
 
-//Lvl 2 part 5
+//LVL 2 EVENT5: shift rows
+//logic for arrow clicks
 function mouseClickArrow(_arr, _obj) {
 	arr = _arr;
 	obj = _obj;
@@ -126,7 +145,7 @@ function mouseClickArrow(_arr, _obj) {
 	}
 	
 }
-
+//helper function for rotaterightArr
 function reverse(_arr, _start, _end) {
 	arr = _arr;
 	s = _start;
@@ -141,6 +160,7 @@ function reverse(_arr, _start, _end) {
 	}
 	
 }
+//rotates rows of matrix
 function rotaterightArr(_arr, _turn, _row) {
 	//arr = _arr;
 	turn = _turn;
@@ -161,7 +181,8 @@ function rotaterightArr(_arr, _turn, _row) {
 	
 }
 
-//Lvl 2 part 6
+//LVL 2 EVENT 6: inverse substitution
+//logic for dial clicks
 function mouseClickDial(_arr, _obj) {
 	arr = _arr;
 	obj = _obj;
