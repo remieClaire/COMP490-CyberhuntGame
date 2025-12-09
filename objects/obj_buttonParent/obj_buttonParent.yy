@@ -11,8 +11,8 @@
   "name":"obj_buttonParent",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"obj_lvlBtns",
+    "path":"folders/Objects/obj_lvlBtns.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -29,7 +29,7 @@
   "physicsShapePoints":[],
   "physicsStartAwake":true,
   "properties":[
-    {"$GMObjectProperty":"v1","%Name":"buttonText","filters":[],"listItems":[],"multiselect":false,"name":"buttonText","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"","varType":2,},
+    {"$GMObjectProperty":"v2","%Name":"buttonText","filters":[],"listItems":[],"multiselect":false,"name":"buttonText","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"","varType":2,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
