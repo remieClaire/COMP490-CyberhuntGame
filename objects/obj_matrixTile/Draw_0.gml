@@ -10,7 +10,7 @@ if (blockArr[hover].block_id == id) {
 }
 else { //draw instance's own value based on matrix
 	for (var j=0; j<array_length(blockArr); j++) {
-		if (blockArr[j].block_id == id && blockArr[j].value != 0) {
+		if (blockArr[j].block_id == id && blockArr[j].value != "") {
 			draw_text(x+center, y+middle, blockArr[j].value);
 			break;
 		}

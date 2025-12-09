@@ -7,7 +7,7 @@ if (hover < 0) hover = optionsCount-1; //wraps around to last option if less tha
 
 //keep track of player choices
 var selected2;
-if (keyboard_check_pressed(ord("E"))) {
+if (keyboard_check_pressed(vk_shift)) {
 	if (!firstOptionChosen) {
 		selected = hover; //get first option
 		firstOptionChosen = true;
@@ -45,6 +45,7 @@ if (keyboard_check_pressed(vk_enter)) {
 		description = "Correct!"
 		alarm[0] = 100;
 		global.puzzleSequence = 2;
+
 		with (obj_machine) {
 			event_user(2);
 		}

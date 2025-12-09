@@ -5,14 +5,17 @@ block = {
 }
 
 blockArr = obj_matrixBorder.blockArray;
-block = new Block(id, 0);
+block = new Block(id, "");
 array_push(blockArr, block);
+
 
 //User input
 hover = 0;
 userChoice = 0;
 keyboard_string = "";
 userText = "";
+
+correct = false;
 
 correctInputArr = ["00","6A","41","16","A2","B3","DA","0F","EC","DA","BD","76","6B","96","CC","83"]
 					

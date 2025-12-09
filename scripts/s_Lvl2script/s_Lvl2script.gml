@@ -1,11 +1,8 @@
 function checkAnswer(_arr2) {
-	arr1 = obj_matrixTile.blockArr;
 	arr2 = _arr2;
-	arr1_length = array_length(arr1);
-	arr2_length = array_length(arr2);
-	
-	for (var i = 0; i < arr1_length; i++) {
-		if (string_trim(arr1[i].value) != string_trim(arr2[i])) {
+
+	for (var i = 0; i < array_length(obj_matrixTile.blockArr); i++) {
+		if (string_trim(obj_matrixTile.blockArr[i].value) != string_trim(arr2[i])) {
 			return false;
 		}	
 	}

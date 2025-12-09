@@ -36,3 +36,4 @@ for (l = 0; l < (optionsCount + _desc); l++) { //loop through options +1 if desc
 	}
 	
 }
+draw_set_colour(c_white);

@@ -1,4 +1,8 @@
 //INPUT VALUES 
+if (instance_exists(obj_matrixBorder)) {
+    exit;
+}
+
 //setting x & y positions of matrix
 x_matrix = x_center-150;
 y_matrix = y_center+150;

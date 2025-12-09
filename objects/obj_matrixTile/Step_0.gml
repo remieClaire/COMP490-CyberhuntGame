@@ -1,5 +1,3 @@
-if (instance_exists(obj_aesInputBox)) exit;
-
 hover += (keyboard_check_pressed(vk_down)*4) - (keyboard_check_pressed(vk_up)*4); //down: +1, up: -1
 hover += keyboard_check_pressed(vk_right) - keyboard_check_pressed(vk_left); //right: +1, left: -1
 
@@ -19,32 +17,20 @@ if (keyboard_string != "") { //store string if input not blank
 }
 
 //clear input only if space pressed & input not already blank
-if (keyboard_check_pressed(vk_space) && userText != "") { 
+if (keyboard_check_pressed(vk_shift) && userText != "") { 
 	keyboard_string = "";
 }
 
+
 //Confirm and check player answers 
+var submit = keyboard_check_pressed(vk_enter);
 var correct = false;
 //check puzzle 2/8
-if (keyboard_check_pressed(vk_enter) && global.puzzleSequence == 2) { 
-	
-	correct = checkAnswer(correctInputArr); //check if user input is correct
-	if (correct) { //if answer is correct
-		show_debug_message("correct!");
-		
-		global.puzzleSequence = 3;
-		correct = false; //reset correct
-		with (obj_machine) { //call obj_machine to start Part 3
-			event_user(3);
-		}
-	}
-	else {
-		show_debug_message("try again");
-	}
-	
+if (submit && global.puzzleSequence == 2) { 
+	event_user(2);
 }
 
-else if (keyboard_check_pressed(vk_enter) && global.puzzleSequence == 3) { //if puzzle part 3/8 is correct
+else if (submit && global.puzzleSequence == 3) { //if puzzle part 3/8 is correct
 	correct = checkAnswer(correctXorArr);
 	if (correct) {
 		show_debug_message("correct!");
@@ -59,7 +45,7 @@ else if (keyboard_check_pressed(vk_enter) && global.puzzleSequence == 3) { //if 
 		show_debug_message("try again");
 	}
 }
-else if (keyboard_check_pressed(vk_enter) && global.puzzleSequence == 5) {
+else if (submit && global.puzzleSequence == 5) {
 	correct = checkAnswer(correctShiftArr);
 	
 	if (correct) {
@@ -75,7 +61,7 @@ else if (keyboard_check_pressed(vk_enter) && global.puzzleSequence == 5) {
 		show_debug_message("try again");
 	}
 }
-else if (keyboard_check_pressed(vk_enter) && global.puzzleSequence == 6) {
+else if (submit && global.puzzleSequence == 6) {
 	correct = checkAnswer(correctSubArr);
 	
 	if (correct) {
@@ -91,7 +77,7 @@ else if (keyboard_check_pressed(vk_enter) && global.puzzleSequence == 6) {
 		show_debug_message("try again");
 	}
 }
-else if (keyboard_check_pressed(vk_enter) && global.puzzleSequence == 7) {
+else if (submit && global.puzzleSequence == 7) {
 	correct = checkAnswer(correctFinalXorArr);
 	
 	if (correct) {
@@ -111,7 +97,7 @@ else if (keyboard_check_pressed(vk_enter) && global.puzzleSequence == 7) {
 
 
 if (global.initiateMultMatrix) {
-	for (var i = 0; i < array_length(blockArr); i++) {
+	for (var i = 0; i < array_length(correctMultArr); i++) {
 		blockArr[i].value = correctMultArr[i];
 	}
 	global.puzzleSequence = 5;
