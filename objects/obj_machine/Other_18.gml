@@ -1,5 +1,5 @@
 //TRANSLATE HEX TO ASCII
-
+obj_text1.textString = "TRANSLATE TO ASCII"
 //destroy operations matrix + state matrix border
 instance_destroy(obj_matrixOpBorder);
 instance_destroy(obj_matrixOpTile);

@@ -5,7 +5,7 @@
 *kicks machine -> machine changes
 *interact with machine -> answer is given
 */
-
+obj_text1.textString = "AES MATRIX MULTIPLICATION"
 //recreate instances if don't exist
 //recreate machine screen
 if (!instance_exists(obj_machineScreen)) {
@@ -27,8 +27,11 @@ instance_destroy(obj_matrixBorder);
 instance_destroy(obj_matrixTile);
 instance_create_layer(x_matrix, y_matrix, "Instances", obj_matrixBorder);
 global.initiateMultMatrix = true;
-dialogueArr = [{ msg: "Oh, it filled it out for me." }];
+
+dialogueArr = [{ msg: "[AES matrix multiplication step completed for player.]" },
+				{ msg: "[Moving onto shift rows step.]"}];
 create_dialogue(dialogueArr);
+
 
 global.puzzleSequence = 5;
 event_user(5);

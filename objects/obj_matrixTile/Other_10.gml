@@ -1,3 +1,5 @@
+//For event8: hex to ascii
+//moves matrix tiles into array format
 for (var h = 0; h < array_length(blockArr); h++) {
 	var offset_x = h * sprite_get_width(spr_matrixTile);
 	

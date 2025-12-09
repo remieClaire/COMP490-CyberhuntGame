@@ -6,7 +6,7 @@ if (correct) { //if answer is correct
 	global.puzzleSequence = 4;
 	correct = false; //reset correct
 	with (obj_machine) { //call obj_machine to start Part 4
-		event_user(4);
+		event_user(0);
 	}
 }
 else {

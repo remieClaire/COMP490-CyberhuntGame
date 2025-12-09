@@ -8,3 +8,4 @@ arrow = new Arrow(id, 0);
 array_push(right_arr, arrow);
 
 clicks = -1;
+arrowID = -1;

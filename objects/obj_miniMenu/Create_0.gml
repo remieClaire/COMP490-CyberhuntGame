@@ -1,4 +1,4 @@
-hover = 0;
+hover_m = 0;
 selected = 0;
 firstOptionChosen = false;
 

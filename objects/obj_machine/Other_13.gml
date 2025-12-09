@@ -3,7 +3,7 @@
 *pull up key inserts on side
 *player must drag and drop key in
 */
-
+obj_text1.textString = "XOR KEY 1"
 //setting x & y positions of matrix
 x_matrix = x_center+150;
 y_matrix = y_center+150;

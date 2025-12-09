@@ -1,3 +1,9 @@
+//if on last step of puzzle, exit matrix tile so it can't be edited anymore
+if (global.puzzleSequence == 8) {
+	hover = -1;
+	exit;
+}
+
 hover += (keyboard_check_pressed(vk_down)*4) - (keyboard_check_pressed(vk_up)*4); //down: +1, up: -1
 hover += keyboard_check_pressed(vk_right) - keyboard_check_pressed(vk_left); //right: +1, left: -1
 
@@ -24,60 +30,21 @@ if (keyboard_check_pressed(vk_shift) && userText != "") {
 //Confirm and check player answers 
 var submit = keyboard_check_pressed(vk_enter);
 var correct = false;
-//check puzzle 2/8
+//Main event cases
 if (submit && global.puzzleSequence == 2) { 
 	event_user(2);
 }
-else if (submit && global.puzzleSequence == 3) { //if puzzle part 3/8 is correct
+else if (submit && global.puzzleSequence == 3) { 
 	event_user(3);
 }
 else if (submit && global.puzzleSequence == 5) {
-	correct = checkAnswer(correctShiftArr);
-	
-	if (correct) {
-		show_debug_message("correct!");
-		
-		global.puzzleSequence = 6;
-		correct = false;
-		with (obj_machine) { //call obj_machine to start Part 6
-			event_user(6);
-		}
-	}
-	else {
-		show_debug_message("try again");
-	}
+	event_user(5);
 }
 else if (submit && global.puzzleSequence == 6) {
-	correct = checkAnswer(correctSubArr);
-	
-	if (correct) {
-		show_debug_message("correct!");
-		
-		global.puzzleSequence = 7;
-		correct = false;
-		with (obj_machine) { //call obj_machine to start Part 7
-			event_user(7);
-		}
-	}
-	else {
-		show_debug_message("try again");
-	}
+	event_user(6);
 }
 else if (submit && global.puzzleSequence == 7) {
-	correct = checkAnswer(correctFinalXorArr);
-	
-	if (correct) {
-		show_debug_message("correct!");
-		
-		global.puzzleSequence = 8;
-		correct = false;
-		with (obj_machine) { //call obj_machine to start Part 8
-			event_user(8);
-		}
-	}
-	else {
-		show_debug_message("try again");
-	}
+	event_user(7);
 }
 
 //Miscellaneous cases

@@ -1,7 +1,9 @@
 //INPUT VALUES 
+
 if (instance_exists(obj_matrixBorder)) {
     exit;
 }
+obj_text1.textString = "INPUT STATE MATRIX"
 
 //setting x & y positions of matrix
 x_matrix = x_center-150;

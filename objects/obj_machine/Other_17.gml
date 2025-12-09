@@ -2,6 +2,7 @@
 /*TO ADD:
 *player must drag and drop second key in
 */
+obj_text1.textString = "XOR KEY 2 (FINAL)"
 //recreate instances if don't exist
 //recreate machine screen
 if (!instance_exists(obj_machineScreen)) {
@@ -23,4 +24,4 @@ y_matrix = y_center+150;
 instance_create_layer(x_matrix, y_matrix, "Instances", obj_matrixOpBorder);
 
 //destroy radio dials
-instance_destroy(obj_subBytesDial);
+instance_destroy(obj_radioDial);

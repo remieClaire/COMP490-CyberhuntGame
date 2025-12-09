@@ -1,5 +1,5 @@
 //SHIFT ROWS
-
+obj_text1.textString = "SHIFT ROWS"
 //recreate instances if don't exist
 //recreate machine screen
 if (!instance_exists(obj_machineScreen)) {

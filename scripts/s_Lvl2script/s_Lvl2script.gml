@@ -119,6 +119,7 @@ function mouseClickArrow(_arr, _obj) {
 			for (var b = 0; b < array_length(arr); b++) {
 				if (arr[b].obj_id == arrowClicked) {
 					arr[b].value++;
+					show_debug_message(arr[b]);
 				}
 			}
 		}

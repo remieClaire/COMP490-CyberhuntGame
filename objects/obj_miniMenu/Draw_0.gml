@@ -28,7 +28,7 @@ for (l = 0; l < (optionsCount + _desc); l++) { //loop through options +1 if desc
 	
 	else {
 		var _str = options[l-_desc][0]; //str equals option chosen
-		if (hover == l - _desc || selected == l - _desc) { //if hover equals a specific option
+		if (hover_m == l - _desc || selected == l - _desc) { //if hover equals a specific option
 			draw_set_colour(c_yellow); //change it's color to yellow
 			_str = hovermarker+_str; //add * next to the option
 		}

@@ -7,5 +7,5 @@ draw_sprite_stretched(
 					w, h);
 
 if (global.puzzleSequence == 6) {
-	draw_text(((room_width/2) - (w/2)), ((room_height/2) - (h/2))-150, obj_subBytesDial.subByte);
+	draw_text(x, y-(h/2), obj_radioDial.subByte);
 }
