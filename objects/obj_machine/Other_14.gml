@@ -5,6 +5,12 @@
 *kicks machine -> machine changes
 *interact with machine -> answer is given
 */
+
+//recreate instances if don't exist
+//recreate machine screen
+if (!instance_exists(obj_machineScreen)) {
+	instance_create_layer(room_width/2, room_height/2, "Instances", obj_machineScreen);
+}
 //setting x & y positions of matrix
 x_matrix = x_center+150;
 y_matrix = y_center+150;
@@ -14,7 +20,6 @@ instance_destroy(obj_matrixOpBorder);
 instance_destroy(obj_matrixOpTile);
 instance_create_layer(x_matrix, y_matrix, "Instances", obj_matrixOpBorder);
 	
-		
 //Fill in answers to matrix multiplication (player will not have to do this)
 x_matrix = x_center-150;
 y_matrix = y_center+150;

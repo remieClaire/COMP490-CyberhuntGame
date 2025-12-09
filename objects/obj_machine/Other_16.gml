@@ -4,6 +4,15 @@
 *hint at dials on bottom of machine screen
 *tune dials according to row & col <- show value depending on tuning
 */
+//recreate instances if don't exist
+//recreate the state matrix
+if (!instance_exists(obj_matrixBorder)) {
+	global.flag = true;
+	x_matrix = x_center-150;
+	y_matrix = y_center+150;
+	instance_create_layer(x_matrix, y_matrix, "Instances", obj_matrixBorder);
+}
+
 //setting x & y values for instance placement
 var x_place = room_width/2 - 32;
 var y_place = room_height/2;

@@ -9,6 +9,16 @@ function checkAnswer(_arr2) {
 	return true;
 }
 
+function recreateMatrix(_arr2) {
+	arr2 = _arr2;
+	
+	for (var i = 0; i < array_length(obj_matrixTile.blockArr); i++) {
+		blockArr[i].value = arr2[i];
+	}
+	global.flag = false;
+	return;
+}
+
 function Block(_block_id, _value) constructor {
 	block_id = _block_id;
 	value = _value;

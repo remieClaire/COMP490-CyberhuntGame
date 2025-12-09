@@ -21,7 +21,6 @@ if (keyboard_check_pressed(vk_shift) && userText != "") {
 	keyboard_string = "";
 }
 
-
 //Confirm and check player answers 
 var submit = keyboard_check_pressed(vk_enter);
 var correct = false;
@@ -29,21 +28,8 @@ var correct = false;
 if (submit && global.puzzleSequence == 2) { 
 	event_user(2);
 }
-
 else if (submit && global.puzzleSequence == 3) { //if puzzle part 3/8 is correct
-	correct = checkAnswer(correctXorArr);
-	if (correct) {
-		show_debug_message("correct!");
-		
-		global.puzzleSequence = 4;
-		correct = false;
-		with (obj_machine) { //call obj_machine to start Part 4
-			event_user(4);
-		}
-	}
-	else {
-		show_debug_message("try again");
-	}
+	event_user(3);
 }
 else if (submit && global.puzzleSequence == 5) {
 	correct = checkAnswer(correctShiftArr);
@@ -94,8 +80,22 @@ else if (submit && global.puzzleSequence == 7) {
 	}
 }
 
+//Miscellaneous cases
+//for repopulating matrices if player picks up from the middle of a sequence
+if (global.flag && global.puzzleSequence == 3) {
+	recreateMatrix(correctInputArr);
+}
+else if (global.flag && global.puzzleSequence == 5) {
+	recreateMatrix(correctMultArr);
+}
+else if (global.flag && global.puzzleSequence == 6) {
+	recreateMatrix(correctShiftArr);
+}
+else if (global.flag && global.puzzleSequence == 7) {
+	recreateMatrix(correctSubArr);
+}
 
-
+//for multiply matrix phase of puzzle
 if (global.initiateMultMatrix) {
 	for (var i = 0; i < array_length(correctMultArr); i++) {
 		blockArr[i].value = correctMultArr[i];
