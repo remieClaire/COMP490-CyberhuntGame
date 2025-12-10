@@ -21,7 +21,7 @@
     {"$GMFolder":"","%Name":"Paths","folderPath":"folders/Paths.yy","name":"Paths","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Rooms","folderPath":"folders/Rooms.yy","name":"Rooms","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Scripts","folderPath":"folders/Scripts.yy","name":"Scripts","resourceType":"GMFolder","resourceVersion":"2.0",},
-    {"$GMFolder":"","%Name":"Sequences","folderPath":"folders/Sounds/Sequences.yy","name":"Sequences","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"Sequences","folderPath":"folders/Sequences.yy","name":"Sequences","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Shaders","folderPath":"folders/Shaders.yy","name":"Shaders","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Sounds","folderPath":"folders/Sounds.yy","name":"Sounds","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Sprites","folderPath":"folders/Sprites.yy","name":"Sprites","resourceType":"GMFolder","resourceVersion":"2.0",},
@@ -52,24 +52,15 @@
     {"id":{"name":"obj_buttonStart","path":"objects/obj_buttonStart/obj_buttonStart.yy",},},
     {"id":{"name":"obj_cabinetFront","path":"objects/obj_cabinetFront/obj_cabinetFront.yy",},},
     {"id":{"name":"obj_cabinetSide","path":"objects/obj_cabinetSide/obj_cabinetSide.yy",},},
-<<<<<<< Updated upstream
-=======
-    {"id":{"name":"obj_character","path":"objects/obj_character/obj_character.yy",},},
-    {"id":{"name":"Obj_inputbox","path":"objects/Obj_inputbox/Obj_inputbox.yy",},},
->>>>>>> Stashed changes
     {"id":{"name":"obj_labTerminal","path":"objects/obj_labTerminal/obj_labTerminal.yy",},},
     {"id":{"name":"obj_noteHint","path":"objects/obj_noteHint/obj_noteHint.yy",},},
     {"id":{"name":"obj_painting","path":"objects/obj_painting/obj_painting.yy",},},
     {"id":{"name":"obj_shelf1","path":"objects/obj_shelf1/obj_shelf1.yy",},},
     {"id":{"name":"obj_shelf2","path":"objects/obj_shelf2/obj_shelf2.yy",},},
     {"id":{"name":"obj_treasureChestclosed","path":"objects/obj_treasureChestclosed/obj_treasureChestclosed.yy",},},
-<<<<<<< Updated upstream
+    {"id":{"name":"Objectlvl4_chestlocked","path":"objects/Objectlvl4_chestlocked/Objectlvl4_chestlocked.yy",},},
     {"id":{"name":"Objectlvl4_controller","path":"objects/Objectlvl4_controller/Objectlvl4_controller.yy",},},
     {"id":{"name":"objlvl4_treasureChestopen","path":"objects/objlvl4_treasureChestopen/objlvl4_treasureChestopen.yy",},},
-=======
-    {"id":{"name":"obj_treasureChestopen","path":"objects/obj_treasureChestopen/obj_treasureChestopen.yy",},},
-    {"id":{"name":"Objlvl4Controller","path":"objects/Objlvl4Controller/Objlvl4Controller.yy",},},
->>>>>>> Stashed changes
     {"id":{"name":"rm_levelSelect","path":"rooms/rm_levelSelect/rm_levelSelect.yy",},},
     {"id":{"name":"rm_lvl1","path":"rooms/rm_lvl1/rm_lvl1.yy",},},
     {"id":{"name":"rm_lvl2","path":"rooms/rm_lvl2/rm_lvl2.yy",},},
