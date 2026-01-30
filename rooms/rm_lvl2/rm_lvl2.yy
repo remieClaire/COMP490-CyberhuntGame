@@ -31,7 +31,7 @@
           9,10,11,12,-5,0,-5,-2147483648,-4,0,8,13,14,15,16,13,14,15,16,-5,0,-5,-2147483648,-4,0,8,18,19,20,21,
           18,19,20,21,-5,0,-5,-2147483648,-17,0,-5,-2147483648,-17,0,-5,-2147483648,-17,0,-3,-2147483648,
         ],"TileDataFormat":1,},"tilesetId":{"name":"ts_floor64x64","path":"tilesets/ts_floor64x64/ts_floor64x64.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
-    {"$GMRTileLayer":"","%Name":"Tiles_collision","depth":200,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Tiles_collision","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":12,"SerialiseWidth":22,"TileCompressedData":[
+    {"$GMRTileLayer":"","%Name":"Tiles_collision","depth":300,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Tiles_collision","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":12,"SerialiseWidth":22,"TileCompressedData":[
           -5,-2147483648,-10,0,-12,-2147483648,1,14,-8,9,1,15,-12,-2147483648,1,11,-8,1,1,13,-12,-2147483648,1,
           11,-8,1,1,13,-12,-2147483648,2,11,0,-3,-2147483648,1,0,-3,-2147483648,1,13,-12,-2147483648,1,11,-7,-2147483648,
           3,0,13,0,-11,-2147483648,1,11,-7,-2147483648,3,0,13,0,-11,-2147483648,1,11,-7,-2147483648,3,0,13,0,-11,
