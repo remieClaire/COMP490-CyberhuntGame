@@ -21,8 +21,8 @@
     "path":"folders/Objects/obj_lvl2objects.yy",
   },
   "parentObjectId":{
-    "name":"obj_objParent",
-    "path":"objects/obj_objParent/obj_objParent.yy",
+    "name":"obj_objInteraction",
+    "path":"objects/obj_objInteraction/obj_objInteraction.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,

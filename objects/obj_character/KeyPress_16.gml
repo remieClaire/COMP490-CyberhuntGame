@@ -6,7 +6,7 @@ var _interact = collision_line(
 	y, 
 	x + lengthdir_x(50, direction), 
 	y + lengthdir_y(50, direction), 
-	obj_objParent, 
+	obj_objInteraction, 
 	true, 
 	false);
 
