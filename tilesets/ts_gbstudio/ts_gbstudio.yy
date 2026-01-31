@@ -24,8 +24,8 @@
   "resourceType":"GMTileSet",
   "resourceVersion":"2.0",
   "spriteId":{
-    "name":"spr_gbstudioTileset",
-    "path":"sprites/spr_gbstudioTileset/spr_gbstudioTileset.yy",
+    "name":"spr_gbstudioSheet1",
+    "path":"sprites/spr_gbstudioSheet1/spr_gbstudioSheet1.yy",
   },
   "spriteNoExport":false,
   "textureGroupId":{

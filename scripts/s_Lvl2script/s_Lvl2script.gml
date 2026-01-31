@@ -101,7 +101,7 @@ function hideRoom() {
 	layer_set_visible(floorTile, false);
 	layer_set_visible(collisionTile, false);
 	
-	with (obj_objParent) {
+	with (obj_objInteraction) {
 		visible = false;
 	}
 }
@@ -121,7 +121,7 @@ function showRoom() {
 	layer_set_visible(floorTile, true);
 	layer_set_visible(collisionTile, true);
 	
-	with (obj_objParent) {
+	with (obj_objInteraction) {
 		visible = true;
 	}
 }

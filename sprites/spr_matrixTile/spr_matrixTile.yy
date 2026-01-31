@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":0,
   "parent":{
-    "name":"spr_lvl2sprites",
-    "path":"folders/Sprites/spr_lvl2sprites.yy",
+    "name":"spr_lvl2Sprites",
+    "path":"folders/Sprites/spr_lvl2Sprites.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
