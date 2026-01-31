@@ -1,0 +1,37 @@
+//MATRIX MULTIPLY
+/*TO ADD:
+*prompt player to look at notebook
+*show room & have player interact with machine again
+*kicks machine -> machine changes
+*interact with machine -> answer is given
+*/
+obj_text1.textString = "AES MATRIX MULTIPLICATION"
+//recreate instances if don't exist
+//recreate machine screen
+if (!instance_exists(obj_machineScreen)) {
+	instance_create_layer(room_width/2, room_height/2, "Instances", obj_machineScreen);
+}
+//setting x & y positions of matrix
+x_matrix = x_center+150;
+y_matrix = y_center+150;
+
+//create inverse multiply matrix
+instance_destroy(obj_matrixOpBorder);
+instance_destroy(obj_matrixOpTile);
+instance_create_layer(x_matrix, y_matrix, "Instances", obj_matrixOpBorder);
+	
+//Fill in answers to matrix multiplication (player will not have to do this)
+x_matrix = x_center-150;
+y_matrix = y_center+150;
+instance_destroy(obj_matrixBorder);
+instance_destroy(obj_matrixTile);
+instance_create_layer(x_matrix, y_matrix, "Instances", obj_matrixBorder);
+global.initiateMultMatrix = true;
+
+dialogueArr = [{ msg: "[AES matrix multiplication step completed for player.]" },
+				{ msg: "[Moving onto shift rows step.]"}];
+create_dialogue(dialogueArr);
+
+
+global.puzzleSequence = 5;
+event_user(5);

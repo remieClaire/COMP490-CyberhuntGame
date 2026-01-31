@@ -1,0 +1,1 @@
+mouseClickArrow(right_arr, obj_rightArrow);
