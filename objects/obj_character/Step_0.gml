@@ -5,21 +5,43 @@ var _up = keyboard_check(vk_up);
 var _down = keyboard_check(vk_down);
 
 //set movement
-var _xinput = (_right - _left)*my_speed; // 1 if going right, -1 if going left 
-var _yinput = (_down - _up)*my_speed; //1 for down, -1 for up
+var _xinput = (_right - _left)*my_speed; // 3 if going right, -3 if going left 
+var _yinput = (_down - _up)*my_speed; //3 for down, -3 for up
 
-//set direction (important for interacting with objects)
+//sets direction & sets corresponding movement animation
 if (_right) {
 	direction = 0;
+	set_animation(animations, "right");	
 }
 else if (_up) {
 	direction = 90;
+	set_animation(animations, "up");
 }
 else if (_left) {
 	direction = 180;
+	set_animation(animations, "left");
 }
 else if (_down) {
 	direction = 270;
+	set_animation(animations, "down");
+}
+
+//idle animation
+if (_xinput == 0 && _yinput == 0) {
+	switch(direction) {
+		case 0:
+			set_animation(animations, "idleright");
+			break;
+		case 90: 
+			set_animation(animations, "idleup");
+			break;
+		case 180:
+			set_animation(animations, "idleleft");
+			break;
+		case 270:
+			set_animation(animations, "idledown");
+			break;
+	}
 }
 
 //Handling collision - collision works by predicting collision and preventing it from happening
@@ -55,4 +77,5 @@ else {
 	y += _yinput;
 }
 
- 
+//Handling dialogue
+if (instance_exists(obj_dialogue)) exit; //if dailogue box already exists, don't make it appear again

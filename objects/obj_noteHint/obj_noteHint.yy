@@ -1,17 +1,19 @@
 {
   "$GMObject":"",
   "%Name":"obj_noteHint",
-  "eventList":[],
+  "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":10,"eventType":7,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
   "name":"obj_noteHint",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"obj_oldObjects",
+    "path":"folders/Objects/obj_oldObjects.yy",
   },
   "parentObjectId":{
-    "name":"obj_objParent",
-    "path":"objects/obj_objParent/obj_objParent.yy",
+    "name":"obj_objInteraction",
+    "path":"objects/obj_objInteraction/obj_objInteraction.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,
