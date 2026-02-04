@@ -1,28 +1,11 @@
+// Inherit the parent event
+event_inherited();
 // ObjLvl4_Controller  -  Step
 
 // --- Find the player and the CLOSED chest ---
 // ObjLvl4_Controller  -  Step
 
 // --- Find the player and the CLOSED chest ---
-var p = instance_find(obj_character, 0);
-var c = instance_find(obj_treasureChestclosed, 0);
-
-if (p != noone && c != noone) {
-    // How far is the player from the chest?
-    var dist = point_distance(p.x, p.y, c.x, c.y);
-
-    // Start typing if:
-    //  - not already typing
-    //  - chest not unlocked yet
-    //  - player is close
-    //  - they press E
-    if (!input_mode && !chest_unlocked && dist < 64 && keyboard_check_pressed(ord("E"))) {
-        input_mode       = true;
-        keyboard_string  = "";     // clear what was typed before
-        player_input     = "";
-        message          = "Type your guess and press Enter.";
-    }
-}
 
 // --- While in input mode, collect text ---
 if (input_mode) {

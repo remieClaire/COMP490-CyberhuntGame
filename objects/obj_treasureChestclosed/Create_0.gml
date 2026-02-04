@@ -20,4 +20,4 @@ correct_hash = make_hash(password + salt);
 chest_unlocked = false;
 message        = "";
 player_input   = "";
-input_mode     = false;  //are we currently typing?
+input_mode     = true;  //are we currently typing?

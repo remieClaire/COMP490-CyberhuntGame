@@ -62,7 +62,6 @@
     {"id":{"name":"obj_shelf2","path":"objects/obj_shelf2/obj_shelf2.yy",},},
     {"id":{"name":"obj_treasureChestclosed","path":"objects/obj_treasureChestclosed/obj_treasureChestclosed.yy",},},
     {"id":{"name":"obj_treasureChestopen","path":"objects/obj_treasureChestopen/obj_treasureChestopen.yy",},},
-    {"id":{"name":"Objlvl4_controller","path":"objects/Objlvl4_controller/Objlvl4_controller.yy",},},
     {"id":{"name":"rm_levelSelect","path":"rooms/rm_levelSelect/rm_levelSelect.yy",},},
     {"id":{"name":"rm_lvl1","path":"rooms/rm_lvl1/rm_lvl1.yy",},},
     {"id":{"name":"rm_lvl2","path":"rooms/rm_lvl2/rm_lvl2.yy",},},

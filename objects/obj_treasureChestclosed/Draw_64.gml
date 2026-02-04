@@ -19,5 +19,3 @@ if (input_mode) {
     draw_text(room_width / 2, 70, "Your guess: " + player_input);
 }
 
-
-
