@@ -1,20 +1,15 @@
 {
   "$GMObject":"",
-  "%Name":"obj_door",
-  "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":10,"eventType":7,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "%Name":"obj_roundHologram",
+  "eventList":[],
   "managed":true,
-  "name":"obj_door",
+  "name":"obj_roundHologram",
   "overriddenProperties":[],
   "parent":{
-    "name":"obj_gbstudioWall",
-    "path":"folders/Objects/obj_gbstudioWall.yy",
+    "name":"obj_gbstudioFloor",
+    "path":"folders/Objects/obj_gbstudioFloor.yy",
   },
-  "parentObjectId":{
-    "name":"obj_objInteraction",
-    "path":"objects/obj_objInteraction/obj_objInteraction.yy",
-  },
+  "parentObjectId":null,
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -33,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_door",
-    "path":"sprites/spr_door/spr_door.yy",
+    "name":"spr_hologram",
+    "path":"sprites/spr_hologram/spr_hologram.yy",
   },
   "spriteMaskId":null,
   "visible":true,

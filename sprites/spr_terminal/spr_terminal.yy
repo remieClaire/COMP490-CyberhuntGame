@@ -23,7 +23,7 @@
   ],
   "name":"spr_terminal",
   "nineSlice":null,
-  "origin":4,
+  "origin":9,
   "parent":{
     "name":"spr_gbstudioFloor",
     "path":"folders/Sprites/spr_gbstudioFloor.yy",
@@ -76,7 +76,7 @@
     "visibleRange":null,
     "volume":1.0,
     "xorigin":8,
-    "yorigin":8,
+    "yorigin":13,
   },
   "swatchColours":null,
   "swfPrecision":0.5,

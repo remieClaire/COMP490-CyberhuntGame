@@ -38,8 +38,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_alienChar1",
-    "path":"sprites/spr_alienChar1/spr_alienChar1.yy",
+    "name":"spr_alienChar2",
+    "path":"sprites/spr_alienChar2/spr_alienChar2.yy",
   },
   "spriteMaskId":null,
   "visible":true,
