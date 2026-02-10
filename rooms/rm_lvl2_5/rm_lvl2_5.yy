@@ -19,6 +19,7 @@
     {"name":"inst_139A9E7E","path":"rooms/rm_lvl2_5/rm_lvl2_5.yy",},
     {"name":"inst_45E833D0","path":"rooms/rm_lvl2_5/rm_lvl2_5.yy",},
     {"name":"inst_6DB3C816","path":"rooms/rm_lvl2_5/rm_lvl2_5.yy",},
+    {"name":"floorTileEnter5","path":"rooms/rm_lvl2_5/rm_lvl2_5.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -51,6 +52,7 @@
         {"$GMRInstance":"v4","%Name":"inst_35BE4E01","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_35BE4E01","objectId":{"name":"obj_wallElectricBox2","path":"objects/obj_wallElectricBox2/obj_wallElectricBox2.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":632.0,"y":240.0,},
         {"$GMRInstance":"v4","%Name":"inst_4ACFD1D7","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_4ACFD1D7","objectId":{"name":"obj_longWindow","path":"objects/obj_longWindow/obj_longWindow.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":716.0,"y":240.0,},
         {"$GMRInstance":"v4","%Name":"inst_CE761A0","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_CE761A0","objectId":{"name":"obj_wallElectricBox1","path":"objects/obj_wallElectricBox1/obj_wallElectricBox1.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":736.0,"y":240.0,},
+        {"$GMRInstance":"v4","%Name":"floorTileEnter5","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"floorTileEnter5","objectId":{"name":"obj_floorTileEnter","path":"objects/obj_floorTileEnter/obj_floorTileEnter.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":672.0,"y":488.0,},
       ],"layers":[],"name":"Instances","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRTileLayer":"","%Name":"Tiles_1","depth":300,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Tiles_1","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":48,"SerialiseWidth":86,"TileCompressedData":[
           -1241,-2147483648,11,138,139,140,141,140,141,140,141,140,142,143,-74,-2147483648,12,0,154,155,156,157,

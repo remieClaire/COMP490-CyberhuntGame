@@ -1,16 +1,18 @@
 {
   "$GMObject":"",
-  "%Name":"obj_textHologram2",
-  "eventList":[],
+  "%Name":"obj_dataCarrier",
+  "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
-  "name":"obj_textHologram2",
+  "name":"obj_dataCarrier",
   "overriddenProperties":[],
   "parent":{
-    "name":"obj_gbstudioFloor",
-    "path":"folders/Objects/obj_gbstudioFloor.yy",
+    "name":"Objects",
+    "path":"folders/Objects.yy",
   },
   "parentObjectId":null,
-  "persistent":false,
+  "persistent":true,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
   "physicsFriction":0.2,
@@ -27,10 +29,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"spr_textHologram2",
-    "path":"sprites/spr_textHologram2/spr_textHologram2.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }

@@ -1,9 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"obj_textHologram2",
+  "%Name":"obj_floorTileEnter",
   "eventList":[],
   "managed":true,
-  "name":"obj_textHologram2",
+  "name":"obj_floorTileEnter",
   "overriddenProperties":[],
   "parent":{
     "name":"obj_gbstudioFloor",
@@ -28,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_textHologram2",
-    "path":"sprites/spr_textHologram2/spr_textHologram2.yy",
+    "name":"spr_floorTile2",
+    "path":"sprites/spr_floorTile2/spr_floorTile2.yy",
   },
   "spriteMaskId":null,
   "visible":true,

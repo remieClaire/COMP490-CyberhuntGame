@@ -9,10 +9,7 @@
     "name":"obj_gbstudioFloor",
     "path":"folders/Objects/obj_gbstudioFloor.yy",
   },
-  "parentObjectId":{
-    "name":"obj_objInteraction",
-    "path":"objects/obj_objInteraction/obj_objInteraction.yy",
-  },
+  "parentObjectId":null,
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
