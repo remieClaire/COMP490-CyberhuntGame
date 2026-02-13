@@ -1,4 +1,4 @@
-draw_sprite_ext(spr_objParent, 0, 200, 400, scalex, 9, 0, c_red, 1);
+draw_sprite_ext(spr_objParent, 0, 150, 350, scalex, 18, 0, c_red, 1);
 
 draw_set_colour(c_lime)
 

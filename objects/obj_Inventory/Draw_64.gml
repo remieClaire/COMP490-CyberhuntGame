@@ -8,7 +8,7 @@ var my = device_mouse_y_to_gui(0);
 
 
 draw_set_alpha(1);
-draw_sprite_ext(spr_objParent, 0, room_x + 100, room_y + 50, 8, 6, 0, c_red, 1);
+draw_sprite_ext(spr_objParent, 0, room_x + 100, room_y + 25, 16, 11, 0, c_red, 1);
 	
 for (var i = 0; i < ds_grid_width(global.AllItems); i++) {
 	var itemX = room_x + (i * spacing);

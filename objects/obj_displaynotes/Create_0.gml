@@ -1,6 +1,6 @@
 visible = false;
 
-scalex = 5
+scalex = 8
 
 textWidth = sprite_get_width(spr_objParent) * (scalex - 1)
 
