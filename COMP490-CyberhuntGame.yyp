@@ -100,6 +100,7 @@
     {"id":{"name":"obj_stool","path":"objects/obj_stool/obj_stool.yy",},},
     {"id":{"name":"obj_table","path":"objects/obj_table/obj_table.yy",},},
     {"id":{"name":"obj_terminal","path":"objects/obj_terminal/obj_terminal.yy",},},
+    {"id":{"name":"obj_test_runner","path":"objects/obj_test_runner/obj_test_runner.yy",},},
     {"id":{"name":"obj_text1","path":"objects/obj_text1/obj_text1.yy",},},
     {"id":{"name":"obj_textHologram1","path":"objects/obj_textHologram1/obj_textHologram1.yy",},},
     {"id":{"name":"obj_textHologram2","path":"objects/obj_textHologram2/obj_textHologram2.yy",},},
