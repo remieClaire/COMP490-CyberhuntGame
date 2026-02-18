@@ -15,3 +15,5 @@ animations =
 };
 
 set_animation(animations, "idledown");
+
+global.item_currently_active = "game";
