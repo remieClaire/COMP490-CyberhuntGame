@@ -12,7 +12,7 @@ draw_sprite_stretched(spr_dialogueBox, 0, _dx, _dy, _boxw, _boxh);
 
 //Text setup
 draw_set_colour(c_white);
-draw_set_font(f_comicSans);
+draw_set_font(f_Silver);
 
 _dx += 16;
 

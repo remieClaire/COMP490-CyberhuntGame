@@ -1,5 +1,5 @@
-//global variable(s)
-global.puzzleSequence = 1;
+//global variable holding puzzle sequence moved to character
+
 
 //FLAGS
 global.flag = false; //flag to repopulate matrices

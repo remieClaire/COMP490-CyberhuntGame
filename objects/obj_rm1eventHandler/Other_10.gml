@@ -1,4 +1,3 @@
-/*
 //REVERSE ENGINEER ALGORITHM
 miniMenu(
 		room_width/2,
@@ -12,4 +11,5 @@ miniMenu(
 		],
 		"Reverse the encryption algorithm:"
 	);
-*/
+
+show_debug_message("called from rm 1 handler");

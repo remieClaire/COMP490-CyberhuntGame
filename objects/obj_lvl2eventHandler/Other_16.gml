@@ -4,7 +4,7 @@
 *hint at dials on bottom of machine screen
 *tune dials according to row & col <- show value depending on tuning
 */
-obj_text1.textString = "INVERSE SUBSTITUTION"
+//obj_text1.textString = "INVERSE SUBSTITUTION"
 //recreate instances if don't exist
 //recreate the state matrix
 if (!instance_exists(obj_matrixBorder)) {

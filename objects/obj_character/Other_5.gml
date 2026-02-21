@@ -5,3 +5,4 @@ if (!instance_exists(obj_dataCarrier)) {
 
 //send the data we want to carry over to the data carrier object
 obj_dataCarrier.targetEnter = targetEnter;
+

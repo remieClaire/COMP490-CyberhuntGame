@@ -2,7 +2,7 @@
 /*TO ADD:
 *player must drag and drop second key in
 */
-obj_text1.textString = "XOR KEY 2 (FINAL)"
+//obj_text1.textString = "XOR KEY 2 (FINAL)"
 //recreate instances if don't exist
 //recreate machine screen
 if (!instance_exists(obj_machineScreen)) {

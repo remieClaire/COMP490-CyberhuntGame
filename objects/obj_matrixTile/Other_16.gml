@@ -7,9 +7,11 @@ if (currentPuzzle == 6) {
 		global.puzzleSequence = 7;
 		correct = false;
 		resetBoolean();
+		/*
 		with (obj_machine) { //call obj_machine to start Part 7
 			event_user(0);
 		}
+		*/
 	}
 	else {
 		//show_debug_message("try again");

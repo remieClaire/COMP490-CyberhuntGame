@@ -46,12 +46,10 @@ if (keyboard_check_pressed(vk_enter)) {
 		alarm[0] = 100;
 		global.puzzleSequence = 2;
 
-		with (obj_machine) {
-			event_user(0);
-		}
 	}
 	else {
 		description = "Try again"
+		alarm[1] = 100;
 	}
 		
 }

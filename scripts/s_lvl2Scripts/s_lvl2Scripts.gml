@@ -1,4 +1,4 @@
-//GENERAL USE
+//--------------- GENERAL USE
 //checks user's answer after each submission
 function checkAnswer(_arr2) {
 	arr2 = _arr2;
@@ -31,7 +31,7 @@ function recreateMatrix(_arr2) {
 	return;
 }
 
-//CONSTRUCTORS
+//--------------- CONSTRUCTORS
 function Block(_block_id, _value, _boolean) constructor {
 	block_id = _block_id;
 	value = _value;
@@ -46,21 +46,20 @@ function Dial(_obj_id, _value) constructor {
 	value = _value;
 }
 	
-//LEVEL SPECIFIC FUNCTIONS
+//--------------- LEVEL SPECIFIC FUNCTIONS
 //LVL 2 EVENT1: reverse engineer
 //creates mini menu that player must unscramble
 function miniMenu(_x, _y, _options, _description = -1){
-	with (instance_create_depth(_x, _y, -999, obj_miniMenu)) {
-		
+	
+	with (instance_create_layer(_x, _y, "Assets_1", obj_miniMenu)) {
 		options = _options;
 		description = _description;
 		optionsCount = array_length(_options);
 		hovermarker = "* ";
 		
-		
 		//Set up size
 		margin = 8; //pixels away from box edges 
-		draw_set_font(f_comicSans);
+		draw_set_font(f_Silver);
 		
 		width = 1; //min width value
 		
@@ -95,11 +94,9 @@ function switchOrder(_option1, _option2){
 //LVL 2 EVENT2: input state matrix
 //hides room so user can see puzzle components better
 function hideRoom() { 
-	floorTile = layer_get_id("Tiles_floor");
-	collisionTile = layer_get_id("Tiles_collision");
+	tileLayer = layer_get_id("Tiles_1");
 	
-	layer_set_visible(floorTile, false);
-	layer_set_visible(collisionTile, false);
+	layer_set_visible(tileLayer, false);
 	
 	with (obj_objInteraction) {
 		visible = false;

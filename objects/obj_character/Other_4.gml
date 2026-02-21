@@ -10,4 +10,5 @@ if (instance_exists(obj_dataCarrier)) {
 		x = targetEnter.x;
 		y = targetEnter.y;
 	}
+	
 }

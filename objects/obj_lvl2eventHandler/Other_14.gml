@@ -5,7 +5,7 @@
 *kicks machine -> machine changes
 *interact with machine -> answer is given
 */
-obj_text1.textString = "AES MATRIX MULTIPLICATION"
+//obj_text1.textString = "AES MATRIX MULTIPLICATION"
 //recreate instances if don't exist
 //recreate machine screen
 if (!instance_exists(obj_machineScreen)) {

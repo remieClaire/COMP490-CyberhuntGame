@@ -17,3 +17,6 @@ animations =
 set_animation(animations, "idledown");
 
 global.item_currently_active = "game";
+
+//global variable to keep track of puzzle sequence in Level 2
+global.puzzleSequence = 1;
