@@ -32,8 +32,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_dialogueBox",
-    "path":"sprites/spr_dialogueBox/spr_dialogueBox.yy",
+    "name":"spr_greenBox",
+    "path":"sprites/spr_greenBox/spr_greenBox.yy",
   },
   "spriteMaskId":null,
   "visible":true,

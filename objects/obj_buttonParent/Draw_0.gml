@@ -8,7 +8,7 @@ draw_self();
 /// @DnDHash : 58D8D974
 /// @DnDArgument : "font" "f_Silver"
 /// @DnDSaveInfo : "font" "f_Silver"
-draw_set_font(f_Silver);
+draw_set_font(f_largeSilver);
 
 /// @DnDAction : YoYo Games.Drawing.Set_Alignment
 /// @DnDVersion : 1.1

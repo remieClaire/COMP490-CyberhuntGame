@@ -1,0 +1,1 @@
+text_arr = ["Grimy, but you can still see the stars through it."];

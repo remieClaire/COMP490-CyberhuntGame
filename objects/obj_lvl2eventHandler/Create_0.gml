@@ -1,9 +1,10 @@
 //global variable holding puzzle sequence moved to character
 
-
+/*
 //FLAGS
 global.flag = false; //flag to repopulate matrices
 global.initiateMultMatrix = false; //flags for puzzle part 3
+*/
 
 //for instance placement
 x_center = (room_width/2)-(sprite_get_width(spr_matrixBorder)/2);

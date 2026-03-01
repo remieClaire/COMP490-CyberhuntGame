@@ -7,10 +7,10 @@ var _boxw = gui_w;
 var _boxh = gui_h - _dy; 
 
 //draw the box
-draw_sprite_stretched(spr_dialogueBox, 0, _dx, _dy, _boxw, _boxh);
+draw_sprite_stretched(spr_greenBox, 0, _dx, _dy, _boxw, _boxh);
 
 //Text setup
-draw_set_font(f_Silver);
+draw_set_font(f_smallSilver);
 _dx += 16;
 _dy += 16;
 

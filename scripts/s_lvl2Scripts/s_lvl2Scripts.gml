@@ -1,3 +1,9 @@
+//--------------- GLOBAL VARS
+global.puzzleSequence = 2;
+//FLAGS
+global.flag = false; //flag to repopulate matrices
+global.initiateMultMatrix = false; //flags for puzzle part 3
+
 //--------------- GENERAL USE
 //checks user's answer after each submission
 function checkAnswer(_arr2) {
@@ -59,7 +65,7 @@ function miniMenu(_x, _y, _options, _description = -1){
 		
 		//Set up size
 		margin = 8; //pixels away from box edges 
-		draw_set_font(f_Silver);
+		draw_set_font(f_smallSilver);
 		
 		width = 1; //min width value
 		
@@ -75,7 +81,7 @@ function miniMenu(_x, _y, _options, _description = -1){
 		width += string_width(hovermarker);
 		
 		//setting height
-		heightLine = 30; //fixed magic number
+		heightLine = 11; //fixed magic number
 		height = heightLine * (optionsCount + !(description == -1)); //multiply by number of lines & whether or not description exists
 		
 		fullWidth = width + margin * 2;
@@ -93,6 +99,27 @@ function switchOrder(_option1, _option2){
 
 //LVL 2 EVENT2: input state matrix
 //hides room so user can see puzzle components better
+function stateMatrix(_x1, _y1, _x2, _y2) {
+	//deactivate all instances
+	instance_deactivate_all(false);
+	//hide all layers except the background
+	var _assetLayers = ["Assets_1", "Instances", "Tiles_1"];
+	
+	for (var i = 0; i < array_length(_assetLayers); i++) {
+		var _curr_layer = layer_get_id(_assetLayers[i]);
+		layer_set_visible(_curr_layer, false);
+	}
+	//change the background to the puzzle background
+	var _background = layer_background_get_id("Background");
+	layer_background_sprite(_background, spr_puzzleBackground);
+	//create inventory on side
+	//create note content on bottom
+	//spawn matrix on top center
+	instance_create_depth(_x1, _y1, -999, obj_matrixBorder);
+	//spawn message to right
+	instance_create_depth(_x2, _y2, -999, obj_messageBox);
+	
+}
 function hideRoom() { 
 	tileLayer = layer_get_id("Tiles_1");
 	

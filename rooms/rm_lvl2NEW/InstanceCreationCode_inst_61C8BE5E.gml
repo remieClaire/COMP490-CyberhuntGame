@@ -1,0 +1,1 @@
+text_arr = ["TRANSLATION ROOM - STRATEGY & PLANNING"]

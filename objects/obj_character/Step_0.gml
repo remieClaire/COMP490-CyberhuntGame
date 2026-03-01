@@ -78,4 +78,5 @@ else {
 }
 
 //Handling dialogue
-if (instance_exists(obj_dialogue)) exit; //if dialogue box is present, pause character movement
+//FIX: THIS DOESN'T WORK
+if (instance_exists(obj_dialogue)) exit; //if dialogue box is present, stop character movement

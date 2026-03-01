@@ -1,3 +1,4 @@
+/*
 //INPUT VALUES 
 if (instance_exists(obj_matrixBorder)) {
     exit;
@@ -12,3 +13,4 @@ y_matrix = y_center+150;
 hideRoom();
 instance_create_layer(room_width/2, room_height/2, "Instances", obj_machineScreen);
 instance_create_layer(x_matrix, y_matrix, "Instances", obj_matrixBorder);
+*/

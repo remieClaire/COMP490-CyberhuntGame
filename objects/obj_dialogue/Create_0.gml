@@ -7,5 +7,9 @@ draw_msg = ""; //actual message being drawn
 char_speed = 0.5; //how fast characters appear
 input_key = vk_space; //key used to speed up text
 
+cam_width = camera_get_view_width(view_camera[0]);
+cam_height = camera_get_view_height(view_camera[0]);
+display_set_gui_size(cam_width, cam_height);
+
 gui_w = display_get_gui_width();
 gui_h = display_get_gui_height();
