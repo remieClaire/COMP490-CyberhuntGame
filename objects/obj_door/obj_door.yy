@@ -9,8 +9,8 @@
   "name":"obj_door",
   "overriddenProperties":[],
   "parent":{
-    "name":"obj_gbstudioWall",
-    "path":"folders/Objects/obj_gbstudioWall.yy",
+    "name":"obj_wall",
+    "path":"folders/Objects/obj_wall.yy",
   },
   "parentObjectId":null,
   "persistent":false,

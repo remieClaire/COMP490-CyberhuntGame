@@ -1,7 +1,7 @@
 my_speed = 2;	//walking speed of character
 objects = [obj_wall, obj_objInteraction]; //array of objects to check for collision
 
-//holds frames of each animation
+//animation frames
 animations = 
 {
 	idledown:	{ frames: [0, 1] },

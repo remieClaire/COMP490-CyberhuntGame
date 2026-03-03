@@ -1,15 +1,20 @@
 {
   "$GMObject":"",
   "%Name":"obj_longWindow",
-  "eventList":[],
+  "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":10,"eventType":7,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
   "name":"obj_longWindow",
   "overriddenProperties":[],
   "parent":{
-    "name":"obj_gbstudioWall",
-    "path":"folders/Objects/obj_gbstudioWall.yy",
+    "name":"obj_wall",
+    "path":"folders/Objects/obj_wall.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"obj_objInteraction",
+    "path":"objects/obj_objInteraction/obj_objInteraction.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,

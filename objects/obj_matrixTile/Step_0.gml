@@ -4,7 +4,7 @@ if (global.puzzleSequence == 8) {
 	exit;
 }
 
-
+//------------setup------------
 hover += (keyboard_check_pressed(vk_down)*4) - (keyboard_check_pressed(vk_up)*4); //down: +1, up: -1
 hover += keyboard_check_pressed(vk_right) - keyboard_check_pressed(vk_left); //right: +1, left: -1
 
@@ -17,7 +17,7 @@ if (hover >= 0 && hover < array_length(blockArr)) {
 	userChoice = hover;
 }
 
-//handling user input
+//------------user input------------
 if (keyboard_string != "") { //store string if input not blank
 	userText = keyboard_string;
 	blockArr[userChoice].value = userText;
@@ -29,7 +29,7 @@ if (keyboard_check_pressed(vk_shift) && userText != "") {
 	currentPuzzle = global.puzzleSequence;
 }
 
-//Main event cases
+//------------events------------
 var submit = keyboard_check_pressed(vk_enter);
 var correct = false;
 //check player answers upon submission
@@ -49,7 +49,7 @@ else if (submit && global.puzzleSequence == 7) {
 	event_user(7);
 }
 
-//Miscellaneous cases
+//------------misc. cases------------
 //for repopulating matrices if player picks up from the middle of a sequence
 if (global.flag && global.puzzleSequence == 3) {
 	recreateMatrix(correctInputArr);

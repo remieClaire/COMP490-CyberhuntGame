@@ -1,0 +1,1 @@
+text_arr = ["Oh!", "This one still has some power!"]

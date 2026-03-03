@@ -8,8 +8,8 @@
   "name":"obj_textHologram2",
   "overriddenProperties":[],
   "parent":{
-    "name":"obj_gbstudioFloor",
-    "path":"folders/Objects/obj_gbstudioFloor.yy",
+    "name":"obj_floor",
+    "path":"folders/Objects/obj_floor.yy",
   },
   "parentObjectId":{
     "name":"obj_objInteraction",

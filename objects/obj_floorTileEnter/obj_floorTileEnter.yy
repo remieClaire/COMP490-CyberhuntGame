@@ -6,8 +6,8 @@
   "name":"obj_floorTileEnter",
   "overriddenProperties":[],
   "parent":{
-    "name":"obj_gbstudioFloor",
-    "path":"folders/Objects/obj_gbstudioFloor.yy",
+    "name":"obj_floor",
+    "path":"folders/Objects/obj_floor.yy",
   },
   "parentObjectId":null,
   "persistent":false,

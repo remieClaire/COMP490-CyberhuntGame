@@ -59,8 +59,8 @@
   },
   "origin":0,
   "parent":{
-    "name":"spr_gbstudioCharacters",
-    "path":"folders/Sprites/spr_gbstudioCharacters.yy",
+    "name":"spr_characters",
+    "path":"folders/Sprites/spr_characters.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
