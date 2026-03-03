@@ -1,5 +1,3 @@
-global.is_done = false;
-
 //Adds lines of text
 /// @param text
 function addText(_text){
@@ -22,6 +20,8 @@ function initText(){
 	}
 }
 
+//Creates dialogue object & triggers event sequentially
+/// @param func
 function initTextCallback(_func){
 	
 	if (array_length(text_arr) == 0) return;
@@ -37,3 +37,4 @@ function initTextCallback(_func){
 		callback = _callback;
 	}
 }
+	

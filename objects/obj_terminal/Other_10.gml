@@ -2,8 +2,6 @@
 event_inherited();
 
 //object interaction text
-initText();
-
 initTextCallback(function() {
 	if (functional) {
 	switch (room) {

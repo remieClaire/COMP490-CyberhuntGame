@@ -1,4 +1,6 @@
 depth = -999;
+
+//sequential event parameter
 callback = undefined;
 
 //text parameters

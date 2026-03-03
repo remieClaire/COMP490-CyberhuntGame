@@ -2,8 +2,8 @@ accept_key = keyboard_check_pressed(vk_space);
 
 var _camwidth = camera_get_view_x(view_camera[0]);
 var _camheight = camera_get_view_y(view_camera[0]);
-textbox_x = _camwidth; 
-textbox_y = _camheight;
+textbox_x = _camwidth + 20; 
+textbox_y = _camheight + 110;
 
 //------------setup------------
 if setup == false {
