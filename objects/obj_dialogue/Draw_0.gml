@@ -9,7 +9,7 @@ textbox_y = _camheight + 110;
 if setup == false {
 	
 	setup = true; //change value so setup only runs for one frame
-	draw_set_font(global.font_main);
+	draw_set_font(global.font_textb);
 	draw_set_valign(fa_top);
 	draw_set_halign(fa_left);
 	
@@ -45,7 +45,8 @@ if accept_key {
 		}
 		//on last page 
 		else {
-			if (is_callable(callback)) callback();
+			if (is_callable(callback)) callback(); //call function if preceding event
+			font_delete(global.font_textb); //delete font so it doesnt take up mem
 			instance_destroy();
 		}
 	}

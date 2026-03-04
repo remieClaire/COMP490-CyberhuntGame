@@ -1,10 +1,4 @@
-//--------------- GLOBAL VARS
-global.puzzleSequence = 2;
-//FLAGS
-global.flag = false; //flag to repopulate matrices
-global.initiateMultMatrix = false; //flags for puzzle part 3
-
-//--------------- GENERAL USE
+//------------general use------------
 //checks user's answer after each submission
 function checkAnswer(_arr2) {
 	arr2 = _arr2;
@@ -37,7 +31,7 @@ function recreateMatrix(_arr2) {
 	return;
 }
 
-//--------------- CONSTRUCTORS
+//------------constructors------------
 function Block(_block_id, _value, _boolean) constructor {
 	block_id = _block_id;
 	value = _value;
@@ -52,8 +46,8 @@ function Dial(_obj_id, _value) constructor {
 	value = _value;
 }
 	
-//--------------- LEVEL SPECIFIC FUNCTIONS
-//LVL 2 EVENT1: reverse engineer
+//------------level specific------------
+//------------event 1: reverse engineer------------
 //creates mini menu that player must unscramble
 function miniMenu(_x, _y, _options, _description = -1){
 	
@@ -97,7 +91,7 @@ function switchOrder(_option1, _option2){
 	options[_option2][0] = temp; //put second value into first value's place
 }
 
-//LVL 2 EVENT2: input state matrix
+//------------event 2: state matrix------------
 //hides room so user can see puzzle components better
 function stateMatrix(_x1, _y1, _x2, _y2) {
 	//deactivate all instances
@@ -130,7 +124,7 @@ function hideRoom() {
 	}
 }
 
-//LVL 2 EVENT4: multiply inverse matrix
+//------------event 4: inv matrix------------
 //reveals room (user interaction with room needed for this event)
 function showRoom() {
 	floorTile = layer_get_id("Tiles_floor");
@@ -150,7 +144,7 @@ function showRoom() {
 	}
 }
 
-//LVL 2 EVENT5: shift rows
+//------------event 5: shift rows------------
 //logic for arrow clicks
 function mouseClickArrow(_arr, _obj) {
 	arr = _arr;
@@ -205,7 +199,7 @@ function rotaterightArr(_arr, _turn, _row) {
 	
 }
 
-//LVL 2 EVENT 6: inverse substitution
+//------------event 6: inv sub------------
 //logic for dial clicks
 function mouseClickDial(_arr, _obj) {
 	arr = _arr;

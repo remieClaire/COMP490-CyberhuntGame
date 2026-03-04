@@ -1,4 +1,6 @@
-my_speed = 2;	//walking speed of character
+sprite_index = global.char_sprite; //set char sprite based on player
+
+my_speed = 2;	//walking speed
 objects = [obj_wall, obj_objInteraction]; //array of objects to check for collision
 
 //animation frames

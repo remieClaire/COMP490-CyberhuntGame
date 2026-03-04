@@ -12,7 +12,7 @@ border = 8;
 vert_line_sep = 12;
 //overall width of a line of text
 line_width = textbox_width - border*2;
-textb_spr = spr_blueBox;
+textb_spr = spr_creamBox;
 textb_img = 0;
 text_img_spd = 0; //used if char has talking animation, but kept to prevent confusion
 
