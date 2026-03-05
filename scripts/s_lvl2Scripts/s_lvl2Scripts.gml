@@ -103,6 +103,10 @@ function stateMatrix(_x1, _y1, _x2, _y2) {
 		var _curr_layer = layer_get_id(_assetLayers[i]);
 		layer_set_visible(_curr_layer, false);
 	}
+	//change camera & view
+	var _cam = view_get_camera(1);
+	camera_apply(_cam);
+	view_set_camera(0, _cam);
 	//change the background to the puzzle background
 	var _background = layer_background_get_id("Background");
 	layer_background_sprite(_background, spr_puzzleBackground);
@@ -113,15 +117,6 @@ function stateMatrix(_x1, _y1, _x2, _y2) {
 	//spawn message to right
 	instance_create_depth(_x2, _y2, -999, obj_messageBox);
 	
-}
-function hideRoom() { 
-	tileLayer = layer_get_id("Tiles_1");
-	
-	layer_set_visible(tileLayer, false);
-	
-	with (obj_objInteraction) {
-		visible = false;
-	}
 }
 
 //------------event 4: inv matrix------------

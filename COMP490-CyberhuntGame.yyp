@@ -84,6 +84,7 @@
     {"id":{"name":"obj_cube","path":"objects/obj_cube/obj_cube.yy",},},
     {"id":{"name":"obj_dataCarrier","path":"objects/obj_dataCarrier/obj_dataCarrier.yy",},},
     {"id":{"name":"obj_dialogue","path":"objects/obj_dialogue/obj_dialogue.yy",},},
+    {"id":{"name":"obj_dialogueCleaner","path":"objects/obj_dialogueCleaner/obj_dialogueCleaner.yy",},},
     {"id":{"name":"obj_displaynotes","path":"objects/obj_displaynotes/obj_displaynotes.yy",},},
     {"id":{"name":"obj_door","path":"objects/obj_door/obj_door.yy",},},
     {"id":{"name":"obj_exit","path":"objects/obj_exit/obj_exit.yy",},},

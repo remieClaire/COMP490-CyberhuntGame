@@ -46,7 +46,6 @@ if accept_key {
 		//on last page 
 		else {
 			if (is_callable(callback)) callback(); //call function if preceding event
-			font_delete(global.font_textb); //delete font so it doesnt take up mem
 			instance_destroy();
 		}
 	}
