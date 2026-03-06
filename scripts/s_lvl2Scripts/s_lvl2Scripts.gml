@@ -30,7 +30,53 @@ function recreateMatrix(_arr2) {
 	global.flag = false;
 	return;
 }
-
+//changes camera and viewport to fit puzzle components
+function setCamera() {
+	var _cam = view_get_camera(1);
+	
+	//set camera 0 to cam1 settings
+    view_set_camera(0, _cam);
+    camera_apply(_cam);
+}
+//changes camera and viewport back to player view
+function resetCamera() {
+	var _cam = view_get_camera(2);
+	
+	view_set_camera(0, _cam);
+	camera_apply(_cam);
+}
+//changes to puzzle view
+function puzzleView() {
+	//deactivate instances
+	instance_deactivate_all(false);
+	//hide layers
+	var _assetLayers = ["Assets_1", "Instances", "Tiles_1"];
+	
+	for (var i = 0; i < array_length(_assetLayers); i++) {
+		var _curr_layer = layer_get_id(_assetLayers[i]);
+		layer_set_visible(_curr_layer, false);
+	}
+	
+	//change background
+	var _background = layer_background_get_id("Background");
+	layer_background_sprite(_background, spr_puzzleBackground);
+	
+}	
+//reverts changes after puzzle is complete
+function normalView() {
+	//reactivate instances
+	instance_activate_all();
+	//show layers
+	var _assetLayers = ["Assets_1", "Instances", "Tiles_1"];
+	
+	for (var i = 0; i < array_length(_assetLayers); i++) {
+		var _curr_layer = layer_get_id(_assetLayers[i]);
+		layer_set_visible(_curr_layer, true);
+	}
+	
+	var _background = layer_background_get_id("Background");
+	layer_background_sprite(_background, spr_levelBackground_dark);
+}
 //------------constructors------------
 function Block(_block_id, _value, _boolean) constructor {
 	block_id = _block_id;
@@ -94,22 +140,10 @@ function switchOrder(_option1, _option2){
 //------------event 2: state matrix------------
 //hides room so user can see puzzle components better
 function stateMatrix(_x1, _y1, _x2, _y2) {
-	//deactivate all instances
-	instance_deactivate_all(false);
-	//hide all layers except the background
-	var _assetLayers = ["Assets_1", "Instances", "Tiles_1"];
-	
-	for (var i = 0; i < array_length(_assetLayers); i++) {
-		var _curr_layer = layer_get_id(_assetLayers[i]);
-		layer_set_visible(_curr_layer, false);
-	}
+	//visual set up
+	puzzleView();
 	//change camera & view
-	var _cam = view_get_camera(1);
-	camera_apply(_cam);
-	view_set_camera(0, _cam);
-	//change the background to the puzzle background
-	var _background = layer_background_get_id("Background");
-	layer_background_sprite(_background, spr_puzzleBackground);
+	setCamera();
 	//create inventory on side
 	//create note content on bottom
 	//spawn matrix on top center
@@ -120,24 +154,7 @@ function stateMatrix(_x1, _y1, _x2, _y2) {
 }
 
 //------------event 4: inv matrix------------
-//reveals room (user interaction with room needed for this event)
-function showRoom() {
-	floorTile = layer_get_id("Tiles_floor");
-	collisionTile = layer_get_id("Tiles_collision");
-	
-	instance_deactivate_object(obj_machineScreen);
-	instance_deactivate_object(obj_matrixBorder);
-	instance_deactivate_object(obj_matrixTile);
-	instance_deactivate_object(obj_matrixOpBorder);
-	instance_deactivate_object(obj_matrixOpTile);
-	
-	layer_set_visible(floorTile, true);
-	layer_set_visible(collisionTile, true);
-	
-	with (obj_objInteraction) {
-		visible = true;
-	}
-}
+
 
 //------------event 5: shift rows------------
 //logic for arrow clicks

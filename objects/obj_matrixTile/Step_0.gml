@@ -1,8 +1,10 @@
 //if on last step of puzzle, exit matrix tile so it can't be edited anymore
+/*
 if (global.puzzleSequence == 8) {
 	hover = -1;
 	exit;
 }
+*/
 
 //------------setup------------
 hover += (keyboard_check_pressed(vk_down)*4) - (keyboard_check_pressed(vk_up)*4); //down: +1, up: -1
@@ -24,29 +26,36 @@ if (keyboard_string != "") { //store string if input not blank
 }
 
 //clear input only if space pressed & input not already blank
-if (keyboard_check_pressed(vk_shift) && userText != "") { 
+var confirm = keyboard_check_pressed(vk_shift);
+if (confirm && userText != "") { 
 	keyboard_string = "";
-	currentPuzzle = global.puzzleSequence;
 }
 
 //------------events------------
 var submit = keyboard_check_pressed(vk_enter);
 var correct = false;
 //check player answers upon submission
-if (submit && global.puzzleSequence == 2) { 
-	event_user(2);
-}
-else if (submit && global.puzzleSequence == 3) { 
-	event_user(3);
-}
-else if (submit && global.puzzleSequence == 5) {
-	event_user(5);
-}
-else if (submit && global.puzzleSequence == 6) {
-	event_user(6);
-}
-else if (submit && global.puzzleSequence == 7) {
-	event_user(7);
+if (submit) {
+	switch(global.puzzleSequence) {
+		case 2:
+			event_user(2);
+			break;
+		case 3:
+			event_user(3);
+			break;
+		case 5:
+			event_user(5);
+			break;
+		case 6:
+			event_user(6);
+			break;
+		case 7:
+			event_user(7);
+			break;
+		default:
+			show_debug_message("error");
+			break;
+	}
 }
 
 //------------misc. cases------------
