@@ -1,0 +1,1 @@
+text_arr = ["Matrix mixup lounge, huh.", "I should refer to the notebook before starting anything."]

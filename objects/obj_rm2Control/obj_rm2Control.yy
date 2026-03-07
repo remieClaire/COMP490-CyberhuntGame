@@ -1,15 +1,15 @@
 {
   "$GMObject":"",
-  "%Name":"obj_objInteraction",
+  "%Name":"obj_rm2Control",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":10,"eventType":7,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_objInteraction",
+  "name":"obj_rm2Control",
   "overriddenProperties":[],
   "parent":{
-    "name":"obj_parents",
-    "path":"folders/Objects/obj_parents.yy",
+    "name":"obj_lvl2objects",
+    "path":"folders/Objects/obj_lvl2objects.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -31,5 +31,5 @@
   "solid":false,
   "spriteId":null,
   "spriteMaskId":null,
-  "visible":false,
+  "visible":true,
 }

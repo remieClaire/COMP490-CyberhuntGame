@@ -1,0 +1,1 @@
+text_arr = ["It's nearly destroyed.", "It'll only hold for one operation."]

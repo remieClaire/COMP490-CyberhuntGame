@@ -11,8 +11,8 @@
   "name":"obj_btnParent",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"obj_parents",
+    "path":"folders/Objects/obj_parents.yy",
   },
   "parentObjectId":null,
   "persistent":false,

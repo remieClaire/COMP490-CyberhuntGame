@@ -83,7 +83,7 @@ function seqManager() {
 		//------------rm 2------------
 		case rm_lvl2_2:
 			if (global.puzzleSequence == 2) {
-				with (obj_rm2eventHandler) {
+				with (obj_rm2Control) {
 					event_user(0);
 				}
 			}
@@ -94,7 +94,18 @@ function seqManager() {
 		//------------rm 3------------
 		case rm_lvl2_3:
 			if (global.puzzleSequence == 3) {
-				with (obj_rm3eventHandler) {
+				with (obj_rm3Control) {
+					event_user(0);		
+				}
+			}
+			else {
+				show_debug_message("you cant do this puzzle yet!");
+			}
+			break;
+		//------------rm 5------------
+		case rm_lvl2_5:
+			if (global.puzzleSequence == 5) {
+				with (obj_rm5Control) {
 					event_user(0);		
 				}
 			}

@@ -1,11 +1,11 @@
 {
   "$GMObject":"",
-  "%Name":"obj_rm3eventHandler",
+  "%Name":"obj_rm3Control",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":10,"eventType":7,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_rm3eventHandler",
+  "name":"obj_rm3Control",
   "overriddenProperties":[],
   "parent":{
     "name":"obj_lvl2objects",
