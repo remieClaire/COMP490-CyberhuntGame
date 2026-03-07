@@ -123,6 +123,7 @@
     {"id":{"name":"obj_rightArrow","path":"objects/obj_rightArrow/obj_rightArrow.yy",},},
     {"id":{"name":"obj_rm1eventHandler","path":"objects/obj_rm1eventHandler/obj_rm1eventHandler.yy",},},
     {"id":{"name":"obj_rm2eventHandler","path":"objects/obj_rm2eventHandler/obj_rm2eventHandler.yy",},},
+    {"id":{"name":"obj_rm3eventHandler","path":"objects/obj_rm3eventHandler/obj_rm3eventHandler.yy",},},
     {"id":{"name":"obj_roundHologram","path":"objects/obj_roundHologram/obj_roundHologram.yy",},},
     {"id":{"name":"obj_roundWindow","path":"objects/obj_roundWindow/obj_roundWindow.yy",},},
     {"id":{"name":"obj_saveBtn","path":"objects/obj_saveBtn/obj_saveBtn.yy",},},

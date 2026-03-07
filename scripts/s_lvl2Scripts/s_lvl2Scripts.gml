@@ -21,13 +21,13 @@ function resetBoolean() {
 	return;
 }
 //rebuilds state matrix (for when player leaves puzzle in between steps)
-function recreateMatrix(_arr2) {
+function repopulateMatrix(_arr2) {
 	arr2 = _arr2;
 	
 	for (var i = 0; i < array_length(obj_matrixTile.blockArr); i++) {
 		blockArr[i].value = arr2[i];
 	}
-	global.flag = false;
+	global.repopulate = false;
 	return;
 }
 //changes camera and viewport to fit puzzle components
@@ -63,7 +63,7 @@ function puzzleView() {
 	
 }	
 //reverts changes after puzzle is complete
-function normalView() {
+function playerView() {
 	//reactivate instances
 	instance_activate_all();
 	//show layers
@@ -77,6 +77,34 @@ function normalView() {
 	var _background = layer_background_get_id("Background");
 	layer_background_sprite(_background, spr_levelBackground_dark);
 }
+
+function seqManager() {
+	switch (room) {
+		//------------rm 2------------
+		case rm_lvl2_2:
+			if (global.puzzleSequence == 2) {
+				with (obj_rm2eventHandler) {
+					event_user(0);
+				}
+			}
+			else {
+				show_debug_message("you cant do this puzzle yet!");
+			}
+			break;
+		//------------rm 3------------
+		case rm_lvl2_3:
+			if (global.puzzleSequence == 3) {
+				with (obj_rm3eventHandler) {
+					event_user(0);		
+				}
+			}
+			else {
+				show_debug_message("you cant do this puzzle yet!");
+			}
+			break;
+	}
+}
+
 //------------constructors------------
 function Block(_block_id, _value, _boolean) constructor {
 	block_id = _block_id;
@@ -139,7 +167,7 @@ function switchOrder(_option1, _option2){
 
 //------------event 2: state matrix------------
 //hides room so user can see puzzle components better
-function stateMatrix(_x1, _y1, _x2, _y2) {
+function stateMatrix(_x1, _y1) {
 	//visual set up
 	puzzleView();
 	//change camera & view
@@ -148,9 +176,6 @@ function stateMatrix(_x1, _y1, _x2, _y2) {
 	//create note content on bottom
 	//spawn matrix on top center
 	instance_create_depth(_x1, _y1, -999, obj_matrixBorder);
-	//spawn message to right
-	instance_create_depth(_x2, _y2, -999, obj_messageBox);
-	
 }
 
 //------------event 4: inv matrix------------

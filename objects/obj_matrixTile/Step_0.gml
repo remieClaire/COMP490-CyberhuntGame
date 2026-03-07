@@ -60,17 +60,17 @@ if (submit) {
 
 //------------misc. cases------------
 //for repopulating matrices if player picks up from the middle of a sequence
-if (global.flag && global.puzzleSequence == 3) {
-	recreateMatrix(correctInputArr);
+if (global.repopulate && global.puzzleSequence == 3) {
+	repopulateMatrix(correctInputArr);
 }
-else if (global.flag && global.puzzleSequence == 5) {
-	recreateMatrix(correctMultArr);
+else if (global.repopulate && global.puzzleSequence == 5) {
+	repopulateMatrix(correctMultArr);
 }
-else if (global.flag && global.puzzleSequence == 6) {
-	recreateMatrix(correctShiftArr);
+else if (global.repopulate && global.puzzleSequence == 6) {
+	repopulateMatrix(correctShiftArr);
 }
-else if (global.flag && global.puzzleSequence == 7) {
-	recreateMatrix(correctSubArr);
+else if (global.repopulate && global.puzzleSequence == 7) {
+	repopulateMatrix(correctSubArr);
 }
 
 //for multiply matrix phase of puzzle

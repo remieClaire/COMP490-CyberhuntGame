@@ -1,0 +1,1 @@
+text_arr = ["Instructions:", "Please scan your tube against any key ring to receive the corresponding set of keys."]

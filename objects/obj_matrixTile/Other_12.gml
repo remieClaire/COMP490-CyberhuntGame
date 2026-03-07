@@ -12,6 +12,6 @@ if (correct) { //if answer is correct
 	instance_destroy(obj_messageBox);
 	
 	resetCamera();
-	normalView();
+	playerView();
 		
 }

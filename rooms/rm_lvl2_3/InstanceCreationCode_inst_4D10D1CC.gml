@@ -1,0 +1,1 @@
+text_arr = ["The stars glimmer through the thick film of dust."]

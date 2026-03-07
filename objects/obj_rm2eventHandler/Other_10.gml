@@ -11,4 +11,5 @@ x_msgBox = _cam_w + (sprite_get_width(spr_messageBox)) + 70;
 y_msgBox = y_matrix;
 	
 //------------spawn puzzle------------
-stateMatrix(x_matrix, y_matrix, x_msgBox, y_msgBox);
+stateMatrix(x_matrix, y_matrix);
+instance_create_depth(x_msgBox, y_msgBox, -999, obj_messageBox);

@@ -8,7 +8,7 @@
 //recreate instances if don't exist
 //recreate the state matrix
 if (!instance_exists(obj_matrixBorder)) {
-	global.flag = true;
+	global.repopulate = true;
 	x_matrix = x_center-150;
 	y_matrix = y_center+150;
 	instance_create_layer(x_matrix, y_matrix, "Instances", obj_matrixBorder);

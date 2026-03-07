@@ -3,8 +3,8 @@
 *pull up key inserts on side
 *player must drag and drop key in
 */
-//obj_text1.textString = "XOR KEY 1"
-//setting x & y positions of matrix
+
+//------------setup------------
 x_matrix = x_center+150;
 y_matrix = y_center+150;
 	
@@ -18,7 +18,7 @@ if (!instance_exists(obj_machineScreen)) {
 }
 //recreate the state matrix
 if (!instance_exists(obj_matrixBorder)) {
-	global.flag = true;
+	global.repopulate = true;
 	x_matrix = x_center-150;
 	y_matrix = y_center+150;
 	instance_create_layer(x_matrix, y_matrix, "Instances", obj_matrixBorder);
