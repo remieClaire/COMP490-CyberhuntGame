@@ -1,1 +1,1 @@
-text_arr = ["It's nearly destroyed.", "It'll only hold for one operation."]
+text_arr = ["It's nearly destroyed, but somehow, it's still holding on."]

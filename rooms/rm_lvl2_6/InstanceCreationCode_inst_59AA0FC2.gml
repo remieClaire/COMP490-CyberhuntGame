@@ -1,0 +1,1 @@
+text_arr = ["The terminal flashes an error message."]

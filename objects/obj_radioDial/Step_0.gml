@@ -1,2 +1,2 @@
 //get values from both instances 
-subByte = invSubBytesArr[dialArr[0].value][dialArr[1].value];
+subByte = invSubBytesArr[dial_arr[0].value][dial_arr[1].value];

@@ -4,9 +4,9 @@ dial = {
 	value: 0
 }
 
-dialArr = obj_machineScreen.radioDials;
+dial_arr = obj_rm6Control.radio_dial_arr;
 dial = new Dial(id, 0);
-array_push(dialArr, dial);
+array_push(dial_arr, dial);
 
 dialClicked = -1;
 subByte = -1;

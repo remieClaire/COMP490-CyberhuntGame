@@ -1,0 +1,1 @@
+text_arr = ["The screen blinks sporadically.", "Otherwise, it's still functional."]

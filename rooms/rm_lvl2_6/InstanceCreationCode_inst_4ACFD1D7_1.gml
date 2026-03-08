@@ -1,0 +1,1 @@
+text_arr = ["A thick film of dust covers the window.", "You can barely see past it."]

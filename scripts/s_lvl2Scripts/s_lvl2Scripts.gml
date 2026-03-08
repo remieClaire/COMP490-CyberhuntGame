@@ -113,6 +113,17 @@ function seqManager() {
 				show_debug_message("you cant do this puzzle yet!");
 			}
 			break;
+		//------------rm 6------------
+		case rm_lvl2_6:
+			if (global.puzzleSequence == 6) {
+				with (obj_rm6Control) {
+					event_user(0);		
+				}
+			}
+			else {
+				show_debug_message("you cant do this puzzle yet!");
+			}
+			break;
 	}
 }
 
