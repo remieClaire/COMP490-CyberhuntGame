@@ -14,7 +14,7 @@ y_arrow = y_matrix + sprite_get_width(spr_rightArrow)/2;
 stateMatrix(x_matrix, y_matrix);
 
 for (var m = 0; m < 4; m++) { 
-	instance_create_layer(x_arrow, y_arrow, "Instances", obj_rightArrow);
+	instance_create_depth(x_arrow, y_arrow, -999, obj_rightArrow);
 	y_arrow += sprite_get_width(spr_matrixTile);
 }
 

@@ -198,8 +198,11 @@ function mouseClickArrow(_arr, _obj) {
 	arr = _arr;
 	obj = _obj;
 	
+	var user_pos_x = x - camera_get_view_x(0);
+	var user_pos_y = y - camera_get_view_y(0);
+	
 	if (mouse_check_button_pressed(mb_left)) {
-		var arrowClicked = instance_position(mouse_x, mouse_y, obj);
+		var arrowClicked = instance_position(user_pos_x, user_pos_y, obj);
 		if (arrowClicked) {
 			for (var b = 0; b < array_length(arr); b++) {
 				if (arr[b].obj_id == arrowClicked) {
@@ -211,6 +214,7 @@ function mouseClickArrow(_arr, _obj) {
 	}
 	
 }
+
 //helper function for rotaterightArr
 function reverse(_arr, _start, _end) {
 	arr = _arr;
@@ -236,7 +240,6 @@ function rotaterightArr(_arr, _turn, _row) {
 	
 	//reverse entire array
 	reverse(_arr, row, row+3);
-
 	
 	//reverse first t elements
 	reverse(_arr, row, row+turn-1); 

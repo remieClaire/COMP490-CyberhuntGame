@@ -1,5 +1,5 @@
 blockArray = [];
-rightArrowArray = [];
+//rightArrowArray = [];
 
 //Generate the tiles inside the border
 for (var i = 0; i < 4; i++) {
