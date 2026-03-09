@@ -15,6 +15,13 @@ if (_interact != noone) {
 	
 	//run object code (stored specifically in User Event 0) 
 	with(_interact) {
+		/*
+		switch (room) {
+			case rm_lvl1:
+				event_user(1);
+				break;
+		}
+		*/
 		event_user(0);
 	}
 		

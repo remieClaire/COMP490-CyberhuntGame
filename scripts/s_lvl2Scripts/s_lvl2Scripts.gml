@@ -225,7 +225,6 @@ function mouseClickArrow(_arr, _obj) {
 	}
 	
 }
-
 //helper function for rotaterightArr
 function reverse(_arr, _start, _end) {
 	arr = _arr;
@@ -267,8 +266,11 @@ function mouseClickDial(_arr, _obj) {
 	arr = _arr;
 	obj = _obj;
 	
+	var user_pos_x = x - camera_get_view_x(0);
+	var user_pos_y = y - camera_get_view_y(0);
+	
 	if (mouse_check_button_pressed(mb_left)) {
-		var dialClicked = instance_position(mouse_x, mouse_y, obj);
+		var dialClicked = instance_position(user_pos_x, user_pos_y, obj);
 		if (dialClicked) {
 			for (var b = 0; b < array_length(arr); b++) {
 				if (arr[b].obj_id == dialClicked) {

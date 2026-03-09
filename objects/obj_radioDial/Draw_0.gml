@@ -1,5 +1,6 @@
 draw_self();
 
+
 //depending on number of clicks, rotate the sprite
 for (var h=0; h<array_length(dial_arr); h++) {
 	if (dial_arr[h].obj_id == dialClicked) {

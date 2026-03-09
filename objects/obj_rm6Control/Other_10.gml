@@ -10,8 +10,8 @@ y_matrix = _cam_h + 20;
 x_screen = x_matrix + sprite_get_width(spr_matrixBorder) + 10;
 y_screen = y_matrix - 5;
 
-x_dial = x_screen + 5;
-y_dial = y_screen + sprite_get_height(spr_screen) - 30;
+x_dial = x_screen + sprite_get_width(spr_subBytesDial) - 5;
+y_dial = y_screen + sprite_get_height(spr_screen) - sprite_get_height(spr_subBytesDial) - 5;
 
 //------------spawn puzzle------------
 stateMatrix(x_matrix, y_matrix);
