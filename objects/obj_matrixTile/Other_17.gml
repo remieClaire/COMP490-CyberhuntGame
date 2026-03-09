@@ -1,19 +1,18 @@
-if (currentPuzzle == 7) {
-	correct = checkAnswer(correctFinalXorArr);
+correct = true;
+//checkAnswer(correctFinalXorArr);
 	
-	if (correct) {
-		show_debug_message("correct!");
+if (correct) {
 		
-		global.puzzleSequence = 8;
-		correct = false;
-		resetBoolean();
-		/*
-		with (obj_machine) { //call obj_machine to start Part 8
-			event_user(0);
-		}
-		*/
-	}
-	else {
-		//show_debug_message("try again");
-	}
+	global.puzzleSequence = 8;
+	correct = false;
+	resetBoolean();
+	
+	instance_destroy(obj_matrixBorder);
+	instance_destroy(obj_matrixTile);
+	instance_destroy(obj_matrixOpBorder);
+	instance_destroy(obj_matrixOpTile);
+	
+	resetCamera();
+	playerView();
+
 }

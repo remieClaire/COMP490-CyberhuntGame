@@ -1,0 +1,1 @@
+text_arr = ["A giant crack marrs the window."]

@@ -56,7 +56,8 @@ function puzzleView() {
 		var _curr_layer = layer_get_id(_assetLayers[i]);
 		layer_set_visible(_curr_layer, false);
 	}
-	
+	//change font 
+	draw_set_font(f_largeSilver);
 	//change background
 	var _background = layer_background_get_id("Background");
 	layer_background_sprite(_background, spr_puzzleBackground);
@@ -73,7 +74,8 @@ function playerView() {
 		var _curr_layer = layer_get_id(_assetLayers[i]);
 		layer_set_visible(_curr_layer, true);
 	}
-	
+	//reset font 
+	draw_set_font(global.font_textb);
 	var _background = layer_background_get_id("Background");
 	layer_background_sprite(_background, spr_levelBackground_dark);
 }
@@ -117,6 +119,17 @@ function seqManager() {
 		case rm_lvl2_6:
 			if (global.puzzleSequence == 6) {
 				with (obj_rm6Control) {
+					event_user(0);		
+				}
+			}
+			else {
+				show_debug_message("you cant do this puzzle yet!");
+			}
+			break;
+			//------------rm 7------------
+		case rm_lvl2_7:
+			if (global.puzzleSequence == 7) {
+				with (obj_rm7Control) {
 					event_user(0);		
 				}
 			}
