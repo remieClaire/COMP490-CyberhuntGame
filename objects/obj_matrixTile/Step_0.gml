@@ -72,6 +72,9 @@ else if (global.repopulate && global.puzzleSequence == 6) {
 else if (global.repopulate && global.puzzleSequence == 7) {
 	repopulateMatrix(correctSubArr);
 }
+else if (global.repopulate && global.puzzleSequence == 8) {
+	repopulateMatrix(correctFinalXorArr);
+}
 
 //for multiply matrix phase of puzzle
 if (global.initiateMultMatrix) {

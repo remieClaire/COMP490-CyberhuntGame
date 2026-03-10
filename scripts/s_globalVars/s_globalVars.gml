@@ -4,7 +4,7 @@ global.char_sprite = spr_alienChar2; //char sprite
 
 
 //------------level 2------------
-global.puzzleSequence = 7;
+global.puzzleSequence = 8;
 //flags
 global.repopulate = false; //repopulate matrices
 global.initiateMultMatrix = false; //puzzle part 3

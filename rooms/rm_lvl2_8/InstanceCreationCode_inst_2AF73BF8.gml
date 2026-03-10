@@ -1,0 +1,1 @@
+text_arr = ["The enemy had the foresight to leave one working."]

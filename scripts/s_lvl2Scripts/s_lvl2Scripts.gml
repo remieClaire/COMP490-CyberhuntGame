@@ -126,10 +126,21 @@ function seqManager() {
 				show_debug_message("you cant do this puzzle yet!");
 			}
 			break;
-			//------------rm 7------------
+		//------------rm 7------------
 		case rm_lvl2_7:
 			if (global.puzzleSequence == 7) {
 				with (obj_rm7Control) {
+					event_user(0);		
+				}
+			}
+			else {
+				show_debug_message("you cant do this puzzle yet!");
+			}
+			break;
+		//------------rm 8------------
+		case rm_lvl2_8:
+			if (global.puzzleSequence == 8) {
+				with (obj_rm8Control) {
 					event_user(0);		
 				}
 			}
