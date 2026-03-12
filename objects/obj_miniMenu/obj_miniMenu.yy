@@ -34,8 +34,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_greenBox",
-    "path":"sprites/spr_greenBox/spr_greenBox.yy",
+    "name":"spr_menuBtn",
+    "path":"sprites/spr_menuBtn/spr_menuBtn.yy",
   },
   "spriteMaskId":null,
   "visible":true,

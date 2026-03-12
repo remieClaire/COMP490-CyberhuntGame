@@ -57,7 +57,7 @@ function puzzleView() {
 		layer_set_visible(_curr_layer, false);
 	}
 	//change font 
-	draw_set_font(f_largeSilver);
+	draw_set_font(f_defaultSilver);
 	//change background
 	var _background = layer_background_get_id("Background");
 	layer_background_sprite(_background, spr_puzzleBackground);
@@ -179,7 +179,7 @@ function miniMenu(_x, _y, _options, _description = -1){
 		
 		//Set up size
 		margin = 8; //pixels away from box edges 
-		draw_set_font(f_smallSilver);
+		draw_set_font(f_pauseSilver);
 		
 		width = 1; //min width value
 		

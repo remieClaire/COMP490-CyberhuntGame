@@ -61,8 +61,8 @@
   "name":"COMP490-CyberhuntGame",
   "resources":[
     {"id":{"name":"f_comicSans","path":"fonts/f_comicSans/f_comicSans.yy",},},
-    {"id":{"name":"f_largeSilver","path":"fonts/f_largeSilver/f_largeSilver.yy",},},
-    {"id":{"name":"f_smallSilver","path":"fonts/f_smallSilver/f_smallSilver.yy",},},
+    {"id":{"name":"f_defaultSilver","path":"fonts/f_defaultSilver/f_defaultSilver.yy",},},
+    {"id":{"name":"f_pauseSilver","path":"fonts/f_pauseSilver/f_pauseSilver.yy",},},
     {"id":{"name":"obj_aesInputBox","path":"objects/obj_aesInputBox/obj_aesInputBox.yy",},},
     {"id":{"name":"obj_aquarium","path":"objects/obj_aquarium/obj_aquarium.yy",},},
     {"id":{"name":"obj_arrayBorder","path":"objects/obj_arrayBorder/obj_arrayBorder.yy",},},
