@@ -26,8 +26,8 @@
   "physicsShapePoints":[],
   "physicsStartAwake":true,
   "properties":[
-    {"$GMObjectProperty":"v2","%Name":"targetRoom","filters":[],"listItems":[],"multiselect":false,"name":"targetRoom","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resource":{"name":"rm_lvl2NEW","path":"rooms/rm_lvl2NEW/rm_lvl2NEW.yy",},"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"rm_lvl2NEW","varType":5,},
-    {"$GMObjectProperty":"v2","%Name":"targetEnter","filters":[],"listItems":[],"multiselect":false,"name":"targetEnter","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"","varType":4,},
+    {"$GMObjectProperty":"v2","%Name":"target_room","filters":[],"listItems":[],"multiselect":false,"name":"target_room","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resource":{"name":"rm_lvl2NEW","path":"rooms/rm_lvl2NEW/rm_lvl2NEW.yy",},"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"rm_lvl2NEW","varType":5,},
+    {"$GMObjectProperty":"v2","%Name":"target_entrance","filters":[],"listItems":[],"multiselect":false,"name":"target_entrance","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"noone","varType":4,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",

@@ -6,3 +6,4 @@
 * 3. Under the event "Room Start", add nameOfVariable = obj_dataCarrier.nameOfVariable;
 *
 */
+room_goto(target_room);

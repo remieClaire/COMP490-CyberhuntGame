@@ -1,13 +1,13 @@
 {
   "$GMObject":"",
-  "%Name":"obj_floorTileEnter",
+  "%Name":"obj_entrance",
   "eventList":[],
   "managed":true,
-  "name":"obj_floorTileEnter",
+  "name":"obj_entrance",
   "overriddenProperties":[],
   "parent":{
-    "name":"obj_floor",
-    "path":"folders/Objects/obj_floor.yy",
+    "name":"obj_lvl2objects",
+    "path":"folders/Objects/obj_lvl2objects.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -28,9 +28,9 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_floorTile2",
-    "path":"sprites/spr_floorTile2/spr_floorTile2.yy",
+    "name":"spr_entrance",
+    "path":"sprites/spr_entrance/spr_entrance.yy",
   },
   "spriteMaskId":null,
-  "visible":true,
+  "visible":false,
 }
