@@ -1,7 +1,8 @@
 //------------game start------------
 global.font_textb = font_add_sprite(spr_creamFont, 32, true, 1); //dialogue font
-global.char_sprite = spr_alienChar2; //char sprite
-
+global.currentcharasprite = spr_alienChar1;; //char sprite
+global.item_currently_active = "game";
+global.AllItems = ds_grid_create(0, Item.Height);
 
 //------------level 2------------
 global.puzzleSequence = 8;

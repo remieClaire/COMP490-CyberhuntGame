@@ -4,7 +4,7 @@ global.AllItems = ds_grid_create(0, Item.Height);
 
 menuWidth = 3;
 menuHeight = 48;
-spacing = 200;
+spacing = 180;
 scale = 4;
 
 depth = -10;

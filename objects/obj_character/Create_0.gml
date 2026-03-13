@@ -1,4 +1,4 @@
-sprite_index = global.char_sprite; //set char sprite based on player
+sprite_index = global.currentcharasprite; //set char sprite based on player
 
 my_speed = 2;	//walking speed
 objects = [obj_wall, obj_objInteraction]; //array of objects to check for collision
@@ -18,5 +18,8 @@ animations =
 
 set_animation(animations, "idledown");
 
-global.item_currently_active = "game";
-sprite_index = global.currentcharasprite;
+AddItemToInventory(["Note1", spr_noteHint, "bleblebleblebleblebleblelbebelleblbeleb"]);
+AddItemToInventory(["Random NOte", spr_noteHint, "what is a random note that i could come up with"]);
+AddItemToInventory(["Vtubers part 1", spr_noteHint, "There are many reasons to watch vtubers and in this note I will be listing the top 5 reasons. Starting with #5..."]);
+AddItemToInventory(["Note1", spr_noteHint, "bleblebleblebleblebleblelbebelleblbeleb"]);
+AddItemToInventory(["Note1", spr_noteHint, "bleblebleblebleblebleblelbebelleblbeleb"]);

@@ -10,4 +10,3 @@ function music(_track)
 		global.current_music = _track;
 	}
 }
-global.currentcharasprite = spr_alienChar1;
