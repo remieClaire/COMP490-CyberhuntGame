@@ -1,7 +1,9 @@
-my_speed = 3;	//walking speed of character
+sprite_index = global.char_sprite; //set char sprite based on player
+
+my_speed = 2;	//walking speed
 objects = [obj_wall, obj_objInteraction]; //array of objects to check for collision
 
-//holds frames of each animation
+//animation frames
 animations = 
 {
 	idledown:	{ frames: [0, 1] },

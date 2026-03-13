@@ -1,0 +1,1 @@
+text_arr = ["It seems like there should be something inside, but the liquid is too murky to make anything out."]

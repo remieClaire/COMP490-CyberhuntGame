@@ -27,8 +27,8 @@
   "nineSlice":null,
   "origin":4,
   "parent":{
-    "name":"spr_gbstudioFloor",
-    "path":"folders/Sprites/spr_gbstudioFloor.yy",
+    "name":"spr_floor",
+    "path":"folders/Sprites/spr_floor.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

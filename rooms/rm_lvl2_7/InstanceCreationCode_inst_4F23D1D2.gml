@@ -1,0 +1,1 @@
+text_arr = ["The box has been punched into the wall, even folding into itself."]

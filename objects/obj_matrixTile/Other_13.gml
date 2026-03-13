@@ -1,17 +1,17 @@
-if (currentPuzzle == 3) {
-	correct = checkAnswer(correctXorArr);
+correct = true
+//checkAnswer(correctXorArr);
 
-	if (correct) { 
-		show_debug_message("correct!");
+if (correct) { 
 		
-		global.puzzleSequence = 4;
-		correct = false; 
-		resetBoolean();
-		with (obj_machine) { 
-			event_user(0);
-		}
-	}
-	else {
-		//show_debug_message("try again");
-	}
+	global.puzzleSequence = 4;
+	correct = false; //reset correct
+	resetBoolean(); //reset matrix state
+	
+	instance_destroy(obj_matrixBorder);
+	instance_destroy(obj_matrixTile);
+	instance_destroy(obj_matrixOpBorder);
+	instance_destroy(obj_matrixOpTile);
+	
+	resetCamera();
+	playerView();	
 }

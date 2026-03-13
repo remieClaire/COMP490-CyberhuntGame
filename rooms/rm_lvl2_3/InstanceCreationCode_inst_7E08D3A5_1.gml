@@ -1,0 +1,1 @@
+text_arr = ["The screen emits a faint light, but otherwise it's fully functional."]

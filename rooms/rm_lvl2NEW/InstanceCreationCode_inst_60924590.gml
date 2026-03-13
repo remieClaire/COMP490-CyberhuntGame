@@ -1,0 +1,1 @@
+text_arr = ["A few mysterious stains smear the glass, but the stars are still visible."];

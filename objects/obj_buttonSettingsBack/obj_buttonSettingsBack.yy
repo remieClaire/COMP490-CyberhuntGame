@@ -7,15 +7,15 @@
   "managed":true,
   "name":"obj_buttonSettingsBack",
   "overriddenProperties":[
-    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_buttonParent","path":"objects/obj_buttonParent/obj_buttonParent.yy",},"propertyId":{"name":"buttonText","path":"objects/obj_buttonParent/obj_buttonParent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"Back",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_btnParent","path":"objects/obj_btnParent/obj_btnParent.yy",},"propertyId":{"name":"buttonText","path":"objects/obj_btnParent/obj_btnParent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"Back",},
   ],
   "parent":{
     "name":"obj_menuBtns",
     "path":"folders/Objects/obj_menuBtns.yy",
   },
   "parentObjectId":{
-    "name":"obj_buttonParent",
-    "path":"objects/obj_buttonParent/obj_buttonParent.yy",
+    "name":"obj_btnParent",
+    "path":"objects/obj_btnParent/obj_btnParent.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,
@@ -35,8 +35,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_mainMenubtn",
-    "path":"sprites/spr_mainMenubtn/spr_mainMenubtn.yy",
+    "name":"spr_menuBtn",
+    "path":"sprites/spr_menuBtn/spr_menuBtn.yy",
   },
   "spriteMaskId":null,
   "visible":true,
