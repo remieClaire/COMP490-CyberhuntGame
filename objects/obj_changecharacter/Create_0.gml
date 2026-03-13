@@ -1,0 +1,1 @@
+character_array = [spr_alienChar1, spr_alienChar2, spr_alienChar3, spr_alienChar4];
