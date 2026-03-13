@@ -1,13 +1,11 @@
 {
   "$GMObject":"",
-  "%Name":"obj_settingsBack",
-  "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":4,"eventType":6,"isDnD":true,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "%Name":"obj_buttonSaveSettings",
+  "eventList":[],
   "managed":true,
-  "name":"obj_settingsBack",
+  "name":"obj_buttonSaveSettings",
   "overriddenProperties":[
-    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_btnParent","path":"objects/obj_btnParent/obj_btnParent.yy",},"propertyId":{"name":"buttonText","path":"objects/obj_btnParent/obj_btnParent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"Back",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_btnParent","path":"objects/obj_btnParent/obj_btnParent.yy",},"propertyId":{"name":"buttonText","path":"objects/obj_btnParent/obj_btnParent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"Save",},
   ],
   "parent":{
     "name":"obj_menuBtns",
