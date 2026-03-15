@@ -1,0 +1,1 @@
+text_arr = ["Though grimy, you can see something through the glass.", "[Received a message tube]"]

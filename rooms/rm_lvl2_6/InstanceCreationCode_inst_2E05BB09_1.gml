@@ -1,0 +1,1 @@
+text_arr = ["A propaganda poster.", "It depicts aliens as flesh-eating monsters."]

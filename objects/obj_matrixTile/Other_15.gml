@@ -1,16 +1,16 @@
-if (currentPuzzle == 5) {
-	correct = checkAnswer(correctShiftArr);
+correct = true;
+//checkAnswer(correctShiftArr);
 	
-	if (correct) {
-		show_debug_message("correct!");
-		
-		global.puzzleSequence = 6;
-		correct = false;
-		with (obj_machine) { //call obj_machine to start Part 6
-			event_user(0);
-		}
-	}
-	else {
-		//show_debug_message("try again");
-	}
+if (correct) {
+	
+	global.puzzleSequence = 6;
+	correct = false;
+	resetBoolean(); //reset matrix state
+	
+	instance_destroy(obj_matrixBorder);
+	instance_destroy(obj_matrixTile);
+	instance_destroy(obj_rightArrow);
+	
+	resetCamera();
+	playerView();
 }

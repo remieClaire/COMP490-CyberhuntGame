@@ -2,7 +2,7 @@
 global.puzzleSequence = 1;
 
 //FLAGS
-global.flag = false; //flag to repopulate matrices
+global.repopulate = false; //flag to repopulate matrices
 global.initiateMultMatrix = false; //flags for puzzle part 3
 
 //for instance placement

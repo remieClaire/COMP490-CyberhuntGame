@@ -1,0 +1,1 @@
+text_arr = ["The top half has been shattered."]

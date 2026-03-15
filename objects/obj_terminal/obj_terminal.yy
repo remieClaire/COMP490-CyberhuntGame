@@ -1,13 +1,15 @@
 {
   "$GMObject":"",
   "%Name":"obj_terminal",
-  "eventList":[],
+  "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":10,"eventType":7,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
   "name":"obj_terminal",
   "overriddenProperties":[],
   "parent":{
-    "name":"obj_gbstudioFloor",
-    "path":"folders/Objects/obj_gbstudioFloor.yy",
+    "name":"obj_floor",
+    "path":"folders/Objects/obj_floor.yy",
   },
   "parentObjectId":{
     "name":"obj_objInteraction",
@@ -26,7 +28,9 @@
   "physicsShape":1,
   "physicsShapePoints":[],
   "physicsStartAwake":true,
-  "properties":[],
+  "properties":[
+    {"$GMObjectProperty":"v2","%Name":"functional","filters":[],"listItems":[],"multiselect":false,"name":"functional","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"False","varType":3,},
+  ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,

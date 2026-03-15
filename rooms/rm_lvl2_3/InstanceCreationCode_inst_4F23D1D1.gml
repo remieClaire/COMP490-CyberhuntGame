@@ -1,0 +1,1 @@
+text_arr = ["The wires have been severed."]

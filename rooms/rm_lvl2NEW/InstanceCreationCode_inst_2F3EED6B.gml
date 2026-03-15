@@ -1,0 +1,1 @@
+text_arr = ["BEGINNER'S LOUNGE", "New recruits! Please start here."];

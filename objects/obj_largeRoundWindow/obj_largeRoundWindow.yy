@@ -1,13 +1,15 @@
 {
   "$GMObject":"",
   "%Name":"obj_largeRoundWindow",
-  "eventList":[],
+  "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":10,"eventType":7,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
   "name":"obj_largeRoundWindow",
   "overriddenProperties":[],
   "parent":{
-    "name":"obj_gbstudioWall",
-    "path":"folders/Objects/obj_gbstudioWall.yy",
+    "name":"obj_wall",
+    "path":"folders/Objects/obj_wall.yy",
   },
   "parentObjectId":{
     "name":"obj_objInteraction",

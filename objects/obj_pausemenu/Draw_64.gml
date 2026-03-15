@@ -13,10 +13,17 @@ if (instance_exists(obj_pausemenu)) {
 	draw_rectangle(width/3, height/2 - 50, (width/3)*2, height/2 + 50, false);
 	draw_rectangle(width/3, (height/3)*2, (width/3)*2, (height/3)*2 + 100, false);
 	
-	draw_text_ext_transformed_colour(width/3 + 40, height/3 - 90, "Return", 10, 100, 4, 2, 0, c_black, c_black, c_black, c_black, 1);
-	draw_text_ext_transformed_colour(width/3 + 30, height/2 - 45, "settings", 10, 100, 4, 2, 0, c_black, c_black, c_black, c_black, 1);
-	draw_text_ext_transformed_colour(width/3 + 100, height/3*2 + 10, "Quit", 10, 100, 4, 2, 0, c_black, c_black, c_black, c_black, 1);
+	//**edits made by remie: for aligning text------------------------------
+	draw_set_halign(fa_center);
+	draw_set_valign(fa_middle)
 	
+	draw_set_font(f_pauseSilver);
+	
+	//**changed widths to width/2 now that text is aligned
+	draw_text_ext_transformed_colour(width/2, height/3 - 90, "Return", 10, 100, 4, 2, 0, c_black, c_black, c_black, c_black, 1);
+	draw_text_ext_transformed_colour(width/2, height/2 - 45, "settings", 10, 100, 4, 2, 0, c_black, c_black, c_black, c_black, 1);
+	draw_text_ext_transformed_colour(width/2, height/3*2 + 10, "Quit", 10, 100, 4, 2, 0, c_black, c_black, c_black, c_black, 1);
+	//-----------------------------------------------------------------------
 	if (point_in_rectangle(device_mouse_x_to_gui(0), device_mouse_y_to_gui(0), width/3, height/3 - 100, (width/3)*2, height/3)) {
 		draw_set_colour(c_blue);
 		draw_set_alpha(0.25);

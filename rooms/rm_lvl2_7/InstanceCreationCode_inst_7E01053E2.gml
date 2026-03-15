@@ -1,0 +1,1 @@
+text_arr = ["KEY RING 3A"]

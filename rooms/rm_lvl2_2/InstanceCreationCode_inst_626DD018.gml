@@ -1,0 +1,1 @@
+text_arr = ["Welcome to the mail room!", "Please take your message tubes to a terminal to convert them into a message matrix. "]

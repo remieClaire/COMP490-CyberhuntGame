@@ -1,11 +1,28 @@
-messages = []; //array of messages
-current_msg = -1; //keeps track of which message you're on in the array
-//for typewriter effect
-current_char = 0; //how many characters of message have been drawn
-draw_msg = ""; //actual message being drawn
+depth = -999;
 
-char_speed = 0.5; //how fast characters appear
-input_key = vk_space; //key used to speed up text
+//sequential event parameter
+callback = undefined;
 
-gui_w = display_get_gui_width();
-gui_h = display_get_gui_height();
+//text parameters
+textbox_width = 214;
+textbox_height = 70;
+//margins from edges of box
+border = 8;
+//space between text vertically
+vert_line_sep = 12;
+//overall width of a line of text
+line_width = textbox_width - border*2;
+textb_spr = spr_creamBox;
+textb_img = 0;
+text_img_spd = 0; //used if char has talking animation, but kept to prevent confusion
+
+//the text
+page = 0;
+page_number = 0;
+text[0] = "";
+//the typing effect
+text_length[0] = string_length(text[0]); //returns number of characters in string
+draw_char = 0; //dictates how many characters being drawn of our string
+text_spd = 1;
+
+setup = false; //checks if a setup is done
