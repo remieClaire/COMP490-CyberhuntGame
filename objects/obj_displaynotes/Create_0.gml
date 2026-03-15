@@ -1,8 +1,8 @@
-visible = false;
+visible = true;
 
 scalex = 8
 
-textWidth = sprite_get_width(spr_objParent) * (scalex - 1)
+textWidth = display_get_gui_width() / 3 - 20
 
 current_title = undefined;
 current_text = undefined;

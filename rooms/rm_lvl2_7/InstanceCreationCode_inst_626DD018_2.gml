@@ -1,0 +1,1 @@
+text_arr = ["Instructions:", "Please go to the corresponding box that deposited your first set of keys."]

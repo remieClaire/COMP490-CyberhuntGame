@@ -1,0 +1,1 @@
+text_arr = ["It's been completely blacked out."];

@@ -8,8 +8,8 @@
   "name":"obj_objInteraction",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"obj_parents",
+    "path":"folders/Objects/obj_parents.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -29,10 +29,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"spr_objParent",
-    "path":"sprites/spr_objParent/spr_objParent.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":false,
 }

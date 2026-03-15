@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":3,
   "parent":{
-    "name":"spr_gbstudioNumbers",
-    "path":"folders/Sprites/spr_gbstudioNumbers.yy",
+    "name":"spr_numbers",
+    "path":"folders/Sprites/spr_numbers.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

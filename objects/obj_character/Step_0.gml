@@ -1,3 +1,6 @@
+if (instance_exists(obj_dialogue)) exit; //if dialogue box is present, stop character movement
+
+//------------movement------------
 // uses arrow keys to move
 var _right = keyboard_check(vk_right);
 var _left = keyboard_check(vk_left);
@@ -26,7 +29,7 @@ else if (_down) {
 	set_animation(animations, "down");
 }
 
-//idle animation
+//------------animation------------
 if (_xinput == 0 && _yinput == 0) {
 	switch(direction) {
 		case 0:
@@ -44,7 +47,8 @@ if (_xinput == 0 && _yinput == 0) {
 	}
 }
 
-//Handling collision - collision works by predicting collision and preventing it from happening
+//------------collision------------
+//*Note: collision works by predicting collision and preventing it from happening
 //*Note: sign returns either 1, -1, or 0 depending on if the argument is a positive or negative number
 
 //if collision is about to happen (i.e. if in x + _xinput steps, collision will occur)
@@ -76,6 +80,3 @@ else {
 	x += _xinput;
 	y += _yinput;
 }
-
-//Handling dialogue
-if (instance_exists(obj_dialogue)) exit; //if dailogue box already exists, don't make it appear again

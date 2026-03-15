@@ -5,10 +5,10 @@ XORKey1 = ["A7","3C","5B","82","4F","D1","96","2E","73","B8","41","CF","9D","6A"
 //Generate the tiles inside the border
 for (var i = 0; i < 4; i++) {
 	for (var j = 0; j < 4; j++) {
-		var tile = instance_create_layer(
+		var tile = instance_create_depth(
 						x + (j*sprite_get_width(spr_matrixTile)), 
 						y + (i*sprite_get_height(spr_matrixTile)), 
-						"Instances", 
+						-999, 
 						obj_matrixOpTile
 					);
 		var index = i*4+j;

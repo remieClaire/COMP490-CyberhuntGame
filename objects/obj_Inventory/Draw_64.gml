@@ -5,19 +5,21 @@ var spr_w = sprite_get_width(spr_noteHint);
 var spr_h = sprite_get_height(spr_noteHint);
 var mx = device_mouse_x_to_gui(0);
 var my = device_mouse_y_to_gui(0);
+var width = display_get_gui_width();
+var height = display_get_gui_height();
 
 
 draw_set_alpha(1);
-draw_sprite_ext(spr_objParent, 0, room_x + 100, room_y + 25, 16, 11, 0, c_red, 1);
+draw_rectangle_colour(width / 2, height / 4, width /4 * 3.5, height / 4 * 3, c_gray, c_gray, c_gray, c_gray, false);
 	
 for (var i = 0; i < ds_grid_width(global.AllItems); i++) {
-	var itemX = room_x + (i * spacing);
-	var itemY = room_y - 150;
+	var itemX = width / 2 + 160 + (i * spacing);
+	var itemY = height / 4 - 25;
 	var sprite = global.AllItems[# i, Item.Sprite];
 	
 	if (i >= menuWidth && i < menuWidth * 2) {
-		itemX = room_x + ((i-3) * spacing);
-		itemY = room_y + 20;
+		itemX = width / 2 + 160 + ((i-3) * spacing);
+		itemY = height / 4 * 2 - 25 + 20;
 	}
 		
 	draw_sprite_ext(sprite, 0, itemX, itemY, scale, scale, 0, c_white, 1);

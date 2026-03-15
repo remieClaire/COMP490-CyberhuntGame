@@ -1,0 +1,1 @@
+text_arr = ["MATRIX MIXUP - ", "(PLUS LOUNGE)"]

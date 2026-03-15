@@ -1,13 +1,15 @@
 {
   "$GMObject":"",
   "%Name":"obj_brain_2",
-  "eventList":[],
+  "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":10,"eventType":7,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
   "name":"obj_brain_2",
   "overriddenProperties":[],
   "parent":{
-    "name":"obj_gbstudioFloor",
-    "path":"folders/Objects/obj_gbstudioFloor.yy",
+    "name":"obj_floor",
+    "path":"folders/Objects/obj_floor.yy",
   },
   "parentObjectId":{
     "name":"obj_objInteraction",
