@@ -1,0 +1,1 @@
+text_arr = ["THESE ARE MEANT TO BE UP TEMPORARILY. PLEASE REMEMBER TO REMOVE BY 02/202X", "That was 2 years ago.", "They must have forgotten."]

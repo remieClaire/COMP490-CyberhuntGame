@@ -1,0 +1,1 @@
+text_arr = ["Stools arranged as if in a meeting."]

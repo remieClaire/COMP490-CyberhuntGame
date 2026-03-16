@@ -1,0 +1,1 @@
+text_arr = ["It seems like it used to hold something."]

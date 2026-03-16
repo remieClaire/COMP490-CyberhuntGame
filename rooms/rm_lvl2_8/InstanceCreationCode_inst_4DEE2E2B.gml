@@ -1,0 +1,1 @@
+text_arr = ["It's been boarded up."]

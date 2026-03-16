@@ -1,0 +1,1 @@
+text_arr = ["4E 65 76 65 72 20 67 6F 6E 6E 61 20 67 69 76 65 20 79 6F 75 20 75 70 0A 4E 65 76 65 72 20 67 6F 6E 6E...", "Someone ripped off the rest of the paper as if in anger."]
