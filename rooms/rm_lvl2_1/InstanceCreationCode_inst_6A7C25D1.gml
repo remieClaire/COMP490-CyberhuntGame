@@ -1,0 +1,1 @@
+text_arr = ["An aquarium.", "The tank is half full with a putrid, fishy smell emanating from it."]

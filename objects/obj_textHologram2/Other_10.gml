@@ -1,4 +1,5 @@
 // Inherit the parent event
 event_inherited();
 
-initText()
+//object interaction text
+initText();

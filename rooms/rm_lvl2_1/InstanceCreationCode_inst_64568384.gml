@@ -1,0 +1,1 @@
+text_arr = ["A large aquarium.", "It's been drained out."]

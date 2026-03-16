@@ -1,6 +1,6 @@
 {
   "$GMFont":"",
-  "%Name":"f_pauseSilver",
+  "%Name":"f_smallSilver",
   "AntiAlias":1,
   "applyKerning":0,
   "ascender":25,
@@ -117,7 +117,7 @@
   "last":0,
   "lineHeight":44,
   "maintainGms1Font":false,
-  "name":"f_pauseSilver",
+  "name":"f_smallSilver",
   "parent":{
     "name":"Fonts",
     "path":"folders/Fonts.yy",

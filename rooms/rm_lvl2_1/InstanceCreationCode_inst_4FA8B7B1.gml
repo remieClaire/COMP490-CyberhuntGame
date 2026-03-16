@@ -1,0 +1,1 @@
+text_arr = ["Welcome new recruits!", "Please step up to the hologram to verify your knowledge of the AES process before we let you loose."]

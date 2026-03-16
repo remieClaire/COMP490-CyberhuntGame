@@ -1,6 +1,6 @@
 {
   "$GMFont":"",
-  "%Name":"f_defaultSilver",
+  "%Name":"f_Silver",
   "AntiAlias":1,
   "applyKerning":0,
   "ascender":33,
@@ -117,7 +117,7 @@
   "last":0,
   "lineHeight":59,
   "maintainGms1Font":false,
-  "name":"f_defaultSilver",
+  "name":"f_Silver",
   "parent":{
     "name":"Fonts",
     "path":"folders/Fonts.yy",

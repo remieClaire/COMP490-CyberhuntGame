@@ -1,7 +1,7 @@
 //REVERSE ENGINEER ALGORITHM
 miniMenu(
-		room_width/2,
-		room_height/2, 
+		room_width,
+		room_height, 
 		[
 			["Substitution"],
 			["Add Final Key"],

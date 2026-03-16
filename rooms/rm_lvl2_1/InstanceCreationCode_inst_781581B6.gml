@@ -1,0 +1,1 @@
+text_arr = ["A faded poster.", "You can make out the words 'Welcome!' at the top."]

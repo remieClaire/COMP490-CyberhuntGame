@@ -82,6 +82,17 @@ function playerView() {
 
 function seqManager() {
 	switch (room) {
+		//------------rm 1------------
+		case rm_lvl2_1:
+			if (global.puzzleSequence == 1) {
+				with (obj_rm1Control) {
+					event_user(0);
+				}
+			}
+			else {
+				show_debug_message("you cant do this puzzle yet!");
+			}
+			break;
 		//------------rm 2------------
 		case rm_lvl2_2:
 			if (global.puzzleSequence == 2) {
@@ -171,7 +182,7 @@ function Dial(_obj_id, _value) constructor {
 //creates mini menu that player must unscramble
 function miniMenu(_x, _y, _options, _description = -1){
 	
-	with (instance_create_layer(_x, _y, "Assets_1", obj_miniMenu)) {
+	with (instance_create_layer(_x, _y, "Instances", obj_miniMenu)) {
 		options = _options;
 		description = _description;
 		optionsCount = array_length(_options);
@@ -179,7 +190,7 @@ function miniMenu(_x, _y, _options, _description = -1){
 		
 		//Set up size
 		margin = 8; //pixels away from box edges 
-		draw_set_font(f_pauseSilver);
+		draw_set_font(f_miniMenuSilver);
 		
 		width = 1; //min width value
 		
