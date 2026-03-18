@@ -2,7 +2,7 @@ if (!instance_exists(self)) exit;
 
 //Box variables
 var _dx = 0;
-var _dy = gui_h * 0.7; //70% of weight down vertically
+var _dy = gui_h * 0.62; //70% of weight down vertically
 var _boxw = gui_w; 
 //height of box minus y position (i.e. box will cover remaining 30% of area vertically)
 var _boxh = gui_h - _dy; 
@@ -12,9 +12,10 @@ draw_sprite_stretched(sprite_index, 0, _dx, _dy, _boxw, _boxh);
 
 //Text setup
 draw_set_colour(c_white);
-//draw_set_font(f_smallSilver);
+draw_set_halign(fa_left);
 
-_dx += 8;
+_dx += sprite_get_width(spr_menuBtn)/3;
+_dy += sprite_get_height(spr_menuBtn)/3;
 
 //draw menu options one at a time
 var _desc = !(description == -1); //check if description exists

@@ -1,0 +1,1 @@
+text_arr = ["A poster promoting scientific discovery."]

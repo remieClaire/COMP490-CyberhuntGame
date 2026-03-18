@@ -1,0 +1,1 @@
+text_arr = ["(143, 67), (512, 389), (74, 201), (938, 455), (287, 713), (601, 128), (45, 876), (734, 342)...", "A list of coordinates with no obvious meaning."]

@@ -51,7 +51,9 @@
     {"$GMFolder":"","%Name":"Tile Sets","folderPath":"folders/Tile Sets.yy","name":"Tile Sets","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Timelines","folderPath":"folders/Timelines.yy","name":"Timelines","resourceType":"GMFolder","resourceVersion":"2.0",},
   ],
-  "ForcedPrefabProjectReferences":[],
+  "ForcedPrefabProjectReferences":[
+    {"link":"io.gamemaker.sdfshaders-1.0.0","name":"io.gamemaker.sdfshaders-1.0.0","path":"io.gamemaker.sdfshaders-1.0.0.yyp",},
+  ],
   "IncludedFiles":[],
   "isEcma":false,
   "LibraryEmitters":[],
@@ -62,6 +64,7 @@
   "resources":[
     {"id":{"name":"f_comicSans","path":"fonts/f_comicSans/f_comicSans.yy",},},
     {"id":{"name":"f_defaultSilver","path":"fonts/f_defaultSilver/f_defaultSilver.yy",},},
+    {"id":{"name":"f_miniMenuSilver","path":"fonts/f_miniMenuSilver/f_miniMenuSilver.yy",},},
     {"id":{"name":"f_pauseSilver","path":"fonts/f_pauseSilver/f_pauseSilver.yy",},},
     {"id":{"name":"obj_aesInputBox","path":"objects/obj_aesInputBox/obj_aesInputBox.yy",},},
     {"id":{"name":"obj_aquarium","path":"objects/obj_aquarium/obj_aquarium.yy",},},

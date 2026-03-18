@@ -1,0 +1,1 @@
+text_arr = ["A hastily torn off note.", "What's left contains scientific jargon."]
