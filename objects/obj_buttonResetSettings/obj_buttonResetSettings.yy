@@ -1,13 +1,13 @@
 {
   "$GMObject":"",
-  "%Name":"obj_lvlBack",
+  "%Name":"obj_buttonResetSettings",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":4,"eventType":6,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_lvlBack",
+  "name":"obj_buttonResetSettings",
   "overriddenProperties":[
-    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_btnParent","path":"objects/obj_btnParent/obj_btnParent.yy",},"propertyId":{"name":"buttonText","path":"objects/obj_btnParent/obj_btnParent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"Back",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_btnParent","path":"objects/obj_btnParent/obj_btnParent.yy",},"propertyId":{"name":"buttonText","path":"objects/obj_btnParent/obj_btnParent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"Reset",},
   ],
   "parent":{
     "name":"obj_menuBtns",
