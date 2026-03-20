@@ -12,4 +12,7 @@ y_msgBox = y_matrix;
 	
 //------------spawn puzzle------------
 stateMatrix(x_matrix, y_matrix);
-instance_create_depth(x_msgBox, y_msgBox, -999, obj_messageBox);
+instance_create_depth(x_msgBox, y_msgBox, -998, obj_messageBox);
+
+//------------create inventory------------
+instance_create_depth(0, 0, -999, obj_Inventory);

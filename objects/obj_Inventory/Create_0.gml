@@ -1,5 +1,6 @@
 visible = false;
 
+// stores items in 2D grid structure like a 2D array
 global.AllItems = ds_grid_create(0, Item.Height);
 
 menuWidth = 3;
@@ -16,5 +17,6 @@ var cam_y = camera_get_view_y(cam);
 var cam_w = camera_get_view_width(cam);
 var cam_h = camera_get_view_height(cam);
 
+// setting x & y values according to camera
 room_x = cam_x + cam_w / 2;
 room_y = cam_y + cam_h / 2;
