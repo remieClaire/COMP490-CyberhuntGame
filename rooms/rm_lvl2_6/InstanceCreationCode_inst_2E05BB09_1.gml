@@ -1,1 +1,1 @@
-text_arr = ["A propaganda poster.", "It depicts aliens as flesh-eating monsters."]
+text_arr = ["An advertisement for some type of new technology.", "'Spend less time writing and more time tuning in to our new dial machines!'", "'Just line them up, left to right, and you'll have the answer in no time!'"]

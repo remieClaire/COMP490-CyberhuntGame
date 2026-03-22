@@ -1,4 +1,6 @@
 //TRANSLATE HEX TO ASCII
+//lvl2_part8_note = ["ASCII ref guide", spr_noteHint, "61 = a\n62 = b\n63 = c\n64 = d\n65 = e\n66 = f\n67 = g\n68 = h\n69 = i\n6A = j\n6B = k\n6C = l\n6D = m\n6E = n\n6F = o\n70 = p\n71 = q\n72 = r\n73 = s\n74 = t\n75 = u\n76 = v\n77 = w\n78 = x\n79 = y\n7A = z"];
+
 //------------setup------------
 var _cam_w = camera_get_view_x(view_camera[0]);
 var _cam_h = camera_get_view_y(view_camera[0]);
