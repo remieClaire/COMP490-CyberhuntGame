@@ -1,4 +1,4 @@
-if (!instance_exists(self)) exit;
+//if (!instance_exists(self)) exit;
 
 //Box variables
 var _dx = 0;
