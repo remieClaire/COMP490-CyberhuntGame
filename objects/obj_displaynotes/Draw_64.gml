@@ -1,7 +1,5 @@
 var width = display_get_gui_width();
-show_debug_message("width in displaynotes: " + string(width));
 var height = display_get_gui_height();
-show_debug_message("height in displaynotes: " + string(height));
 
 draw_rectangle_colour(10, 10, width / 3, height - 10, c_gray, c_gray, c_gray, c_gray, false)
 

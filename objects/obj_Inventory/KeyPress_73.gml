@@ -1,5 +1,4 @@
 // when called
-show_debug_message("inventory called");
 // if item currently active is not the game AND inventory is not visible, exit
 if (global.item_currently_active != "game" && visible = false) {
 	exit;

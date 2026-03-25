@@ -1,0 +1,1 @@
+text_arr = ["A gray poster has been plastered to the bottom."]

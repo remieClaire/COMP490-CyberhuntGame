@@ -5,7 +5,7 @@ global.item_currently_active = "game";
 global.AllItems = ds_grid_create(0, Item.Height);
 
 //------------level 2------------
-global.puzzleSequence = 1;
+global.puzzleSequence = 3;
 //flags
 global.repopulate = false; //repopulate matrices
 global.initiateMultMatrix = false; //puzzle part 3

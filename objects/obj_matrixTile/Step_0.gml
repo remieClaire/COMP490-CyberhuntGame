@@ -40,12 +40,12 @@ switch (global.puzzleSequence) {
 		}
 		break;
 	case 3:
-		for (var i = 0; i < array_length(blockArr) / 2; i++) {
+		for (var i = 0; i < 12; i++) {
 			blockArr[i].value = correctXorArr[i];
 		}
 		break;
 	case 7:
-		for (var i = 0; i < array_length(blockArr) / 2; i++) {
+		for (var i = 0; i < 12; i++) {
 			blockArr[i].value = correctFinalXorArr[i];
 		}
 		break;	

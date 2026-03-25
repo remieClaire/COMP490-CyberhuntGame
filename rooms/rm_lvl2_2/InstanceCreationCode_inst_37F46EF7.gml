@@ -1,1 +1,1 @@
-text_arr = ["Oh!", "This one still has some power!"]
+text_arr = ["...", "While the machine is functional, it seems to have glitched halfway.", "Some values will need to be manually filled in."]

@@ -66,3 +66,6 @@ for (var i = 0; i < ds_grid_width(global.AllItems); i++) {
 		}
 	}
 }
+
+// reset color settings
+draw_set_colour(c_white);
