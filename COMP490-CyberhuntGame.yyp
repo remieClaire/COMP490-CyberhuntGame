@@ -287,6 +287,7 @@
     {"id":{"name":"spr_stool","path":"sprites/spr_stool/spr_stool.yy",},},
     {"id":{"name":"spr_stump1","path":"sprites/spr_stump1/spr_stump1.yy",},},
     {"id":{"name":"spr_stump2","path":"sprites/spr_stump2/spr_stump2.yy",},},
+    {"id":{"name":"spr_subBytesDial_1","path":"sprites/spr_subBytesDial_1/spr_subBytesDial_1.yy",},},
     {"id":{"name":"spr_subBytesDial","path":"sprites/spr_subBytesDial/spr_subBytesDial.yy",},},
     {"id":{"name":"spr_table","path":"sprites/spr_table/spr_table.yy",},},
     {"id":{"name":"spr_tentacle1","path":"sprites/spr_tentacle1/spr_tentacle1.yy",},},
