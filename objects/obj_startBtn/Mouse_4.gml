@@ -1,11 +1,13 @@
-/// @DnDAction : YoYo Games.Instances.Inherit_Event
-/// @DnDVersion : 1
-/// @DnDHash : 792E531C
-event_inherited();
+global.levels_completed = 1;
 
-/// @DnDAction : YoYo Games.Rooms.Go_To_Room
-/// @DnDVersion : 1
-/// @DnDHash : 5A26D227
-/// @DnDArgument : "room" "rm_charSelect"
-/// @DnDSaveInfo : "room" "rm_charSelect"
-room_goto(rm_charSelect);
+if (s_loadGame() == true) {
+	show_debug_message("save file detected.");
+	if (file_exists("save.json")) {
+        file_delete("save.json");
+		show_debug_message("save file deleted");
+    }
+} else {
+	show_debug_message("no save file detected.");
+}
+
+room_goto(rm_lvl1);

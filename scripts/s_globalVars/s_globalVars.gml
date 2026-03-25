@@ -7,6 +7,7 @@ global.current_music = -1;
 global.music_id = -1;
 global.last_room = rm_mainMenu;
 global.volume_level = 1;
+global.levels_completed = 0;
 
 //------------level 2------------
 global.puzzleSequence = 8;
