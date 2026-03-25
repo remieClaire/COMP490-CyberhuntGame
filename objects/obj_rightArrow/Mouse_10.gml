@@ -1,2 +1,3 @@
-//set lightening effect on mouse hover
-image_alpha = 0.6;
+// set pressed & fade effect on mouser hover
+image_alpha = 0.6
+image_index = 1;
