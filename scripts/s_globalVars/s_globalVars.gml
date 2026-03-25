@@ -6,6 +6,7 @@ global.AllItems = ds_grid_create(0, Item.Height);
 
 //------------level 2------------
 global.puzzleSequence = 7;
+
 //flags
 global.repopulate = false; //repopulate matrices
 global.initiateMultMatrix = false; //puzzle part 3

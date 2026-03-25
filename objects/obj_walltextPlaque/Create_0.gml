@@ -1,1 +1,3 @@
-alphabet_notes = [];
+// for level 2
+alphabet_notes = [ascii_note1, ascii_note2, ascii_note3, ascii_note4, ascii_note5, ascii_note6, ascii_note7, ascii_note8, ascii_note9];
+lvl2_part8_note = ["ASCII to text", spr_noteHint,"61 = a \n62 = b \n63 = c\n64 = d \n65 = e \n66 = f\n67 = g \n68 = h \n69 = i\n6A = j \n6B = k \n6C = l\n6D = m \n6E = n \n6F = o\n70 = p \n71 = q \n72 = r\n73 = s \n74 = t \n75 = u \n76 = v \n77 = w\n78 = x \n79 = y \n7A = z"];

@@ -1,1 +1,0 @@
-text_arr = ["78 = x \t 79 = y \t 7A = z"]

@@ -1,1 +1,0 @@
-text_arr = ["6A = J \t 6B = k \t 6C = l"]

@@ -1,1 +1,0 @@
-text_arr = ["6D = m \t 6E = n \t 6F = o"]
