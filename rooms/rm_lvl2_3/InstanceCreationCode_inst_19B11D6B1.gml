@@ -1,1 +1,1 @@
-text_arr = ["A gray poster has been plastered to the bottom."]
+text_arr = ["A gray poster has been plastered to the bottom.", "The bottom has been ripped off, but otherwise, its largely intact."]
