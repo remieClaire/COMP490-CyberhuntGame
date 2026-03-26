@@ -58,7 +58,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.14.3.217",
+    "IDEVersion":"2024.14.4.221",
   },
   "name":"COMP490-CyberhuntGame",
   "resources":[
@@ -169,6 +169,7 @@
     {"id":{"name":"obj_whatIsThis","path":"objects/obj_whatIsThis/obj_whatIsThis.yy",},},
     {"id":{"name":"obj_XORchart","path":"objects/obj_XORchart/obj_XORchart.yy",},},
     {"id":{"name":"rm_charSelect","path":"rooms/rm_charSelect/rm_charSelect.yy",},},
+    {"id":{"name":"rm_introScene_1","path":"rooms/rm_introScene_1/rm_introScene_1.yy",},},
     {"id":{"name":"rm_introScene","path":"rooms/rm_introScene/rm_introScene.yy",},},
     {"id":{"name":"rm_levelSelect","path":"rooms/rm_levelSelect/rm_levelSelect.yy",},},
     {"id":{"name":"rm_lvl1","path":"rooms/rm_lvl1/rm_lvl1.yy",},},
@@ -340,6 +341,7 @@
     {"roomId":{"name":"rm_lvl2_7","path":"rooms/rm_lvl2_7/rm_lvl2_7.yy",},},
     {"roomId":{"name":"rm_charSelect","path":"rooms/rm_charSelect/rm_charSelect.yy",},},
     {"roomId":{"name":"rm_introScene","path":"rooms/rm_introScene/rm_introScene.yy",},},
+    {"roomId":{"name":"rm_introScene_1","path":"rooms/rm_introScene_1/rm_introScene_1.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[
