@@ -27,3 +27,66 @@ function timer(_val) {
 	}
 	
 }
+
+function charDialogue(_text) {
+	text_arr = _text;
+	
+	if (!instance_exists(obj_dialogue)) {
+		initTextCallback(function() { obj_cutSceneIntro.currentStep++ });	
+	}
+}
+
+function npcDialogue(_text) {
+	global.npcSpeaking = true;
+	text_arr = _text;
+	
+	if (!instance_exists(obj_dialogue)) {
+		initTextCallback(function() { 
+			obj_cutSceneIntro.currentStep++ 
+			global.npcSpeaking = false;
+		});	
+	}
+}
+
+function lookDir(_img) {
+	global.inCutScene = true;
+	// set image speed to anim doesn't start
+	obj_character.image_speed = 0;
+	
+	// set correct index
+	obj_character.image_index = _img;
+	
+	// NOTE:*place global.inCutScene = false after every end of lookDir sequence
+}
+
+function walkDir_x(_val, _keypress) {
+	// set image speed so walking anim plays
+	obj_character.image_speed = 1;
+	
+	// set walking speed
+	obj_character.my_speed = 1;
+	
+	if (obj_character.x != _val) {
+		keyboard_key_press(_keypress);
+	}
+	else {
+		keyboard_key_release(_keypress);
+		obj_cutSceneIntro.currentStep++;
+	}
+}
+
+function walkDir_y(_val, _keypress) {
+	// set image speed so walking anim plays
+	obj_character.image_speed = 1;
+	
+	// set walking speed
+	obj_character.my_speed = 1;
+	
+	if (obj_character.y != _val) {
+		keyboard_key_press(_keypress);
+	}
+	else {
+		keyboard_key_release(_keypress);
+		obj_cutSceneIntro.currentStep++;
+	}
+}
