@@ -25,8 +25,8 @@ if(point_in_rectangle(mx, my, width / 3, height / 3*2 - 40,  width / 3 + sprite_
 	draw_rectangle(width / 3, height / 3*2 - 40,  width / 3 + sprite_get_height(spr_alienChar1)*4, height / 3*2 - 40 + sprite_get_height(spr_alienChar1)*4, false)
 	draw_set_colour(c_white);
 	draw_set_alpha(1);
-	if (mouse_check_button_pressed(mb_left) && global.currentcharasprite != spr_alienChar1) {
-		global.currentcharasprite = spr_alienChar1;
+	if (mouse_check_button_pressed(mb_left) && current_sprite != spr_alienChar1) {
+		current_sprite = spr_alienChar1;
 	}
 }
 if(point_in_rectangle(mx, my, width / 3*1.25, height / 3*2 - 40,  width / 3*1.25 + sprite_get_height(spr_alienChar1)*4, height / 3*2 - 40 + sprite_get_height(spr_alienChar1)*4)) {
@@ -35,8 +35,8 @@ if(point_in_rectangle(mx, my, width / 3*1.25, height / 3*2 - 40,  width / 3*1.25
 	draw_rectangle(width / 3*1.25, height / 3*2 - 40,  width / 3*1.25 + sprite_get_height(spr_alienChar1)*4, height / 3*2 - 40 + sprite_get_height(spr_alienChar1)*4, false)
 	draw_set_colour(c_white);
 	draw_set_alpha(1);
-	if (mouse_check_button_pressed(mb_left) && global.currentcharasprite != spr_alienChar2) {
-		global.currentcharasprite = spr_alienChar2;
+	if (mouse_check_button_pressed(mb_left) && current_sprite != spr_alienChar2) {
+		current_sprite = spr_alienChar2;
 	}
 }
 if(point_in_rectangle(mx, my, width / 3*1.5, height / 3*2 - 40,  width / 3*1.5 + sprite_get_height(spr_alienChar1)*4, height / 3*2 - 40 + sprite_get_height(spr_alienChar1)*4)) {
@@ -45,8 +45,8 @@ if(point_in_rectangle(mx, my, width / 3*1.5, height / 3*2 - 40,  width / 3*1.5 +
 	draw_rectangle(width / 3*1.5, height / 3*2 - 40,  width / 3*1.5 + sprite_get_height(spr_alienChar1)*4, height / 3*2 - 40 + sprite_get_height(spr_alienChar1)*4, false)
 	draw_set_colour(c_white);
 	draw_set_alpha(1);
-	if (mouse_check_button_pressed(mb_left) && global.currentcharasprite != spr_alienChar3) {
-		global.currentcharasprite = spr_alienChar3;
+	if (mouse_check_button_pressed(mb_left) && current_sprite != spr_alienChar3) {
+		current_sprite = spr_alienChar3;
 	}
 }
 if(point_in_rectangle(mx, my, width / 3*1.75, height / 3*2 - 40,  width / 3*1.75 + sprite_get_height(spr_alienChar1)*4, height / 3*2 - 40 + sprite_get_height(spr_alienChar1)*4)) {
@@ -55,7 +55,7 @@ if(point_in_rectangle(mx, my, width / 3*1.75, height / 3*2 - 40,  width / 3*1.75
 	draw_rectangle(width / 3*1.75, height / 3*2 - 40,  width / 3*1.75 + sprite_get_height(spr_alienChar1)*4, height / 3*2 - 40 + sprite_get_height(spr_alienChar1)*4, false)
 	draw_set_colour(c_white);
 	draw_set_alpha(1);
-	if (mouse_check_button_pressed(mb_left) && global.currentcharasprite != spr_alienChar4) {
-		global.currentcharasprite = spr_alienChar4;
+	if (mouse_check_button_pressed(mb_left) && current_sprite != spr_alienChar4) {
+		current_sprite = spr_alienChar4;
 	}
 }

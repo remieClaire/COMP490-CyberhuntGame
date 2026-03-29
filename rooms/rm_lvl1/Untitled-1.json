@@ -1,0 +1,154 @@
+{
+  "last_node_id": 12,
+  "last_link_id": 14,
+  "nodes": [
+    {
+      "id": 1,
+      "type": "VHS_LoadVideo",
+      "pos": [0, 0],
+      "size": [300, 120],
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        { "name": "IMAGE", "type": "IMAGE", "links": [1] },
+        { "name": "FRAME_RATE", "type": "FLOAT", "links": [12] }
+      ],
+      "properties": {},
+      "widgets_values": ["input.mp4", 0, -1]
+    },
+    {
+      "id": 2,
+      "type": "Canny",
+      "pos": [300, 0],
+      "size": [200, 120],
+      "inputs": [
+        { "name": "image", "type": "IMAGE", "link": 1 }
+      ],
+      "outputs": [
+        { "name": "IMAGE", "type": "IMAGE", "links": [2] }
+      ],
+      "widgets_values": [100, 200]
+    },
+    {
+      "id": 3,
+      "type": "CheckpointLoaderSimple",
+      "pos": [0, 300],
+      "size": [300, 120],
+      "outputs": [
+        { "name": "MODEL", "type": "MODEL", "links": [6] },
+        { "name": "CLIP", "type": "CLIP", "links": [4, 5] },
+        { "name": "VAE", "type": "VAE", "links": [9, 11] }
+      ],
+      "widgets_values": ["illustriousXL.safetensors"]
+    },
+    {
+      "id": 4,
+      "type": "CLIPTextEncode",
+      "pos": [350, 300],
+      "size": [250, 120],
+      "inputs": [
+        { "name": "clip", "type": "CLIP", "link": 4 }
+      ],
+      "outputs": [
+        { "name": "CONDITIONING", "type": "CONDITIONING", "links": [7] }
+      ],
+      "widgets_values": ["masterpiece anime cinematic lighting"]
+    },
+    {
+      "id": 5,
+      "type": "CLIPTextEncode",
+      "pos": [350, 450],
+      "size": [250, 120],
+      "inputs": [
+        { "name": "clip", "type": "CLIP", "link": 5 }
+      ],
+      "outputs": [
+        { "name": "CONDITIONING", "type": "CONDITIONING", "links": [8] }
+      ],
+      "widgets_values": ["blurry low quality"]
+    },
+    {
+      "id": 6,
+      "type": "AnimateDiffLoader",
+      "pos": [250, 650],
+      "size": [250, 120],
+      "inputs": [
+        { "name": "model", "type": "MODEL", "link": 6 }
+      ],
+      "outputs": [
+        { "name": "MODEL", "type": "MODEL", "links": [10] }
+      ],
+      "widgets_values": ["mm_sd_v15_v2.ckpt"]
+    },
+    {
+      "id": 7,
+      "type": "ApplyControlNet",
+      "pos": [600, 150],
+      "size": [250, 120],
+      "inputs": [
+        { "name": "conditioning", "type": "CONDITIONING", "link": 7 },
+        { "name": "image", "type": "IMAGE", "link": 2 }
+      ],
+      "outputs": [
+        { "name": "CONDITIONING", "type": "CONDITIONING", "links": [13] }
+      ],
+      "widgets_values": ["control_v11p_sd15_canny.pth", 1.0]
+    },
+    {
+      "id": 8,
+      "type": "VAEEncode",
+      "pos": [600, 0],
+      "size": [200, 100],
+      "inputs": [
+        { "name": "pixels", "type": "IMAGE", "link": 1 },
+        { "name": "vae", "type": "VAE", "link": 9 }
+      ],
+      "outputs": [
+        { "name": "LATENT", "type": "LATENT", "links": [10] }
+      ]
+    },
+    {
+      "id": 9,
+      "type": "KSampler",
+      "pos": [900, 250],
+      "size": [300, 200],
+      "inputs": [
+        { "name": "model", "type": "MODEL", "link": 10 },
+        { "name": "positive", "type": "CONDITIONING", "link": 13 },
+        { "name": "negative", "type": "CONDITIONING", "link": 8 },
+        { "name": "latent_image", "type": "LATENT", "link": 10 }
+      ],
+      "outputs": [
+        { "name": "LATENT", "type": "LATENT", "links": [11] }
+      ],
+      "widgets_values": [12345, "dpmpp_2m", "karras", 25, 7, 0.55]
+    },
+    {
+      "id": 10,
+      "type": "VAEDecode",
+      "pos": [1250, 250],
+      "size": [200, 120],
+      "inputs": [
+        { "name": "samples", "type": "LATENT", "link": 11 },
+        { "name": "vae", "type": "VAE", "link": 11 }
+      ],
+      "outputs": [
+        { "name": "IMAGE", "type": "IMAGE", "links": [12] }
+      ]
+    },
+    {
+      "id": 11,
+      "type": "VHS_VideoCombine",
+      "pos": [1500, 250],
+      "size": [300, 140],
+      "inputs": [
+        { "name": "images", "type": "IMAGE", "link": 12 },
+        { "name": "frame_rate", "type": "FLOAT", "link": 12 }
+      ],
+      "outputs": [],
+      "widgets_values": ["output.mp4", "h264"]
+    }
+  ]
+}

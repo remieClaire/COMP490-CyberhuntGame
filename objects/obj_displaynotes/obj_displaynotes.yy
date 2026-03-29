@@ -9,8 +9,8 @@
   "name":"obj_displaynotes",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"obj_menuGUI",
+    "path":"folders/Objects/obj_menuGUI.yy",
   },
   "parentObjectId":null,
   "persistent":true,
