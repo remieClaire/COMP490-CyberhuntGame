@@ -15,3 +15,15 @@ function bound(_index, _bounds) {
 	return _index; //regardless, return the frame's index so it can be drawn
 	
 }
+
+function timer(_val) {
+	if (obj_cutSceneIntro.counter == _val) {
+		obj_cutSceneIntro.counter = 0;
+		obj_cutSceneIntro.currentStep++;
+		return;
+	}
+	else {
+		obj_cutSceneIntro.counter++;
+	}
+	
+}

@@ -15,7 +15,16 @@ for (var c = 0; c < array_length(forbidden_rooms); c++) {
 	}
 }
 
-//specific to Level 2
+// Intro sequence: run function for cinematic
+if (room == rm_introScene_1) {
+	global.inCutScene = true;
+	if (!instance_exists(obj_cutSceneParent)) {
+		instance_create_depth(0, 0, -999, obj_cutSceneIntro);
+		image_speed = 1;
+	}
+}
+
+// Level 2: spawn dialogue at beginning
 if (room == rm_lvl2NEW && global.puzzleSequence == 1) {
 	with (instance_create_depth(0, 0, -999, obj_dialogue)) {
 		
