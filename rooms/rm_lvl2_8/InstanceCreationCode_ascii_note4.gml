@@ -1,0 +1,1 @@
+text_arr = ["6A = j \n6B = k \n6C = l"]

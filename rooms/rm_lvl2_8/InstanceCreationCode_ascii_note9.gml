@@ -1,0 +1,1 @@
+text_arr = ["78 = x \n79 = y \n7A = z"]

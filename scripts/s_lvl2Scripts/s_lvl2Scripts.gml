@@ -48,7 +48,8 @@ function resetCamera() {
 //changes to puzzle view
 function puzzleView() {
 	//deactivate instances
-	instance_deactivate_all(false);
+	instance_deactivate_object(obj_objInteraction);
+	instance_deactivate_object(obj_character);
 	//hide layers
 	var _assetLayers = ["Assets_1", "Instances", "Tiles_1"];
 	
@@ -66,7 +67,8 @@ function puzzleView() {
 //reverts changes after puzzle is complete
 function playerView() {
 	//reactivate instances
-	instance_activate_all();
+	instance_activate_object(obj_objInteraction);
+	instance_activate_object(obj_character);
 	//show layers
 	var _assetLayers = ["Assets_1", "Instances", "Tiles_1"];
 	
@@ -229,10 +231,44 @@ function stateMatrix(_x1, _y1) {
 	puzzleView();
 	//change camera & view
 	setCamera();
-	//create inventory on side
-	//create note content on bottom
 	//spawn matrix on top center
 	instance_create_depth(_x1, _y1, -999, obj_matrixBorder);
+}
+
+//------------event 3: XOR key 1------------
+function showChart() {
+	show_debug_message("show chart called")
+	// change camera
+	var _cam = view_get_camera(3);
+	
+    view_set_camera(0, _cam);
+    camera_apply(_cam);
+	
+	show_debug_message("cam set");
+	
+	// disable all objects
+	instance_deactivate_object(obj_objInteraction);
+	instance_deactivate_object(obj_character);
+	
+	// pull up sprite
+	instance_create_depth(0, 0, -999, obj_XORchart);
+	
+	
+}
+
+function hideChart() {
+	// destroy sprite
+	instance_destroy(obj_XORchart);
+	
+	// change camera
+	var _cam = view_get_camera(2);
+	
+    view_set_camera(0, _cam);
+    camera_apply(_cam);
+	
+	// reactivate all objects
+	instance_activate_object(obj_objInteraction);
+	instance_activate_object(obj_character);
 }
 
 //------------event 4: inv matrix------------
@@ -253,7 +289,6 @@ function mouseClickArrow(_arr, _obj) {
 			for (var b = 0; b < array_length(arr); b++) {
 				if (arr[b].obj_id == arrowClicked) {
 					arr[b].value++;
-					show_debug_message(arr[b]);
 				}
 			}
 		}

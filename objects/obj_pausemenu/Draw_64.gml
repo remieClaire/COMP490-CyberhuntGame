@@ -1,3 +1,9 @@
+var _prev_colour = draw_get_colour();
+var _prev_alpha  = draw_get_alpha();
+var _prev_halign = draw_get_halign();
+var _prev_valign = draw_get_valign();
+var _prev_font   = draw_get_font();
+
 if (instance_exists(obj_pausemenu)) {
 	draw_set_colour(c_black);
 	draw_set_alpha(.75);
@@ -57,3 +63,9 @@ if (instance_exists(obj_pausemenu)) {
 		}
 	}
 }
+
+draw_set_colour(_prev_colour);
+draw_set_alpha(_prev_alpha);
+draw_set_halign(_prev_halign);
+draw_set_valign(_prev_valign);
+draw_set_font(_prev_font);
