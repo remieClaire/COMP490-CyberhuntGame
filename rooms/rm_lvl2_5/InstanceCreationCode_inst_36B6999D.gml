@@ -1,1 +1,1 @@
-text_arr = ["The top half has been shattered."]
+text_arr = ["The top half has been shattered.", "Amidst the glass, you spot a small slip of paper.", "[Received a note]"]

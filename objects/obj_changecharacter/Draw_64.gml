@@ -4,8 +4,8 @@ var mx = device_mouse_x_to_gui(0);
 var my = device_mouse_y_to_gui(0);
 
 
-draw_set_font(f_comicSans)
-draw_sprite_ext(current_sprite, 0, width / 2 - 40, height / 3, 5, 5, 0, c_white, 1);
+draw_set_font(f_defaultSilver)
+draw_sprite_ext(global.currentcharasprite, 0, width / 2 - 40, height / 3, 5, 5, 0, c_white, 1);
 draw_rectangle(width / 2 - 50, height / 3 - 10, width / 2 + (sprite_get_width(object_get_sprite(obj_character))*5) - 32, height / 3 + (sprite_get_width(object_get_sprite(obj_character))*5), true)
 
 draw_text_ext(width / 2, height / 2, "Current Character", 25, 500);

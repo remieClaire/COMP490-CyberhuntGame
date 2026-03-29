@@ -1,1 +1,1 @@
-text_arr = ["The screen emits a faint light, but otherwise it's fully functional."]
+text_arr = ["...", "The performance drops drastically around the second to last row.", "While you're patient, you're not exactly immortal.", "The last row will need to be manually computed."]

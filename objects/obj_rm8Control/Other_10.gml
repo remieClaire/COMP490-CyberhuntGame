@@ -1,4 +1,5 @@
 //TRANSLATE HEX TO ASCII
+
 //------------setup------------
 var _cam_w = camera_get_view_x(view_camera[0]);
 var _cam_h = camera_get_view_y(view_camera[0]);

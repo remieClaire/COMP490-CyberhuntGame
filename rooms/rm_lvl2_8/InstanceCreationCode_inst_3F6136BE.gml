@@ -1,0 +1,1 @@
+text_arr = ["The vase has been cracked."]

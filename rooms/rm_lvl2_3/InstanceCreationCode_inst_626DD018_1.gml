@@ -1,1 +1,1 @@
-text_arr = ["Instructions:", "Please scan your tube against any key ring to receive the corresponding set of keys."]
+text_arr = ["Instructions:", "Please scan your tube against any key ring to receive the corresponding set of keys.", "More importantly, the keys are to be read left to right."]

@@ -9,8 +9,7 @@ if (correct) {
 	
 	instance_destroy(obj_matrixBorder);
 	instance_destroy(obj_matrixTile);
-	instance_destroy(obj_matrixOpBorder);
-	instance_destroy(obj_matrixOpTile);
+	instance_destroy(obj_aes1Key);
 	
 	resetCamera();
 	playerView();	

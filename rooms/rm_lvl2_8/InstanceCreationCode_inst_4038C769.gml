@@ -1,0 +1,1 @@
+text_arr = ["The top poster has peeled enough to reveal a science poster underneath."]

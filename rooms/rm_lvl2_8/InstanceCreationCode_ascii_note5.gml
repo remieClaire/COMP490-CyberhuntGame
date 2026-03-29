@@ -1,0 +1,1 @@
+text_arr = ["6D = m \n6E = n \n6F = o"]

@@ -10,7 +10,8 @@ global.volume_level = 1;
 global.levels_completed = 0;
 
 //------------level 2------------
-global.puzzleSequence = 8;
+global.puzzleSequence = 7;
+
 //flags
 global.repopulate = false; //repopulate matrices
 global.initiateMultMatrix = false; //puzzle part 3

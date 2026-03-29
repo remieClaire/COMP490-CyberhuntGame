@@ -1,0 +1,1 @@
+text_arr = ["A large leather swivel chair.", "It's been tilted at a violent angle."]
