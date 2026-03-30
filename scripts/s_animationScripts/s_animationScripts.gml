@@ -90,3 +90,35 @@ function walkDir_y(_val, _keypress) {
 		obj_cutSceneIntro.currentStep++;
 	}
 }
+
+function teleportStart(_dest_x, _dest_y) {
+	
+	if (obj_character.image_alpha != 0) {
+		obj_character.image_alpha -= obj_cutSceneIntro.fadeSpeed;
+	}
+	else {
+		// set to true so that char ends up facing teleport
+		global.inCutScene = true;
+		obj_character.image_speed = 0;
+		obj_character.image_index = 7;
+		
+		obj_character.x = _dest_x;
+		obj_character.y = _dest_y;
+		
+		obj_cutSceneIntro.currentStep++;
+	}
+}
+
+function teleportStop() {
+	if (obj_character.image_alpha != 1) {
+		obj_character.image_alpha += obj_cutSceneIntro.fadeSpeed;
+	}
+	else {
+		// reset so anims work
+		global.inCutScene = false;
+		obj_character.image_speed = 1;
+		
+		obj_cutSceneIntro.currentStep++;
+	}
+	
+}

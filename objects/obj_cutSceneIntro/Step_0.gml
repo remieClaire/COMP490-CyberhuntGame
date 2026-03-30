@@ -45,33 +45,10 @@ if (currentState == cutSceneStates.Active) {
 			walkDir_x(1135, vk_right);
 			break;
 		case 12: //teleport (1/2)
-			if (obj_character.image_alpha != 0) {
-				obj_character.image_alpha -= fadeSpeed;
-			}
-			else {
-				obj_character.x = 1089;
-				obj_character.y = 512;
-				
-				global.inCutScene = true;
-				obj_character.image_speed = 0;
-				obj_character.image_index = 7; // look left
-				
-				currentStep++;
-			}
-			
+			teleportStart(1089, 512);
 			break;
 		case 13: // teleport (2/2)
-			if (obj_character.image_alpha != 1) {
-				obj_character.image_alpha += fadeSpeed;
-				
-			}
-			else {
-				global.inCutScene = false;
-				
-				obj_character.image_speed = 1;
-				
-				currentStep++;
-			}
+			teleportStop();
 			break;
 		case 14: // npc dialogue
 			npcDialogue(["Correct.", "And if anyone was left behind..."])
@@ -95,7 +72,7 @@ if (currentState == cutSceneStates.Active) {
 			break;
 		case 20: // look down
 			lookDir(0);
-			timer(30);
+			timer(45);
 			break;
 		case 21: // npc dialogue
 			npcDialogue(["Mixed to be more exact."])
@@ -106,7 +83,85 @@ if (currentState == cutSceneStates.Active) {
 		case 23: // npc dialogue
 			npcDialogue(["Surprising, but not unheard of."])
 			break;
+		case 24: // move up
+			walkDir_y(340, vk_up);
+			break;
+		case 25: // look left
+			lookDir(7);
+			timer(45);
+			break;
+		case 26: // walk down
+			global.inCutScene = false;
+			walkDir_y(550, vk_down);
+			break;
+		case 27: // dialogue
+			charDialogue(["Yeah, but the reason they were the first to go."])
+			break;
+		case 28: // walk left
+			walkDir_x(338, vk_left);
+			break;
+		case 29: // dialogue
+			charDialogue(["Heard rumours that the commanders didn't want to take any chances."]);
+			break;
+		case 30: // walk up
+			walkDir_y(495, vk_up);
+			break;
+		case 31: // look at plants
+			lookDir(7);
+			timer(45);
+			break;
+		case 32: // npc dialogue
+			global.inCutScene = false;
+			npcDialogue(["You'd be right about that.", "Apparently it was the same for the humans too."]);
+			break;
+		case 33: // walk right
+			walkDir_x(495, vk_right);
+			break;
+		case 34: // npc dialogue
+			npcDialogue(["Found anything yet?", "It's been taking you long enough."])
+			break;
+		case 35: // walk up a little
+			walkDir_y(432, vk_up);
+			break;
+		case 36: // npc dialogue
+			npcDialogue(["That planet used to be heavily populated."])
+			break;
+		case 37: // walk to scrap piece 
+			walkDir_x(513, vk_right);
+			break;
+		case 38: // dialogue
+			charDialogue(["Yeah, and now it's heavily populated with scraps."])
+			break;
+		case 39: // walk up
+			walkDir_y(340, vk_up);
+			break;
+		case 40: // walk right
+			walkDir_x(568, vk_right);
+			break;
+		case 41: // dialogue
+			charDialogue(["The local fauna have really taken advantage of the lack of foot-traffic too."])
+			break;
+		case 42: // walk left
+			walkDir_x(305, vk_left);
+			break;
+		case 43: // walk down
+			walkDir_y(372, vk_down);
+			break;
+		case 44: // face left to teleporter
+			lookDir(7);
+			timer(30);
+			break;
+		case 45: // teleport (1/2)
+			teleportStart(305, 48);
+			break;
+		case 46: // teleport (2/2)
+			teleportStop();
+			break;
+		case 47: // dialogue
+			charDialogue(["It's a miracle the teleporters are still working."])
+			break;
 			
+
 		
 		
 			
