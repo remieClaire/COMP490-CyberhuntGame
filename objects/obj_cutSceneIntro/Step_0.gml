@@ -160,10 +160,73 @@ if (currentState == cutSceneStates.Active) {
 		case 47: // dialogue
 			charDialogue(["It's a miracle the teleporters are still working."])
 			break;
-			
-
-		
-		
+		case 48: // npc dialogue
+			npcDialogue(["Well, in the bowels of space we gotta build things to last."]);
+			break;
+		case 49: // walk down
+			walkDir_y(75, vk_down);
+			break;
+		case 50: // walk right
+			walkDir_x(384, vk_right);
+			break;
+		case 51: // look right
+			lookDir(5);
+			timer(30);
+			break;
+		case 52: // walk left
+			global.inCutScene = false;
+			walkDir_x(336, vk_left);
+			break;
+		case 53: // walk down
+			walkDir_y(140, vk_down);
+			break;
+		case 54: // walk right
+			walkDir_x(358, vk_right);
+			break;
+		case 55: // walk down
+			walkDir_y(160, vk_down);
+			break;
+		case 56: // look right
+			lookDir(5);
+			timer(10);
+			break;
+		case 57: // teleport (1/2)
+			teleportStart(499,64);
+			break;
+		case 58: // teleport (2/2)
+			teleportStop();
+			break;
+		case 59: // dialogue
+			global.inCutScene = false;
+			charDialogue(["I highly doubt anything is still standing in this dumpster heap."])
+			break;
+		case 60: // walk right
+			walkDir_x(625, vk_right);
+			break;
+		case 61: // walk down
+			walkDir_y(95, vk_down);
+			break;
+		case 62: // walk right
+			walkDir_x(790, vk_right);
+			break;
+		case 63: // look right
+			lookDir(5);
+			timer(30);
+		case 64: // dialogue
+			global.inCutScene = false;
+			charDialogue(["...Wait."])
+			break;
+		case 65: // walk up
+			walkDir_y(80, vk_up);
+			break;
+		case 66: // walk right
+			walkDir_x(922, vk_right);
+			break;
+		case 67: // walk down a bit
+			walkDir_y(99, vk_down);
+			break;
+		case 68:
+			break;
 			
 			
 			
