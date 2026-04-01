@@ -3,7 +3,6 @@ if (currentState == cutSceneStates.Active) {
 		case 0: // dialogue
 			charDialogue(["Alright, I've landed."]);
 			break;
-			
 		case 1: // look around (1/3)
 			lookDir(0);
 			timer(60);
@@ -217,21 +216,129 @@ if (currentState == cutSceneStates.Active) {
 			charDialogue(["...Wait."])
 			break;
 		case 65: // walk up
-			walkDir_y(80, vk_up);
+			walkDir_y(63, vk_up);
 			break;
 		case 66: // walk right
 			walkDir_x(922, vk_right);
 			break;
 		case 67: // walk down a bit
-			walkDir_y(99, vk_down);
+			walkDir_y(85, vk_down);
 			break;
-		case 68:
+		case 68: // walk right to front of building
+			walkDir_x(1054, vk_right);
 			break;
-			
-			
-			
+		case 69: // look up
+			lookDir(3);
+			timer(45);
+			break;
+		case 70: // walk left to edge
+			global.inCutScene = false;
+			walkDir_x(967, vk_left);
+			break;
+		case 71: // look up
+			lookDir(3)
+			timer(45);
+			break;
+		case 72: // start walking right a little past the middle
+			global.inCutScene = false;
+			walkDir_x(1088, vk_right);
+			break;
+		case 73: // npc dialogue
+			npcDialogue(["Well don't leave me hanging now!", "Did you find something???"])
+			break;
+		case 74: // look up
+			lookDir(3);
+			timer(45);
+			break;
+		case 75: //dialogue
+			global.inCutScene = false;
+			charDialogue(["They..."]);
+			break;
+		case 76: // walk right
+			walkDir_x(1120, vk_right);
+			break;
+		case 77: // walk up to mushroom
+			walkDir_y(25, vk_up);
+			break;
+		case 78: // look left
+			lookDir(7);
+			timer(45);
+			break;
+		case 79: // dialogue
+			global.inCutScene = false;
+			charDialogue(["...They left a whole lab standing."])
+			break;
+		case 80: // npc dialogue
+			npcDialogue(["You can't be serious!", "You just said nothing could be standing in that dumpster heap!"]);
+			break;
+		case 81: // walk left 
+			walkDir_x(1085, vk_left);
+			break;
+		case 82: // look up
+			lookDir(3);
+			timer(45);
+			break;
+		case 83: // dialogue
+			global.inCutScene = false;
+			charDialogue(["No, I'm still right about that.", "It isn't standing."]);
+			break;
+		case 84: // walk left
+			walkDir_x(1050, vk_left);
+			break;
+		case 85: // walk up
+			walkDir_y(25, vk_up);
+			break;
+		case 86: // dialogue
+			charDialogue(["At first glance it's ash and rubble."]);
+			break;
+		case 87: // look up
+			lookDir(3);
+			timer(45);
+			break;
+		case 88: // npc dialogue
+			global.inCutScene = false;
+			npcDialogue(["..."])
+			break;
+		case 89: // look left 
+			lookDir(7);
+			timer(45);
+			break;
+		case 90: // dialogue
+			global.inCutScene = false;
+			charDialogue(["But that doesn't completely rule out something underground."])
+			break;
+		case 91: // walk down
+			walkDir_y(88, vk_down);
+			break;
+		case 92: // look up
+			lookDir(3);
+			timer(45);
+			break;
+		case 93: // dialogue
+			charDialogue(["I'm sending you my coordinates.", "Might lose connection when I'm under there."])
+			break;
+		case 94: // beeping noises
+			currentStep++
+			break;
+		case 95: // npc dialogue
+			npcDialogue(["...", "It reeks of a trap."])
+			break;
+		case 96: // dialogue
+			charDialogue(["...", "Well there's only one way to find out."])
+			break;
+		case 97: // npc dialogue
+			npcDialogue(["...Hey wait-"])
+			break;
+		case 98: // radio static sudden break
+			currentStep++;
+			break;
+		case 99: // dialogue
+			charDialogue(["Alright, I'm going in."])
+			break;
+		case 100: // fade to black
+			global.inCutScene = false;
+			break;
 	}
 }
-
 else if (currentState == cutSceneStates.Paused) {
 } 
