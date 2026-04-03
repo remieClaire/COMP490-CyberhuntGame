@@ -122,3 +122,16 @@ function teleportStop() {
 	}
 	
 }
+
+function fadeToRoom(_room, _dur, _color) {
+	
+	//create 
+	var _inst = instance_create_depth(0, 0, 0, obj_fade);
+	
+	//set properties
+	with (_inst) {
+		targetRoom = _room;
+		duration = _dur;
+		color = _color;
+	}
+}

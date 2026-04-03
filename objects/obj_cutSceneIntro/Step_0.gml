@@ -318,7 +318,8 @@ if (currentState == cutSceneStates.Active) {
 			charDialogue(["I'm sending you my coordinates.", "Might lose connection when I'm under there."])
 			break;
 		case 94: // beeping noises
-			currentStep++
+			audio_play_sound(snd_beeping, 10, false);
+			timer(60);
 			break;
 		case 95: // npc dialogue
 			npcDialogue(["...", "It reeks of a trap."])
@@ -330,13 +331,15 @@ if (currentState == cutSceneStates.Active) {
 			npcDialogue(["...Hey wait-"])
 			break;
 		case 98: // radio static sudden break
-			currentStep++;
+			audio_play_sound(snd_walkieTalkieCut, 10, false);
+			timer(60);
 			break;
 		case 99: // dialogue
 			charDialogue(["Alright, I'm going in."])
 			break;
 		case 100: // fade to black
 			global.inCutScene = false;
+			fadeToRoom(rm_lvl1, 60, c_black);
 			break;
 	}
 }
