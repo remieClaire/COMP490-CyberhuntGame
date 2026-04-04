@@ -7,18 +7,15 @@ if (currentState == cutSceneStates.Active) {
 			lookDir(0);
 			timer(60);
 			break;
-		
 		case 2: // look around (2/3)
 			lookDir(7);
 			timer(60);
 			break;
-			
 		case 3:	// look around (3/3)
 			lookDir(3);
 			timer(60);
 			global.inCutScene = false;
 			break;
-			
 		case 4: // dialogue
 			charDialogue(["Place looks abandoned."]);
 			break;
@@ -318,8 +315,12 @@ if (currentState == cutSceneStates.Active) {
 			charDialogue(["I'm sending you my coordinates.", "Might lose connection when I'm under there."])
 			break;
 		case 94: // beeping noises
-			audio_play_sound(snd_beeping, 10, false);
-			timer(60);
+			if (!audio_is_playing(snd_beeping)) {
+				audio_play_sound(snd_beeping, 10, false);
+			}
+			else {
+				timer(25);
+			}
 			break;
 		case 95: // npc dialogue
 			npcDialogue(["...", "It reeks of a trap."])
@@ -331,8 +332,12 @@ if (currentState == cutSceneStates.Active) {
 			npcDialogue(["...Hey wait-"])
 			break;
 		case 98: // radio static sudden break
-			audio_play_sound(snd_walkieTalkieCut, 10, false);
-			timer(60);
+			if (!audio_is_playing(snd_walkieTalkieCut)) {
+				audio_play_sound(snd_walkieTalkieCut, 10, false);
+			}
+			else {
+				timer(25);
+			}
 			break;
 		case 99: // dialogue
 			charDialogue(["Alright, I'm going in."])

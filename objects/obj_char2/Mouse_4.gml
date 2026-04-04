@@ -3,4 +3,4 @@ event_inherited();
 //set char sprite
 global.currentcharasprite = spr_alienChar2;
 //go to start room
-room_goto(rm_lvl2NEW);
+fadeToRoom(rm_introScene_1, 60, c_black)

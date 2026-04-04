@@ -8,4 +8,4 @@ event_inherited();
 /// @DnDHash : 5A26D227
 /// @DnDArgument : "room" "rm_introScene_1"
 /// @DnDSaveInfo : "room" "rm_introScene_1"
-room_goto(rm_introScene_1);
+room_goto(rm_charSelect);

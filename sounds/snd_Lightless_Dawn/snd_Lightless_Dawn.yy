@@ -10,7 +10,7 @@
   "compression":0,
   "compressionQuality":4,
   "conversionMode":0,
-  "duration":0.0,
+  "duration":377.19467,
   "exportDir":"",
   "name":"snd_Lightless_Dawn",
   "parent":{
