@@ -1,18 +1,17 @@
 {
   "$GMObject":"",
-  "%Name":"obj_column1",
-  "eventList":[],
+  "%Name":"obj_cutSceneParent",
+  "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
-  "name":"obj_column1",
+  "name":"obj_cutSceneParent",
   "overriddenProperties":[],
   "parent":{
-    "name":"obj_outdoor",
-    "path":"folders/Objects/obj_outdoor.yy",
+    "name":"obj_parents",
+    "path":"folders/Objects/obj_parents.yy",
   },
-  "parentObjectId":{
-    "name":"obj_objInteraction",
-    "path":"objects/obj_objInteraction/obj_objInteraction.yy",
-  },
+  "parentObjectId":null,
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -30,10 +29,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"spr_column1",
-    "path":"sprites/spr_column1/spr_column1.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }

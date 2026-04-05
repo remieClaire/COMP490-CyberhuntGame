@@ -9,7 +9,13 @@ textbox_y = _camheight + 110;
 if setup == false {
 	
 	setup = true; //change value so setup only runs for one frame
-	draw_set_font(global.font_textb);
+	if (global.npcSpeaking) {
+		draw_set_font(global.npc_textb);
+	}
+	else {
+		draw_set_font(global.font_textb);
+	}
+	
 	draw_set_valign(fa_top);
 	draw_set_halign(fa_left);
 	
@@ -45,6 +51,7 @@ if accept_key {
 		}
 		//on last page 
 		else {
+
 			if (is_callable(callback)) callback(); //call function if preceding event
 			instance_destroy();
 		}

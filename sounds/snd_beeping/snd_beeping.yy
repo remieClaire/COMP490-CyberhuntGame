@@ -1,6 +1,6 @@
 {
   "$GMSound":"v2",
-  "%Name":"snd_Lightless_Dawn",
+  "%Name":"snd_beeping",
   "audioGroupId":{
     "name":"audiogroup_default",
     "path":"audiogroups/audiogroup_default",
@@ -10,9 +10,9 @@
   "compression":0,
   "compressionQuality":4,
   "conversionMode":0,
-  "duration":377.19467,
+  "duration":0.7920181,
   "exportDir":"",
-  "name":"snd_Lightless_Dawn",
+  "name":"snd_beeping",
   "parent":{
     "name":"Sounds",
     "path":"folders/Sounds.yy",
@@ -21,6 +21,6 @@
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":44100,
-  "soundFile":"snd_Lightless_Dawn.mp3",
-  "volume":1.0,
+  "soundFile":"snd_beeping.wav",
+  "volume":0.1,
 }

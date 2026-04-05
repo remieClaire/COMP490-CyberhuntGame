@@ -1,4 +1,4 @@
-s_saveGame();
+//s_saveGame();
 
 // reset alarm so it keeps looping
 alarm[0] = room_speed * 30;
