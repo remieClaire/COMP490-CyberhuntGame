@@ -80,3 +80,33 @@ else {
 	x += _xinput;
 	y += _yinput;
 }
+
+
+
+
+// Terminal Interaction
+// Check for the "E" key press
+if (keyboard_check_pressed(ord("E"))) {
+    var _inst = collision_rectangle(bbox_left - 20, bbox_top - 20, bbox_right + 20, bbox_bottom + 20, obj_wallLongDecor, false, true); 
+	if (_inst != noone) {
+        show_message("=== Caesar's Cipher ===\n\nThis cryptography algorithm works by using a value, k, to shift each letter in a message down the alphabet by that k value. To decrypt, just do it backwards!\nEncrypted Message: JFWYM\nChallenge: Search the room to find k and decrypt the message.\n\nOnce you have the message decrypted, enter it in the hologram located in the center of the room. ");
+    }
+}
+
+// Hint Interaction
+// Check for the "E" key press
+if (keyboard_check_pressed(ord("E"))) {
+    var _inst = collision_rectangle(bbox_left - 20, bbox_top - 20, bbox_right + 20, bbox_bottom + 20, obj_brain_2, false, true); 
+	if (_inst != noone) {
+        show_message("I have bright colors and wave on a pole,\nRepresenting a land is my only goal.\nI’m made of cloth and hang in the air,\nYou’ll find me waiting almost everywhere.\nLook at the walls and search the space,\nHow many of me are in this place?");
+    }
+}
+
+// Hologram Interaction
+// Check for the "E" key press
+if (keyboard_check_pressed(ord("E"))) {
+    var _inst = collision_rectangle(bbox_left - 20, bbox_top - 20, bbox_right + 20, bbox_bottom + 20, obj_roundHologram, false, true); 
+	if (_inst != noone) {
+        msg_id = get_string_async("Enter Password:", "");
+    }
+}
