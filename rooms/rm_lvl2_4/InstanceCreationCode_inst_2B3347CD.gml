@@ -1,0 +1,1 @@
+text_arr = ["A poster of some human scientists.", "They're crowded around some sort of specimen."]

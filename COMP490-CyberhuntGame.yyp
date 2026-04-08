@@ -71,7 +71,6 @@
     {"id":{"name":"obj_aes1Key","path":"objects/obj_aes1Key/obj_aes1Key.yy",},},
     {"id":{"name":"obj_aes2Key","path":"objects/obj_aes2Key/obj_aes2Key.yy",},},
     {"id":{"name":"obj_aesInputBox","path":"objects/obj_aesInputBox/obj_aesInputBox.yy",},},
-    {"id":{"name":"obj_aesKeyItem","path":"objects/obj_aesKeyItem/obj_aesKeyItem.yy",},},
     {"id":{"name":"obj_aquarium","path":"objects/obj_aquarium/obj_aquarium.yy",},},
     {"id":{"name":"obj_arrayBorder","path":"objects/obj_arrayBorder/obj_arrayBorder.yy",},},
     {"id":{"name":"obj_asciiMsg","path":"objects/obj_asciiMsg/obj_asciiMsg.yy",},},
