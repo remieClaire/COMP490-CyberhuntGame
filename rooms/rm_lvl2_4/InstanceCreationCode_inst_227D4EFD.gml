@@ -1,0 +1,1 @@
+text_arr = ["A mysterious dark stain sullies the glass."]

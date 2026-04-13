@@ -117,6 +117,16 @@ function seqManager() {
 				show_debug_message("you cant do this puzzle yet!");
 			}
 			break;
+		//------------rm 4------------
+		case rm_lvl2_4:
+			if (global.puzzleSequence == 3) {
+				with (obj_rm4Control) {
+					event_user(0);		
+				}
+			}
+			else {
+				show_debug_message("you cant do this puzzle yet!");
+			}
 		//------------rm 5------------
 		case rm_lvl2_5:
 			if (global.puzzleSequence == 5) {

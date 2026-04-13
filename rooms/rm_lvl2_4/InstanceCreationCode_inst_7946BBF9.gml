@@ -1,0 +1,1 @@
+text_arr = ["Something is lying on the bottom.", "It's not moving."]

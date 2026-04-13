@@ -1,0 +1,1 @@
+text_arr = ["You slide your message matrix into a slot in the bottom.", "Slow, but it finishes in a reasonable time."]

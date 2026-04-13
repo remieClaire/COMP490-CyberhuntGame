@@ -1,0 +1,1 @@
+text_arr = ["It's so dehydrated, the plants look like burnt matchsticks."]
