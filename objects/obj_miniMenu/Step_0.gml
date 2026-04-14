@@ -24,6 +24,7 @@ if (keyboard_check_pressed(vk_shift)) {
 //Confirm & check player choices
 var correct = true;
 if (keyboard_check_pressed(vk_enter)) {
+	
 	var correct_options =
 	[
 		["Add Key"],
@@ -33,23 +34,24 @@ if (keyboard_check_pressed(vk_enter)) {
 		["Add Final Key"]
 	];
 	
-	
+	// go through array and check
 	for (j=0; j<optionsCount; j++) {
 		if (options[j][0] != correct_options[j][0]) {
 			correct = false;
 			break;
 		}
 	}
-	
+	// if correct answer
 	if (correct) {
 		description = "Correct!"
 		alarm[0] = 100;
 		global.puzzleSequence = 2;
 
 	}
-	else {
+	// if incorrect but not keypress from spawning puzzle
+	else if (!correct && !spawn) {
 		description = "Try again"
 		alarm[1] = 100;
 	}
-		
+
 }

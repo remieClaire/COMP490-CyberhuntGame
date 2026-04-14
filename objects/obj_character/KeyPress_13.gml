@@ -50,7 +50,7 @@ if (_interact != noone) {
 			case rm_lvl3:
 				event_user(3);
 				break;
-			case rm_lvl2_4:
+			case rm_lvl4:
 				event_user(4);
 				break;
 		}

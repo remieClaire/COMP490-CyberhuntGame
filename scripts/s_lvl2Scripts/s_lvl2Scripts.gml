@@ -10,6 +10,9 @@ function checkAnswer(_arr2) {
 			pass = false;
 			obj_matrixTile.blockArr[i].boolean = false;
 		}	
+		else if (string_trim(obj_matrixTile.blockArr[i].value) == string_trim(arr2[i])) {
+			obj_matrixTile.blockArr[i].boolean = true;
+		}
 	}
 	return pass;
 }
@@ -247,14 +250,12 @@ function stateMatrix(_x1, _y1) {
 
 //------------event 3: XOR key 1------------
 function showChart() {
-	show_debug_message("show chart called")
 	// change camera
 	var _cam = view_get_camera(3);
 	
     view_set_camera(0, _cam);
     camera_apply(_cam);
 	
-	show_debug_message("cam set");
 	
 	// disable all objects
 	instance_deactivate_object(obj_objInteraction);

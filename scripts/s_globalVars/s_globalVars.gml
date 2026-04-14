@@ -13,7 +13,7 @@ global.volume_level = 1;
 global.levels_completed = 0;
 
 //------------level 2------------
-global.puzzleSequence = 7;
+global.puzzleSequence = 8;
 
 //flags
 global.repopulate = false; //repopulate matrices

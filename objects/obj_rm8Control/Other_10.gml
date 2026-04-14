@@ -4,15 +4,28 @@
 var _cam_w = camera_get_view_x(view_camera[0]);
 var _cam_h = camera_get_view_y(view_camera[0]);
 
-x_array = _cam_w/2 - (sprite_get_width(spr_arrayBorder)/2) + 550;
-y_array = _cam_h - 200;
+x_array = _cam_w/2 + 220;
+y_array = _cam_h - 100;
 
-x_input = _cam_w + 180;
-y_input = y_array - 80;
+x_input = x_array - 8;
+y_input = y_array + 100;
+
+
+//visual set up
+puzzleView();
+//change camera & view
+setCamera();
 
 //------------spawn puzzle------------
+// spawn screen
+instance_create_depth(x_array, y_array, -999, obj_asciiMsg);
+
+// spawn user input screen
+instance_create_depth(x_input, y_input, -999, obj_asciiInput);
+/*
 //creat state matrix so matrix tiles can be called
 stateMatrix(0, 0);
+
 obj_matrixBorder.visible = false;
 
 instance_create_depth(x_array, y_array, -999, obj_arrayBorder);
@@ -22,3 +35,4 @@ instance_create_depth(x_input, y_input, -999, obj_aesInputBox);
 
 //------------recreate progress------------
 global.repopulate = true;
+*/
