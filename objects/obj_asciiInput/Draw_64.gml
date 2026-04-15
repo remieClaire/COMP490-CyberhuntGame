@@ -4,13 +4,22 @@ fontSize = font_get_size(f_pauseSilver);
 buffer = fontSize;
 
 startX = x - sprite_get_width(spr_asciiInput)/2;
-startY = y - 40;
+startY = y;
 
 
 var _charCount = 1;
 
 draw_set_colour(c_black);
 
+/* ----------- draw the current name -----------*/
+_startX = startX;
+_startY = startY - 60;
+
+draw_set_halign(fa_left);
+draw_set_valign(fa_top);
+draw_text(_startX, _startY, currentName);
+
+/* ----------- drawing the letters -----------*/
 for (var yy = 0; yy < yLetters; yy++) {
 	for (var xx = 0; xx < xLetters; xx++) {
 		

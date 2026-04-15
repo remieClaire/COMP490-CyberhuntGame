@@ -1,6 +1,7 @@
 gridX = 0; 
 gridY = 0;
 
+currentName = "THECATJUMPEDHIGH";
 letterString = "ABCDEFGHIJKLMNOPQRSTUVWXYZ    ";
 
 // define shape of grid 
@@ -10,6 +11,9 @@ yLetters = 5;
 
 // track how far along the string we're at
 charCount = 1;
+
+//correct answer
+answer = "THECATJUMPEDHIGH";
 
 //making the grid
 for (var yy = 0; yy < yLetters; yy++) {
