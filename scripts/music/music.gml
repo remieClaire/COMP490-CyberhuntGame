@@ -8,5 +8,6 @@ function music(_track)
 		}
 		global.music_id = audio_play_sound(_track, 10, true);
 		global.current_music = _track;
+		audio_sound_gain(global.current_music, global.volume_level, 0);
 	}
 }

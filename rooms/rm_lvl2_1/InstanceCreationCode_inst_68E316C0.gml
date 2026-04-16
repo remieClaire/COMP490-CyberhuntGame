@@ -1,0 +1,1 @@
+text_arr = ["...recruits!", "... step up... verify... AES... before...", "It displays the same message, albeit with some words glitched out."]

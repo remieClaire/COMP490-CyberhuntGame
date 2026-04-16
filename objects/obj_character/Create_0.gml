@@ -18,8 +18,7 @@ animations =
 
 set_animation(animations, "idledown");
 
-AddItemToInventory(["Note1", spr_noteHint, "bleblebleblebleblebleblelbebelleblbeleb"]);
-AddItemToInventory(["Random NOte", spr_noteHint, "what is a random note that i could come up with"]);
-AddItemToInventory(["Vtubers part 1", spr_noteHint, "There are many reasons to watch vtubers and in this note I will be listing the top 5 reasons. Starting with #5..."]);
-AddItemToInventory(["Note1", spr_noteHint, "bleblebleblebleblebleblelbebelleblbeleb"]);
-AddItemToInventory(["Note1", spr_noteHint, "bleblebleblebleblebleblelbebelleblbeleb"]);
+
+alarm[0] = room_speed * 30; // every 30 seconds
+
+AddItemToInventory(["Note1", spr_noteHint, "random ahh words that i cant be bothered to explain right here"]);

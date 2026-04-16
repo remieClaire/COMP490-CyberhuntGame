@@ -48,7 +48,8 @@ function resetCamera() {
 //changes to puzzle view
 function puzzleView() {
 	//deactivate instances
-	instance_deactivate_all(false);
+	instance_deactivate_object(obj_objInteraction);
+	instance_deactivate_object(obj_character);
 	//hide layers
 	var _assetLayers = ["Assets_1", "Instances", "Tiles_1"];
 	
@@ -66,7 +67,8 @@ function puzzleView() {
 //reverts changes after puzzle is complete
 function playerView() {
 	//reactivate instances
-	instance_activate_all();
+	instance_activate_object(obj_objInteraction);
+	instance_activate_object(obj_character);
 	//show layers
 	var _assetLayers = ["Assets_1", "Instances", "Tiles_1"];
 	
@@ -82,6 +84,17 @@ function playerView() {
 
 function seqManager() {
 	switch (room) {
+		//------------rm 1------------
+		case rm_lvl2_1:
+			if (global.puzzleSequence == 1) {
+				with (obj_rm1Control) {
+					event_user(0);
+				}
+			}
+			else {
+				show_debug_message("you cant do this puzzle yet!");
+			}
+			break;
 		//------------rm 2------------
 		case rm_lvl2_2:
 			if (global.puzzleSequence == 2) {
@@ -171,7 +184,7 @@ function Dial(_obj_id, _value) constructor {
 //creates mini menu that player must unscramble
 function miniMenu(_x, _y, _options, _description = -1){
 	
-	with (instance_create_layer(_x, _y, "Assets_1", obj_miniMenu)) {
+	with (instance_create_layer(_x, _y, "Instances", obj_miniMenu)) {
 		options = _options;
 		description = _description;
 		optionsCount = array_length(_options);
@@ -179,7 +192,7 @@ function miniMenu(_x, _y, _options, _description = -1){
 		
 		//Set up size
 		margin = 8; //pixels away from box edges 
-		draw_set_font(f_pauseSilver);
+		draw_set_font(f_miniMenuSilver);
 		
 		width = 1; //min width value
 		
@@ -218,10 +231,44 @@ function stateMatrix(_x1, _y1) {
 	puzzleView();
 	//change camera & view
 	setCamera();
-	//create inventory on side
-	//create note content on bottom
 	//spawn matrix on top center
 	instance_create_depth(_x1, _y1, -999, obj_matrixBorder);
+}
+
+//------------event 3: XOR key 1------------
+function showChart() {
+	show_debug_message("show chart called")
+	// change camera
+	var _cam = view_get_camera(3);
+	
+    view_set_camera(0, _cam);
+    camera_apply(_cam);
+	
+	show_debug_message("cam set");
+	
+	// disable all objects
+	instance_deactivate_object(obj_objInteraction);
+	instance_deactivate_object(obj_character);
+	
+	// pull up sprite
+	instance_create_depth(0, 0, -999, obj_XORchart);
+	
+	
+}
+
+function hideChart() {
+	// destroy sprite
+	instance_destroy(obj_XORchart);
+	
+	// change camera
+	var _cam = view_get_camera(2);
+	
+    view_set_camera(0, _cam);
+    camera_apply(_cam);
+	
+	// reactivate all objects
+	instance_activate_object(obj_objInteraction);
+	instance_activate_object(obj_character);
 }
 
 //------------event 4: inv matrix------------
@@ -242,7 +289,6 @@ function mouseClickArrow(_arr, _obj) {
 			for (var b = 0; b < array_length(arr); b++) {
 				if (arr[b].obj_id == arrowClicked) {
 					arr[b].value++;
-					show_debug_message(arr[b]);
 				}
 			}
 		}

@@ -4,11 +4,12 @@
 var _cam_w = camera_get_view_x(view_camera[0]);
 var _cam_h = camera_get_view_y(view_camera[0]);
 
-x_matrix = _cam_w + 120;
-y_matrix = _cam_h + 20;
+x_matrix = _cam_w + 130;
+y_matrix = _cam_h + 100;
 
-x_screen = x_matrix + sprite_get_width(spr_matrixBorder) + 10;
-y_screen = y_matrix - 5;
+x_screen = x_matrix - 4;
+//+ sprite_get_width(spr_matrixBorder) + 10;
+y_screen = y_matrix - sprite_get_height(spr_screen);
 
 x_dial = x_screen + sprite_get_width(spr_subBytesDial) - 5;
 y_dial = y_screen + sprite_get_height(spr_screen) - sprite_get_height(spr_subBytesDial) - 5;

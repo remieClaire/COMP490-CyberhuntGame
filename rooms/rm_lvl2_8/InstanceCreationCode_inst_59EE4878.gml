@@ -1,0 +1,1 @@
+text_arr = ["A war propaganda poster.", "On closer inspection however, there seems to be another poster underneath."]

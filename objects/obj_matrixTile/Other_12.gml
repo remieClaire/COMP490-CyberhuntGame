@@ -1,6 +1,8 @@
 correct = true
 //checkAnswer(correctInputArr); //check if user input is correct
 
+
+//------------check answer------------
 if (correct) { //if answer is correct
 		
 	global.puzzleSequence = 3;

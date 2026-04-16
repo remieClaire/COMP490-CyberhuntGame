@@ -1,0 +1,1 @@
+text_arr = ["It looks like it's seen better days.", "And it looks like someone left a note under the seat.", "[Received a note.]"]

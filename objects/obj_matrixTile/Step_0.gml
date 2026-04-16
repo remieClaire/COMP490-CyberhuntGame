@@ -32,8 +32,29 @@ if (confirm && userText != "") {
 }
 
 //------------events------------
+//fill in half of array for entry and key steps
+switch (global.puzzleSequence) {
+	case 2: 
+		for (var i = 0; i < array_length(blockArr) / 2; i++) {
+			blockArr[i].value = correctInputArr[i];
+		}
+		break;
+	case 3:
+		for (var i = 0; i < 12; i++) {
+			blockArr[i].value = correctXorArr[i];
+		}
+		break;
+	case 7:
+		for (var i = 0; i < 12; i++) {
+			blockArr[i].value = correctFinalXorArr[i];
+		}
+		break;	
+}
+
+//player submission variables
 var submit = keyboard_check_pressed(vk_enter);
 var correct = false;
+
 //check player answers upon submission
 if (submit) {
 	switch(global.puzzleSequence) {

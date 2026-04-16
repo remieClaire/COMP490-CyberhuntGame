@@ -34,6 +34,23 @@ function initTextCallback(_func){
 		}
 		
 		callback = _callback;
+		
 	}
 }
 	
+function sceneTextCallback(_func){
+	
+	if (array_length(text_arr) == 0) return;
+	
+	var _callback = _func;
+	
+	//*with block will run all code in it from the perspective of the OBJECT BEING CREATED
+	with (instance_create_depth(0, 0, -999, obj_dialogue)) {
+		for (var p = 0; p < array_length(other.text_arr); p++) {
+			addText(other.text_arr[p]);
+		}
+		
+		callback = _callback;
+		
+	}
+}

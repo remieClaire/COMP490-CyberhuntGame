@@ -1,0 +1,1 @@
+text_arr = ["It looks like it's seen better days."]

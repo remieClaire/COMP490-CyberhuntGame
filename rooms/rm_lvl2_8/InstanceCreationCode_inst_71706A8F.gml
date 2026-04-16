@@ -1,0 +1,1 @@
+text_arr = ["Some notes that were hastily torn off.", "They seemed to have used the wall for thoughts and ideas."]
