@@ -344,6 +344,7 @@
     {"roomId":{"name":"rm_lvl2_7","path":"rooms/rm_lvl2_7/rm_lvl2_7.yy",},},
     {"roomId":{"name":"rm_charSelect","path":"rooms/rm_charSelect/rm_charSelect.yy",},},
     {"roomId":{"name":"rm_introScene_1","path":"rooms/rm_introScene_1/rm_introScene_1.yy",},},
+    {"roomId":{"name":"rm_lvl1","path":"rooms/rm_lvl1/rm_lvl1.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[
