@@ -12,7 +12,7 @@ if (_id == msg_id) {
         
         // 5. Check the password
         if (string_upper(_input) == "EARTH") {
-            room_goto(rm_lvl2NEW);
+			fadeToRoom(rm_lvl2NEW, 60, c_black);
         } else {
             // Show another pop-up for the error
             show_message_async("INCORRECT. TRY AGAIN.");
