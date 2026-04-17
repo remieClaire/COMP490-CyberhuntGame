@@ -9,7 +9,7 @@ if (global.item_currently_active == "inventory") {
 	global.item_currently_active = "game";
 } else if (global.item_currently_active == "pause") {
 	obj_pausemenu.visible = false;
-	my_speed = 2;
+	my_speed = 1;
 	draw_set_colour(c_white);
 	draw_set_alpha(1);
 	global.item_currently_active = "game";	

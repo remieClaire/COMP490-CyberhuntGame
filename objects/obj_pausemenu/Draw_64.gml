@@ -7,7 +7,7 @@ var _prev_font   = draw_get_font();
 if (instance_exists(obj_pausemenu)) {
 	draw_set_colour(c_black);
 	draw_set_alpha(.75);
-	draw_rectangle(0, 0, room_width, room_height, false);
+	draw_rectangle(0, 0, display_get_gui_width(), display_get_gui_height(), false);
 	
 	draw_set_alpha(1);
 	
@@ -36,7 +36,7 @@ if (instance_exists(obj_pausemenu)) {
 		draw_rectangle(width/3, height/3 - 100, (width/3)*2, height/3, false);
 		if (mouse_check_button_pressed(mb_left) && visible == true) {
 			visible = false;
-			obj_character.my_speed = 2;
+			obj_character.my_speed = 1;
 			global.item_currently_active = "game";
 			draw_set_colour(c_white);
 			draw_set_alpha(1);
