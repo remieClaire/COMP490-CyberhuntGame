@@ -13,7 +13,7 @@ yLetters = 5;
 charCount = 1;
 
 //correct answer
-answer = "THECATJUMPEDHIGH";
+answer = "EARTH";
 
 //making the grid
 for (var yy = 0; yy < yLetters; yy++) {
