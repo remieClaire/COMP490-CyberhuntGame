@@ -1,0 +1,1 @@
+text_arr = ["A foul smell is coming from the vase."]

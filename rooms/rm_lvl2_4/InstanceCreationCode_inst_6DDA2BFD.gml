@@ -1,0 +1,1 @@
+text_arr = ["A poster of some human soldiers.", "They seem to be saluting someone off canvas."]

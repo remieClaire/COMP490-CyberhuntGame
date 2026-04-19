@@ -23,8 +23,5 @@ else if (state == 1) {
 
 //set alpha
 if (fade_timer > 0) {
-	show_debug_message("alpha: " + string(alpha));
-	show_debug_message("fade_timer: " + string(fade_timer));
-	show_debug_message("duration: " + string(duration))
 	alpha = fade_timer / duration;
 }

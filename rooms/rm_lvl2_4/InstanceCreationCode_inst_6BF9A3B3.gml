@@ -1,0 +1,1 @@
+text_arr = ["The tank is full with water and the glass is coated in algae.", "You don't dare peak inside."]

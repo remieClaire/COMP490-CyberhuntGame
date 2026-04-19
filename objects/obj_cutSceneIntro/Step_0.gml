@@ -344,7 +344,7 @@ if (currentState == cutSceneStates.Active) {
 			break;
 		case 100: // fade to black
 			global.inCutScene = false;
-			fadeToRoom(rm_lvl1, 60, c_black);
+			fadeToRoom(rm_lvl1, 70, c_black);
 			break;
 	}
 }
