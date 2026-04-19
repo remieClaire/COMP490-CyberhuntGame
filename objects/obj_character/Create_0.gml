@@ -1,3 +1,7 @@
+show_debug_message(room);
+show_debug_message(x);
+show_debug_message(y)
+
 sprite_index = global.currentcharasprite; //set char sprite based on player
 
 my_speed = 1;	//walking speed
