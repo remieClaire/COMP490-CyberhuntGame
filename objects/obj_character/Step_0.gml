@@ -1,5 +1,6 @@
 if (instance_exists(obj_dialogue)) exit; //if dialogue box is present, stop character movement
 if (instance_exists(obj_miniMenu)) exit;
+if (instance_exists(obj_userInputBox)) exit;
 
 //------------movement------------
 // uses arrow keys to move
