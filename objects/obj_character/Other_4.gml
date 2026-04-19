@@ -24,8 +24,20 @@ if (room == rm_introScene_1) {
 	}
 }
 
+// Level 1: spawn dialogue at beginning
+if (room == rm_lvl1) {
+	// spawns dialogue object 
+	with (instance_create_depth(0, 0, -999, obj_dialogue)) {
+		addText("Text1");
+		
+		//if you want more dialogue
+		//addText("");
+		//addText("");
+	}
+}
+
 // Level 2: spawn dialogue at beginning
-if (room == rm_lvl2NEW && global.puzzleSequence == 1) {
+else if (room == rm_lvl2NEW && global.puzzleSequence == 1) {
 	with (instance_create_depth(0, 0, -999, obj_dialogue)) {
 		
 		addText("For the following puzzles, press shift to confirm an action. Press enter to submit your final answer.");
