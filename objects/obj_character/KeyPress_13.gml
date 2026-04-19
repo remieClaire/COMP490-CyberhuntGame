@@ -1,4 +1,5 @@
 //DO NOT CHANGE
+if (instance_exists(obj_userInputBox)) exit;
 
 //checks if an object is within 40 pixels of the character's "line of sight" & returns the object
 var _interact = collision_line(
