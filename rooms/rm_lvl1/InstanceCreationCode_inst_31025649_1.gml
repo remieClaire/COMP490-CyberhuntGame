@@ -1,1 +1,1 @@
-text_arr = ["test 1"];
+text_arr = ["Level 1: Caesar's Cipher cyptography algorithm", "To encrypt, use a value, k, to shift each letter down the alphabet by that k value.", "To decrypt, just do it backwards!", "Encrypted Message: JFWYM", "Challenge: Search the room to find k and decrypt the message.", "Enter the decrypted message in the hologram located in the center of the room."];

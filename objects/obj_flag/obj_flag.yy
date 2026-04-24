@@ -9,7 +9,10 @@
     "name":"obj_outdoor",
     "path":"folders/Objects/obj_outdoor.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"obj_objInteraction",
+    "path":"objects/obj_objInteraction/obj_objInteraction.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,

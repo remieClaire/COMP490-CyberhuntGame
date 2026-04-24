@@ -28,11 +28,10 @@ if (room == rm_introScene_1) {
 if (room == rm_lvl1) {
 	// spawns dialogue object 
 	with (instance_create_depth(0, 0, -999, obj_dialogue)) {
-		addText("Text1");
-		
-		//if you want more dialogue
-		//addText("");
-		//addText("");
+		addText("How interesting...\nIt's a whole abandoned lab!");
+		addText("I can't help myself but to look around.");
+		addText("Woah! There's a computer over there in the corner...");
+		addText("If it works, maybe it contains useful information!");
 	}
 }
 
