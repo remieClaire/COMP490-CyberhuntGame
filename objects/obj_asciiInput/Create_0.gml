@@ -1,7 +1,9 @@
 gridX = 0; 
 gridY = 0;
 
-currentName = "THECATJUMPEDHIGH";
+destroy = false;
+
+currentName = "";
 letterString = "ABCDEFGHIJKLMNOPQRSTUVWXYZ    ";
 
 // define shape of grid 

@@ -18,6 +18,8 @@ userText = "";
 correct = false;
 currentPuzzle = -1;
 
+destroy = false;
+
 correctInputArr = ["00","6A","41","16","A2","B3","DA","0F","EC","DA","BD","76","6B","96","CC","83"]
 					
 correctXorArr = ["2A","8D","D0","4A","11","FB","D5","D9","92","1E","AB","FF","C9","23","3C","BE"]

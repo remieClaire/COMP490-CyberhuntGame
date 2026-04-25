@@ -1,0 +1,2 @@
+// reset boolean
+destroy = false;

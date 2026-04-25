@@ -1,1 +1,1 @@
-text_arr = ["You slide your message matrix into a slot in the bottom.", "Slow, but it finishes in a reasonable time."]
+text_arr = ["Friendly reminder that you must convert the numbers from your state matrix into their binary counterpart before you can proceed with operations.", "In the event you get lost, please consult your lab-appointed notebooks."]

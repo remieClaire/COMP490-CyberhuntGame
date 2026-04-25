@@ -83,6 +83,7 @@ function playerView() {
 	draw_set_font(global.font_textb);
 	var _background = layer_background_get_id("Background");
 	layer_background_sprite(_background, spr_levelBackground_dark);
+	
 }
 
 function seqManager() {
@@ -95,7 +96,7 @@ function seqManager() {
 				}
 			}
 			else {
-				show_debug_message("you cant do this puzzle yet!");
+				audio_play_sound(snd_invalidChoice, 10, false);
 			}
 			break;
 		//------------rm 2------------
@@ -106,7 +107,7 @@ function seqManager() {
 				}
 			}
 			else {
-				show_debug_message("you cant do this puzzle yet!");
+				audio_play_sound(snd_invalidChoice, 10, false);
 			}
 			break;
 		//------------rm 3------------
@@ -117,7 +118,7 @@ function seqManager() {
 				}
 			}
 			else {
-				show_debug_message("you cant do this puzzle yet!");
+				audio_play_sound(snd_invalidChoice, 10, false);
 			}
 			break;
 		//------------rm 4------------
@@ -128,7 +129,7 @@ function seqManager() {
 				}
 			}
 			else {
-				show_debug_message("you cant do this puzzle yet!");
+				audio_play_sound(snd_invalidChoice, 10, false);
 			}
 		//------------rm 5------------
 		case rm_lvl2_5:
@@ -138,7 +139,7 @@ function seqManager() {
 				}
 			}
 			else {
-				show_debug_message("you cant do this puzzle yet!");
+				audio_play_sound(snd_invalidChoice, 10, false);
 			}
 			break;
 		//------------rm 6------------
@@ -149,7 +150,7 @@ function seqManager() {
 				}
 			}
 			else {
-				show_debug_message("you cant do this puzzle yet!");
+				audio_play_sound(snd_invalidChoice, 10, false);
 			}
 			break;
 		//------------rm 7------------
@@ -160,7 +161,7 @@ function seqManager() {
 				}
 			}
 			else {
-				show_debug_message("you cant do this puzzle yet!");
+				audio_play_sound(snd_invalidChoice, 10, false);
 			}
 			break;
 		//------------rm 8------------
@@ -171,7 +172,7 @@ function seqManager() {
 				}
 			}
 			else {
-				show_debug_message("you cant do this puzzle yet!");
+				audio_play_sound(snd_invalidChoice, 10, false);
 			}
 			break;
 	}
@@ -196,7 +197,7 @@ function Dial(_obj_id, _value) constructor {
 //------------event 1: reverse engineer------------
 //creates mini menu that player must unscramble
 function miniMenu(_x, _y, _options, _description = -1){
-	
+
 	with (instance_create_layer(_x, _y, "Instances", obj_miniMenu)) {
 		options = _options;
 		description = _description;

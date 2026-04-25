@@ -8,6 +8,8 @@ dial_arr = obj_rm6Control.radio_dial_arr;
 dial = new Dial(id, 0);
 array_push(dial_arr, dial);
 
+destroy = false;
+
 dialClicked = -1;
 subByte = -1;
 invSubBytesArr = [

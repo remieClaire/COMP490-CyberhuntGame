@@ -7,4 +7,3 @@ initTextCallback(function() {
 		seqManager();
 	}
 });
-

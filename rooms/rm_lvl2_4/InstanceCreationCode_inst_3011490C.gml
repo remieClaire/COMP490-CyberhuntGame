@@ -1,1 +1,1 @@
-text_arr = ["You slide your message matrix into a slot in the bottom.", "Slow, but it finishes in a reasonable time."]
+text_arr = ["Remember, Galois Field multiplication must be carried out in base 2, not base 10.", "Please consult your lab-appointed notebooks if you ever get lost."]

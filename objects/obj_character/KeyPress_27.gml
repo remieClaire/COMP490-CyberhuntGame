@@ -1,4 +1,6 @@
-// pause, inventory, puzzle, game
+// **EDIT: moved key press - escape event to obj_pausemenu
+
+/*// pause, inventory, puzzle, game
 if (global.item_currently_active == "inventory") {
 	obj_Inventory.visible = false;
 	my_speed = 2;
@@ -14,7 +16,10 @@ if (global.item_currently_active == "inventory") {
 	draw_set_alpha(1);
 	global.item_currently_active = "game";	
 } else if (global.item_currently_active == "game") {
+	
 	obj_pausemenu.visible = true;
 	my_speed = 0;
 	global.item_currently_active = "pause";
-}
+} 
+
+*/

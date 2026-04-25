@@ -1,5 +1,6 @@
 //REVERSE ENGINEER ALGORITHM
-miniMenu(
+if (!instance_exists(obj_miniMenu)) {
+	miniMenu(
 		room_width,
 		room_height, 
 		[
@@ -11,3 +12,4 @@ miniMenu(
 		],
 		"Reverse the encryption algorithm:"
 	);
+}

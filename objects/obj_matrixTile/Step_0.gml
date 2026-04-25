@@ -6,6 +6,33 @@ if (global.puzzleSequence == 8) {
 }
 */
 
+//------------exit puzzle------------
+switch (global.puzzleSequence) {
+	case 2:
+		destroy = true;
+		break;
+	case 3: 
+		destroy = true;
+		break;
+	case 5: 
+		destroy = true;
+		break;
+	case 6:
+		destroy = true;
+		break;
+	case 7:
+		destroy = true;
+		break;
+	case 8: 
+		destroy = true;
+		break;
+}
+
+if (destroy && global.leavePuzzle) {
+	// destroy self
+	instance_destroy();
+}
+
 //------------setup------------
 hover += (keyboard_check_pressed(vk_down)*4) - (keyboard_check_pressed(vk_up)*4); //down: +1, up: -1
 hover += keyboard_check_pressed(vk_right) - keyboard_check_pressed(vk_left); //right: +1, left: -1

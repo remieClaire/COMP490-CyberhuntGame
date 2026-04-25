@@ -1,3 +1,8 @@
+if (global.puzzleSequence == 1 && global.leavePuzzle) {
+	// destroy self
+	instance_destroy();
+}
+
 hover_m += keyboard_check_pressed(vk_down) - keyboard_check_pressed(vk_up); //down: +1, up: -1
 
 
