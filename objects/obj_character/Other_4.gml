@@ -30,8 +30,9 @@ if (room == rm_lvl1) {
 	with (instance_create_depth(0, 0, -999, obj_dialogue)) {
 		addText("How interesting...\nIt's a whole abandoned lab!");
 		addText("I can't help myself but to look around.");
-		addText("Woah! There's a computer over there in the corner...");
+		addText("There's a computer over there in the corner...");
 		addText("If it works, maybe it contains useful information!");
+		addText("Woah! There is a literal brain over there on the table! Let me go check it out.");
 	}
 }
 
