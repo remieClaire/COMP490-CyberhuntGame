@@ -1,10 +1,29 @@
-//if on last step of puzzle, exit matrix tile so it can't be edited anymore
-/*
-if (global.puzzleSequence == 8) {
-	hover = -1;
-	exit;
+//------------exit puzzle------------
+switch (global.puzzleSequence) {
+	case 2:
+		destroy = true;
+		break;
+	case 3: 
+		destroy = true;
+		break;
+	case 5: 
+		destroy = true;
+		break;
+	case 6:
+		destroy = true;
+		break;
+	case 7:
+		destroy = true;
+		break;
+	case 8: 
+		destroy = true;
+		break;
 }
-*/
+
+if (destroy && global.leavePuzzle) {
+	// destroy self
+	instance_destroy();
+}
 
 //------------setup------------
 hover += (keyboard_check_pressed(vk_down)*4) - (keyboard_check_pressed(vk_up)*4); //down: +1, up: -1
@@ -12,10 +31,21 @@ hover += keyboard_check_pressed(vk_right) - keyboard_check_pressed(vk_left); //r
 
 //decide what to do when hover is below 0 or over the maximum
 var max_index = array_length(blockArr) - 1;
-if (hover > max_index) hover = max_index;
-if (hover < 0) hover = 0;
+var min_index = 0;
+if (global.puzzleSequence == 2) {
+	min_index = 8;
+}
+else if (global.puzzleSequence == 3 || global.puzzleSequence == 7) {
+	min_index = 12;
+}
+else if (global.puzzleSequence == 5) {
+	min_index = 15;
+}
 
-if (hover >= 0 && hover < array_length(blockArr)) {
+if (hover > max_index) hover = max_index;
+if (hover < min_index) hover = min_index;
+
+if (hover >= min_index && hover < array_length(blockArr)) {
 	userChoice = hover;
 }
 
@@ -54,9 +84,18 @@ switch (global.puzzleSequence) {
 //player submission variables
 var submit = keyboard_check_pressed(vk_enter);
 var correct = false;
+var filled = true;
+
+//check first if all boxes are filled
+for (var c = 0; c < array_length(blockArr); c++) {
+	if (blockArr[c].value == "") {
+		filled = false; 
+	}
+	
+}
 
 //check player answers upon submission
-if (submit) {
+if (submit && filled) {
 	switch(global.puzzleSequence) {
 		case 2:
 			event_user(2);
@@ -78,6 +117,10 @@ if (submit) {
 			break;
 	}
 }
+else if (submit && !filled) {
+	// play sound
+	audio_play_sound(snd_invalidChoice, 10, false);
+}
 
 //------------misc. cases------------
 //for repopulating matrices if player picks up from the middle of a sequence
@@ -92,15 +135,4 @@ else if (global.repopulate && global.puzzleSequence == 6) {
 }
 else if (global.repopulate && global.puzzleSequence == 7) {
 	repopulateMatrix(correctSubArr);
-}
-else if (global.repopulate && global.puzzleSequence == 8) {
-	repopulateMatrix(correctFinalXorArr);
-}
-
-//for multiply matrix phase of puzzle
-if (global.initiateMultMatrix) {
-	for (var i = 0; i < array_length(correctMultArr); i++) {
-		blockArr[i].value = correctMultArr[i];
-	}
-	global.puzzleSequence = 5;
 }

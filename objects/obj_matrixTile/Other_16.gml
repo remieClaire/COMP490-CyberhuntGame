@@ -1,5 +1,4 @@
-correct = true;
-//checkAnswer(correctSubArr);
+correct = checkAnswer(correctSubArr);
 	
 if (correct) {
 		
@@ -9,7 +8,7 @@ if (correct) {
 	
 	instance_destroy(obj_matrixBorder);
 	instance_destroy(obj_matrixTile);
-	instance_destroy(obj_screen);
+	instance_destroy(obj_subScreen);
 	instance_destroy(obj_radioDial);
 	
 	resetCamera();

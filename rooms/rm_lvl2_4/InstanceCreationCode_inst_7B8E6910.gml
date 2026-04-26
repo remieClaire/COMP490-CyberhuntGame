@@ -1,0 +1,1 @@
+text_arr = ["Some sort of small lounge area."]

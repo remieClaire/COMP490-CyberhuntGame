@@ -41,10 +41,11 @@ else if (room == rm_lvl2NEW && global.puzzleSequence == 1) {
 	with (instance_create_depth(0, 0, -999, obj_dialogue)) {
 		
 		addText("For the following puzzles, press shift to confirm an action. Press enter to submit your final answer.");
+		addText("Press Q to quit. However, your progress will not be saved!");
 		addText("*These instructions will also be available as a note in your inventory.");
 		addText("[Added instruction notes to inventory]");
 	}
 	
-	var _lvl2_info = ["*Puzzle Instructions", spr_noteHint, "Shift to confirm choice.\nEnter to submit final answer."];
+	var _lvl2_info = ["*Puzzle Instructions", spr_noteHint, "Shift to confirm choice.\nEnter to submit final answer.\nQ to quit. (Note that your progress will not save)"];
 	AddItemToInventory(_lvl2_info);
 }

@@ -9,3 +9,5 @@ array_push(arrow_arr, arrow);
 
 clicks = -1;
 arrowID = -1;
+
+destroy = false;

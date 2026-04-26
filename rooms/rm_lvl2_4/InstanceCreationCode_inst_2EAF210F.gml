@@ -1,1 +1,1 @@
-text_arr = ["You wouldn't want to attempt this."]
+text_arr = ["The screen glitches out horribly."]

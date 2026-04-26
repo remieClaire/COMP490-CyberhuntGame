@@ -1,5 +1,4 @@
-correct = true
-//checkAnswer(correctXorArr);
+correct = checkAnswer(correctXorArr);
 
 if (correct) { 
 		

@@ -1,1 +1,1 @@
-text_arr = ["The wires are completely severed.", "Upon closer inspection though, you notice a piece of paper that was shoved inside.", "[Received a note]"]
+text_arr = ["The wires are completely severed."]

@@ -1,1 +1,1 @@
-text_arr = ["...", "The screen starts to flicker spastically and there's no guarantee it will stay on long enough.", "The last 4 values will need to be manually computed."]
+text_arr = ["L...Lau...", "Launc...puz..le..."]

@@ -1,1 +1,1 @@
-text_arr = ["The screen blinks sporadically.", "Otherwise, it's still functional."]
+text_arr = ["Key detected... Initiating failsafe sequence...", "Launching puzzle..."]

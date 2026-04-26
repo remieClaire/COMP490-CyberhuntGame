@@ -1,5 +1,4 @@
-correct = true
-//checkAnswer(correctInputArr); //check if user input is correct
+correct = checkAnswer(correctInputArr); //check if user input is correct
 
 
 //------------check answer------------

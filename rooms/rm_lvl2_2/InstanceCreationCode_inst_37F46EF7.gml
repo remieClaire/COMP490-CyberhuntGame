@@ -1,1 +1,1 @@
-text_arr = ["This one-", "On closer inspection, it appears someone had left a message running."]
+text_arr = ["Message booted.", "Loading puzzle..."]
