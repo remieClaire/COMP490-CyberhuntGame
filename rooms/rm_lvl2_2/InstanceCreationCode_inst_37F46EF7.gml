@@ -1,1 +1,1 @@
-text_arr = ["Launching puzzle..."]
+text_arr = ["Message booted.", "Loading puzzle..."]

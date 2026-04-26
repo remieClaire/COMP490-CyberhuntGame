@@ -1,5 +1,4 @@
-correct = true;
-//checkAnswer(correctSubArr);
+correct = checkAnswer(correctSubArr);
 	
 if (correct) {
 		

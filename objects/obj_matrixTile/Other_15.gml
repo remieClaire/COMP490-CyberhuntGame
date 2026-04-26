@@ -1,5 +1,4 @@
-correct = true;
-//checkAnswer(correctShiftArr);
+correct = checkAnswer(correctShiftArr);
 	
 if (correct) {
 	

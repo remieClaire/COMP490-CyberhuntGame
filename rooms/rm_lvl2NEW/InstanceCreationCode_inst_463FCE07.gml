@@ -1,0 +1,1 @@
+text_arr = ["THE MATRIX MIXUP LOUNGE IS CURRENTLY UNDERGOING RENOVATIONS.", "Please use the provided terminal to compute Gaois Field multiplication for the time being."]

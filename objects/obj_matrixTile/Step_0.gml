@@ -1,11 +1,3 @@
-//if on last step of puzzle, exit matrix tile so it can't be edited anymore
-/*
-if (global.puzzleSequence == 8) {
-	hover = -1;
-	exit;
-}
-*/
-
 //------------exit puzzle------------
 switch (global.puzzleSequence) {
 	case 2:
@@ -43,8 +35,11 @@ var min_index = 0;
 if (global.puzzleSequence == 2) {
 	min_index = 8;
 }
-else if (global.puzzleSequence == 3 || 7) {
+else if (global.puzzleSequence == 3 || global.puzzleSequence == 7) {
 	min_index = 12;
+}
+else if (global.puzzleSequence == 5) {
+	min_index = 15;
 }
 
 if (hover > max_index) hover = max_index;
@@ -141,17 +136,3 @@ else if (global.repopulate && global.puzzleSequence == 6) {
 else if (global.repopulate && global.puzzleSequence == 7) {
 	repopulateMatrix(correctSubArr);
 }
-/*
-else if (global.repopulate && global.puzzleSequence == 8) {
-	repopulateMatrix(correctFinalXorArr);
-}
-
-
-//for multiply matrix phase of puzzle
-if (global.initiateMultMatrix) {
-	for (var i = 0; i < array_length(correctMultArr); i++) {
-		blockArr[i].value = correctMultArr[i];
-	}
-	global.puzzleSequence = 5;
-}
-*/

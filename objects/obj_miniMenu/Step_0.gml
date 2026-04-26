@@ -1,3 +1,4 @@
+// if player wants to leave puzzle
 if (global.puzzleSequence == 1 && global.leavePuzzle) {
 	// destroy self
 	instance_destroy();

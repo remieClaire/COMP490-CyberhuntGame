@@ -101,15 +101,3 @@ else if (pOK) {
 	}
 }
 	
-	/*
-	var newLetter = letterString[gridX, gridY];
-	
-	// add letter to name (?)
-	if (newLetter != "OK") {
-		currentName += newLetter;
-	}
-	*/
-
-
-//show_debug_message("gridX: " + string(gridX))
-//show_debug_message("gridY: " + string(gridY))

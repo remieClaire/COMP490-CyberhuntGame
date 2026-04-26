@@ -122,6 +122,7 @@ function seqManager() {
 			}
 			break;
 		//------------rm 4------------
+		/*
 		case rm_lvl2_4:
 			if (global.puzzleSequence == 3) {
 				with (obj_rm4Control) {
@@ -131,6 +132,7 @@ function seqManager() {
 			else {
 				audio_play_sound(snd_invalidChoice, 10, false);
 			}
+		*/
 		//------------rm 5------------
 		case rm_lvl2_5:
 			if (global.puzzleSequence == 5) {

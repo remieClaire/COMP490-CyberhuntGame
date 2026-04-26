@@ -1,1 +1,1 @@
-text_arr = ["Launching puzzle..."]
+text_arr = ["Key detected... Refusal to terminate.", "Launching puzzle..."]
