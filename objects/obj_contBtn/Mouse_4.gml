@@ -7,3 +7,4 @@ if (global.levels_completed == 0) {
 	room_goto(global.target_room);
 }
 */
+}
