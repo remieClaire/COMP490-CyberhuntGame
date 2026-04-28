@@ -1,0 +1,1 @@
+text_arr = ["I can't leave yet. My curiosity won't let me.", "I want to keep exploring."]

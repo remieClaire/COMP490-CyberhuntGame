@@ -1,1 +1,1 @@
-text_arr = []
+text_arr = ["Wow. I love the view."]
