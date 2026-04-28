@@ -1,4 +1,4 @@
-if (global.levels_completed == 0) {
+//if (global.levels_completed == 0) {
 	//DELETE 
 	room_goto(rm_levelSelect);
 	//exit;	

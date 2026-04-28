@@ -69,6 +69,7 @@ else if (pOK) {
 	if (pEnter) {
 		if (currentName == answer) {
 			fadeToRoom(rm_lvl2NEW, 70, c_black);
+			
 		}
 	}
 }

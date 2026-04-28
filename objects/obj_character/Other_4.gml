@@ -18,14 +18,20 @@ for (var c = 0; c < array_length(forbidden_rooms); c++) {
 // Intro sequence: run function for cinematic
 if (room == rm_introScene_1) {
 	global.inCutScene = true;
+	
 	if (!instance_exists(obj_cutSceneParent)) {
 		instance_create_depth(0, 0, -999, obj_cutSceneIntro);
 		image_speed = 1;
 	}
+	
 }
 
-// Level 1: spawn dialogue at beginning
+// Level 1
 if (room == rm_lvl1) {
+	// set x & y coordinates of character upon spawning in
+	obj_character.x = 575;
+	obj_character.y = 224
+	
 	// spawns dialogue object 
 	with (instance_create_depth(0, 0, -999, obj_dialogue)) {
 		addText("How interesting...\nIt's a whole abandoned lab!");
@@ -36,8 +42,13 @@ if (room == rm_lvl1) {
 	}
 }
 
-// Level 2: spawn dialogue at beginning
+// Level 2
 else if (room == rm_lvl2NEW && global.puzzleSequence == 1) {
+	// set x & y coordinates of character upon spawning in
+	obj_character.x = 160;
+	obj_character.y = 366
+	
+	// spawn dialogue
 	with (instance_create_depth(0, 0, -999, obj_dialogue)) {
 		
 		addText("For the following puzzles, press shift to confirm an action. Press enter to submit your final answer.");
@@ -46,6 +57,7 @@ else if (room == rm_lvl2NEW && global.puzzleSequence == 1) {
 		addText("[Added instruction notes to inventory]");
 	}
 	
+	// add note to player's inventory
 	var _lvl2_info = ["*Puzzle Instructions", spr_noteHint, "Shift to confirm choice.\nEnter to submit final answer.\nQ to quit. (Note that your progress will not save)"];
 	AddItemToInventory(_lvl2_info);
 }
