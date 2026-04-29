@@ -291,6 +291,7 @@
     {"id":{"name":"spr_puzzleBackground","path":"sprites/spr_puzzleBackground/spr_puzzleBackground.yy",},},
     {"id":{"name":"spr_rightArrow","path":"sprites/spr_rightArrow/spr_rightArrow.yy",},},
     {"id":{"name":"spr_roundWindow","path":"sprites/spr_roundWindow/spr_roundWindow.yy",},},
+    {"id":{"name":"spr_settingsBackground","path":"sprites/spr_settingsBackground/spr_settingsBackground.yy",},},
     {"id":{"name":"spr_shelf1","path":"sprites/spr_shelf1/spr_shelf1.yy",},},
     {"id":{"name":"spr_shelf2","path":"sprites/spr_shelf2/spr_shelf2.yy",},},
     {"id":{"name":"spr_smallRoundPlant","path":"sprites/spr_smallRoundPlant/spr_smallRoundPlant.yy",},},
