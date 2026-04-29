@@ -1,1 +1,0 @@
-text_arr = ["Key detected... Initiating failsafe sequence...", "Launching puzzle..."]

@@ -21,7 +21,7 @@ global.levels_completed = 0;
 
 //------------level 2------------
 //keeps track of which stage the player is on in level 2
-global.puzzleSequence = 5;
+global.puzzleSequence = 1;
 global.leavePuzzle = false;
 
 //flags

@@ -1,3 +1,8 @@
+// set depth for level 2 so it appears on top of puzzles
+if (!global.leavePuzzle) {
+	depth = -1000;
+}
+
 var width = display_get_gui_width();
 var height = display_get_gui_height();
 

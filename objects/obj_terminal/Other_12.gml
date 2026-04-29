@@ -10,10 +10,17 @@ if (id == rm4Terminal && global.puzzleSequence == 4) {
 }
 // otherwise, run text interaction code as normal
 else {
+	
 	//object interaction text
-	initTextCallback(function() {
-		if (functional) {
+	if (functional && !locked) {
+		initTextCallback(function() {
 			seqManager();
-		}
-	});
+		});
+	}
+	else if (functional && locked) {
+		audio_play_sound(snd_invalidChoice, 10, false);
+	}
+	else {
+		initText();
+	}
 }
