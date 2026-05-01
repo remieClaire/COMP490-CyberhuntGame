@@ -8,6 +8,7 @@ var _right = keyboard_check(vk_right);
 var _left = keyboard_check(vk_left);
 var _up = keyboard_check(vk_up);
 var _down = keyboard_check(vk_down);
+footstep_sound_cooldown -= 1;
 
 //set movement
 var _xinput = (_right - _left)*my_speed; // 3 if going right, -3 if going left 
@@ -17,18 +18,38 @@ var _yinput = (_down - _up)*my_speed; //3 for down, -3 for up
 if (_right) {
 	direction = 0;
 	set_animation(animations, "right");	
+	if(footstep_sound_cooldown <= 0){
+		var inst = audio_play_sound(snd_Footstep, 0, false);
+		audio_sound_pitch(inst, random_range(0.9, 1.1));
+		footstep_sound_cooldown = 20;
+	}
 }
 else if (_up) {
 	direction = 90;
 	set_animation(animations, "up");
+	if(footstep_sound_cooldown <= 0){
+		var inst = audio_play_sound(snd_Footstep, 0, false);
+		audio_sound_pitch(inst, random_range(0.9, 1.1));
+		footstep_sound_cooldown = 20;
+	}
 }
 else if (_left) {
 	direction = 180;
 	set_animation(animations, "left");
+	if(footstep_sound_cooldown <= 0){
+		var inst = audio_play_sound(snd_Footstep, 0, false);
+		audio_sound_pitch(inst, random_range(0.9, 1.1));
+		footstep_sound_cooldown = 20;
+	}
 }
 else if (_down) {
 	direction = 270;
 	set_animation(animations, "down");
+	if(footstep_sound_cooldown <= 0){
+		var inst = audio_play_sound(snd_Footstep, 0, false);
+		audio_sound_pitch(inst, random_range(0.9, 1.1));
+		footstep_sound_cooldown = 20;
+	}
 }
 
 //------------animation------------
