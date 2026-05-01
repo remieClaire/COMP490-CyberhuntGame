@@ -23,3 +23,9 @@ set_animation(animations, "idledown");
 alarm[0] = room_speed * 30; // every 30 seconds
 
 //AddItemToInventory(["Note1", spr_noteHint, "random ahh words that i cant be bothered to explain right here"]);
+
+
+
+// Sfx for level 1 computer interaction
+sound_playing = false;
+sound_instance = -1;

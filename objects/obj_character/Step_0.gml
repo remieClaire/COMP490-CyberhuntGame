@@ -103,3 +103,21 @@ else {
 	x += _xinput;
 	y += _yinput;
 }
+
+
+
+// Sfx for level 1 computer interaction
+var near = (room == rm_lvl1 && point_distance(x, y, obj_wallLongDecor.x, obj_wallLongDecor.y) < 15);
+
+// Player enters the area → start sound ONCE
+if (near && !sound_playing) {
+    sound_playing = true;
+    sound_instance = audio_play_sound(snd_Computer_Interact, 0, true);
+}
+
+// Player leaves the area → stop sound ONCE
+if (!near && sound_playing) {
+    sound_playing = false;
+    audio_stop_sound(sound_instance);
+    sound_instance = -1;
+}
