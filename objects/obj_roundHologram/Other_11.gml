@@ -1,5 +1,6 @@
 // Inherit the parent event
 event_inherited();
+audio_play_sound(snd_Hologram_Interact, 0, false);
 
 //initText();
 
