@@ -26,7 +26,8 @@ if (room == rm_introScene_1) {
 
 // Level 1: spawn dialogue at beginning
 if (room == rm_lvl1) {
-	// spawns dialogue object 
+	// spawns dialogue object and door closing sounth
+	audio_play_sound(snd_Door_Close, 0, false);
 	with (instance_create_depth(0, 0, -999, obj_dialogue)) {
 		addText("How interesting...\nIt's a whole abandoned lab!");
 		addText("I can't help myself but to look around.");

@@ -210,6 +210,7 @@
     {"id":{"name":"s_testingScripts","path":"scripts/s_testingScripts/s_testingScripts.yy",},},
     {"id":{"name":"snd_Babylon","path":"sounds/snd_Babylon/snd_Babylon.yy",},},
     {"id":{"name":"snd_beeping","path":"sounds/snd_beeping/snd_beeping.yy",},},
+    {"id":{"name":"snd_Door_Close","path":"sounds/snd_Door_Close/snd_Door_Close.yy",},},
     {"id":{"name":"snd_Footstep","path":"sounds/snd_Footstep/snd_Footstep.yy",},},
     {"id":{"name":"snd_invalidChoice","path":"sounds/snd_invalidChoice/snd_invalidChoice.yy",},},
     {"id":{"name":"snd_Lightless_Dawn","path":"sounds/snd_Lightless_Dawn/snd_Lightless_Dawn.yy",},},
