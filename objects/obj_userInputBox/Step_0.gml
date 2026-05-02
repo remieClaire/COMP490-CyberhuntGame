@@ -68,7 +68,12 @@ else if (pDelete) {
 else if (pOK) {
 	if (pEnter) {
 		if (currentName == answer) {
+			audio_play_sound(snd_Correct_Answer, 0, false);
 			fadeToRoom(rm_lvl2NEW, 70, c_black);
+		}
+		else{
+			audio_play_sound(snd_Wrong_Answer, 0, false);
+			currentName = "";
 		}
 	}
 }
