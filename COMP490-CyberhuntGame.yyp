@@ -212,6 +212,7 @@
     {"id":{"name":"snd_beeping","path":"sounds/snd_beeping/snd_beeping.yy",},},
     {"id":{"name":"snd_Brain_Interact","path":"sounds/snd_Brain_Interact/snd_Brain_Interact.yy",},},
     {"id":{"name":"snd_Button_Press","path":"sounds/snd_Button_Press/snd_Button_Press.yy",},},
+    {"id":{"name":"snd_Chair_Interact","path":"sounds/snd_Chair_Interact/snd_Chair_Interact.yy",},},
     {"id":{"name":"snd_Computer_Interact","path":"sounds/snd_Computer_Interact/snd_Computer_Interact.yy",},},
     {"id":{"name":"snd_Correct_Answer","path":"sounds/snd_Correct_Answer/snd_Correct_Answer.yy",},},
     {"id":{"name":"snd_Door_Close","path":"sounds/snd_Door_Close/snd_Door_Close.yy",},},
