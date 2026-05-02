@@ -15,6 +15,9 @@ charCount = 1;
 //correct answer
 answer = "EARTH";
 
+//fix bug when 'A' automatically is added to currentName
+ready = false;
+
 //making the grid
 for (var yy = 0; yy < yLetters; yy++) {
 	for (var xx = 0; xx < xLetters; xx++) {

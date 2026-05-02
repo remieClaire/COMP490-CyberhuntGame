@@ -8,6 +8,15 @@ pDown = keyboard_check_pressed(vk_down);
 
 pOK = false;
 pDelete = keyboard_check_pressed(vk_backspace);
+
+//fix bug where 'A' is automatically added to currentName
+if (!ready) {
+    if (!keyboard_check(vk_enter)) {
+        ready = true;
+    }
+    exit; // skip input until Enter is released
+}
+
 pEnter = keyboard_check_pressed(vk_enter);
 
 // define OK key
