@@ -3,4 +3,5 @@ event_inherited();
 
 initText()
 
-audio_play_sound(snd_Chair_Interact, 0, false);
+var inst = audio_play_sound(snd_Chair_Interact, 0, false);
+audio_sound_pitch(inst, random_range(0.7, 1.3));
