@@ -26,6 +26,7 @@ if(point_in_rectangle(mx, my, width / 3, height / 3*2 - 40,  width / 3 + sprite_
 	draw_set_colour(c_white);
 	draw_set_alpha(1);
 	if (mouse_check_button_pressed(mb_left) && current_sprite != spr_alienChar1) {
+		audio_play_sound(snd_Button_Press, 0, false);
 		current_sprite = spr_alienChar1;
 	}
 }
@@ -36,6 +37,7 @@ if(point_in_rectangle(mx, my, width / 3*1.25, height / 3*2 - 40,  width / 3*1.25
 	draw_set_colour(c_white);
 	draw_set_alpha(1);
 	if (mouse_check_button_pressed(mb_left) && current_sprite != spr_alienChar2) {
+		audio_play_sound(snd_Button_Press, 0, false);
 		current_sprite = spr_alienChar2;
 	}
 }
@@ -46,6 +48,7 @@ if(point_in_rectangle(mx, my, width / 3*1.5, height / 3*2 - 40,  width / 3*1.5 +
 	draw_set_colour(c_white);
 	draw_set_alpha(1);
 	if (mouse_check_button_pressed(mb_left) && current_sprite != spr_alienChar3) {
+		audio_play_sound(snd_Button_Press, 0, false);
 		current_sprite = spr_alienChar3;
 	}
 }
@@ -56,6 +59,7 @@ if(point_in_rectangle(mx, my, width / 3*1.75, height / 3*2 - 40,  width / 3*1.75
 	draw_set_colour(c_white);
 	draw_set_alpha(1);
 	if (mouse_check_button_pressed(mb_left) && current_sprite != spr_alienChar4) {
+		audio_play_sound(snd_Button_Press, 0, false);
 		current_sprite = spr_alienChar4;
 	}
 }

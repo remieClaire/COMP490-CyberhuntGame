@@ -2,6 +2,7 @@
 /// @DnDVersion : 1
 /// @DnDHash : 792E531C
 event_inherited();
+audio_play_sound(snd_Button_Press, 0, false);
 
 /// @DnDAction : YoYo Games.Rooms.Go_To_Room
 /// @DnDVersion : 1

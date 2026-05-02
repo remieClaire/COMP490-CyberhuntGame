@@ -1,3 +1,4 @@
+audio_play_sound(snd_Button_Press, 0, false);
 if (global.levels_completed < 2) {
 	exit;	
 } else {

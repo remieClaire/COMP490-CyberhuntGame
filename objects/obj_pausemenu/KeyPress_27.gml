@@ -1,4 +1,5 @@
 // pause, inventory, puzzle, game
+audio_play_sound(snd_Pause_Menu, 0, false);
 if (global.item_currently_active == "inventory") {
 	obj_Inventory.visible = false;
 	my_speed = 2;

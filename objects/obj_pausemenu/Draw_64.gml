@@ -35,6 +35,7 @@ if (instance_exists(obj_pausemenu)) {
 		draw_set_colour(c_blue);
 		draw_rectangle(width/3, height/3 - 100, (width/3)*2, height/3, false);
 		if (mouse_check_button_pressed(mb_left) && visible == true) {
+			audio_play_sound(snd_Button_Press, 0, false);
 			visible = false;
 			obj_character.my_speed = 1;
 			global.item_currently_active = "game";
@@ -46,6 +47,7 @@ if (instance_exists(obj_pausemenu)) {
 		draw_set_colour(c_blue);
 		draw_rectangle(width/3, height/2 - 50, (width/3)*2, height/2 + 50, false);
 		if (mouse_check_button_pressed(mb_left) && visible == true) {
+			audio_play_sound(snd_Button_Press, 0, false);
 			draw_set_colour(c_white);
 			draw_set_alpha(1);
 			global.last_room = room;
@@ -56,6 +58,7 @@ if (instance_exists(obj_pausemenu)) {
 		draw_set_colour(c_blue);
 		draw_rectangle(width/3, (height/3)*2, (width/3)*2, (height/3)*2 + 100, false);
 		if (mouse_check_button_pressed(mb_left) && visible == true) {
+			audio_play_sound(snd_Button_Press, 0, false);
 			draw_set_colour(c_white);
 			draw_set_alpha(1);
 			global.last_room = room;
