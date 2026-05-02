@@ -223,6 +223,7 @@
     {"id":{"name":"snd_Mesmerizing_Galaxy_Loop","path":"sounds/snd_Mesmerizing_Galaxy_Loop/snd_Mesmerizing_Galaxy_Loop.yy",},},
     {"id":{"name":"snd_Note","path":"sounds/snd_Note/snd_Note.yy",},},
     {"id":{"name":"snd_Pause_Menu","path":"sounds/snd_Pause_Menu/snd_Pause_Menu.yy",},},
+    {"id":{"name":"snd_Plant_Interact","path":"sounds/snd_Plant_Interact/snd_Plant_Interact.yy",},},
     {"id":{"name":"snd_Puzzle_Complete","path":"sounds/snd_Puzzle_Complete/snd_Puzzle_Complete.yy",},},
     {"id":{"name":"snd_Spacial_Harvest","path":"sounds/snd_Spacial_Harvest/snd_Spacial_Harvest.yy",},},
     {"id":{"name":"snd_walkieTalkieCut","path":"sounds/snd_walkieTalkieCut/snd_walkieTalkieCut.yy",},},
