@@ -19,6 +19,5 @@ switch (global.puzzleSequence) {
 
 if (destroy && global.leavePuzzle) {
 	// destroy self
-	show_debug_message("aes1keys")
 	instance_destroy();
 }

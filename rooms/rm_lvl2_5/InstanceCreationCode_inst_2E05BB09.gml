@@ -1,1 +1,1 @@
-text_arr = ["It's been shredded to piecces."]
+text_arr = ["It's been shredded to pieces."]

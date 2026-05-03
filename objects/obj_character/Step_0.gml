@@ -11,8 +11,8 @@ var _down = keyboard_check(vk_down);
 footstep_sound_cooldown -= 1;
 
 //set movement
-var _xinput = (_right - _left)*my_speed; // 3 if going right, -3 if going left 
-var _yinput = (_down - _up)*my_speed; //3 for down, -3 for up
+var _xinput = (_right - _left)*my_speed; // 1 if going right, -1 if going left 
+var _yinput = (_down - _up)*my_speed; //1 for down, -1 for up
 
 //sets direction & sets corresponding movement animation
 if (_right) {

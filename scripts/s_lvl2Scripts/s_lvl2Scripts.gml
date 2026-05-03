@@ -95,9 +95,7 @@ function seqManager() {
 					event_user(0);
 				}
 			}
-			else {
-				audio_play_sound(snd_invalidChoice, 10, false);
-			}
+			else {}
 			break;
 		//------------rm 2------------
 		case rm_lvl2_2:
@@ -106,9 +104,7 @@ function seqManager() {
 					event_user(0);
 				}
 			}
-			else {
-				audio_play_sound(snd_invalidChoice, 10, false);
-			}
+			else {}
 			break;
 		//------------rm 3------------
 		case rm_lvl2_3:
@@ -117,32 +113,15 @@ function seqManager() {
 					event_user(0);		
 				}
 			}
-			else {
-				audio_play_sound(snd_invalidChoice, 10, false);
-			}
+			else {}
 			break;
-		//------------rm 4------------
-		/*
-		case rm_lvl2_4:
-			if (global.puzzleSequence == 3) {
-				with (obj_rm4Control) {
-					event_user(0);		
-				}
-			}
-			else {
-				audio_play_sound(snd_invalidChoice, 10, false);
-			}
-		*/
-		//------------rm 5------------
 		case rm_lvl2_5:
 			if (global.puzzleSequence == 5) {
 				with (obj_rm5Control) {
 					event_user(0);		
 				}
 			}
-			else {
-				audio_play_sound(snd_invalidChoice, 10, false);
-			}
+			else {}
 			break;
 		//------------rm 6------------
 		case rm_lvl2_6:
@@ -151,9 +130,7 @@ function seqManager() {
 					event_user(0);		
 				}
 			}
-			else {
-				audio_play_sound(snd_invalidChoice, 10, false);
-			}
+			else {}
 			break;
 		//------------rm 7------------
 		case rm_lvl2_7:
@@ -162,9 +139,7 @@ function seqManager() {
 					event_user(0);		
 				}
 			}
-			else {
-				audio_play_sound(snd_invalidChoice, 10, false);
-			}
+			else {}
 			break;
 		//------------rm 8------------
 		case rm_lvl2_8:
@@ -173,9 +148,7 @@ function seqManager() {
 					event_user(0);		
 				}
 			}
-			else {
-				audio_play_sound(snd_invalidChoice, 10, false);
-			}
+			else {}
 			break;
 	}
 }

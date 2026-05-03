@@ -14,11 +14,25 @@ if (room == rm_lvl2_8) {
 			if (!alphabet_notes[n].read) return;
 		}
 		
-		with (instance_create_depth(x, y, -999, obj_dialogue)) {
-			addText("Better write these down, they seem important.");
-			addText("[Added note to inventory]");
+		var _note_received = false;
+		
+		// check to make sure note is not in inventory already
+		for (var i = 0; i < ds_grid_width(global.AllItems); i++) {
+			if (global.AllItems[# i, Item.title] == "ASCII to text") {
+				 _note_received = true;
+				break;
+			}
 		}
+		
+		//if note is not already in player's inventory
+		if (!_note_received) {
+			with (instance_create_depth(x, y, -999, obj_dialogue)) {
+				addText("Better write these down, they seem important.");
+				addText("[Added note to inventory]");
+			}
+			//add the note to inventory
 			AddItemToInventory(lvl2_part8_note);
-			
+		}
+
 	});
 }

@@ -18,13 +18,15 @@ for (var c = 0; c < array_length(forbidden_rooms); c++) {
 // Intro sequence: run function for cinematic
 if (room == rm_introScene_1) {
 	global.inCutScene = true;
+	
 	if (!instance_exists(obj_cutSceneParent)) {
 		instance_create_depth(0, 0, -999, obj_cutSceneIntro);
 		image_speed = 1;
 	}
+	
 }
 
-// Level 1: spawn dialogue at beginning
+// Level 1
 if (room == rm_lvl1) {
 	// spawns dialogue object and door closing sounth
 	audio_play_sound(snd_Door_Close, 0, false);
@@ -37,16 +39,35 @@ if (room == rm_lvl1) {
 	}
 }
 
-// Level 2: spawn dialogue at beginning
+// Level 2
 else if (room == rm_lvl2NEW && global.puzzleSequence == 1) {
-	with (instance_create_depth(0, 0, -999, obj_dialogue)) {
-		
-		addText("For the following puzzles, press shift to confirm an action. Press enter to submit your final answer.");
-		addText("Press Q to quit. However, your progress will not be saved!");
-		addText("*These instructions will also be available as a note in your inventory.");
-		addText("[Added instruction notes to inventory]");
+	// set x & y coordinates of character upon spawning in
+	obj_character.x = 160;
+	obj_character.y = 366;
+	
+	var _claimed = false;
+	// check to make sure note is not in inventory already
+	for (var i = 0; i < ds_grid_width(global.AllItems); i++) {
+		if (global.AllItems[# i, Item.title] == "*Puzzle Instructions") {
+			_claimed = true;
+			break;
+		}
 	}
 	
-	var _lvl2_info = ["*Puzzle Instructions", spr_noteHint, "Shift to confirm choice.\nEnter to submit final answer.\nQ to quit. (Note that your progress will not save)"];
-	AddItemToInventory(_lvl2_info);
+	if (!_claimed) {
+		// spawn dialogue
+		with (instance_create_depth(0, 0, -999, obj_dialogue)) {
+		
+			addText("For the following puzzles, press shift to confirm an action. Press enter to submit your final answer.");
+			addText("Press Q to quit. However, your progress will not be saved!");
+			addText("*These instructions will also be available as a note in your inventory.");
+			addText("[Added instruction notes to inventory]");
+		}
+	
+		// add note to player's inventory
+		var _lvl2_info = ["*Puzzle Instructions", spr_noteHint, "Shift to confirm choice.\nEnter to submit final answer.\nQ to quit. (Note that your progress will not save)"];
+		AddItemToInventory(_lvl2_info);
+	
+	}
+	
 }

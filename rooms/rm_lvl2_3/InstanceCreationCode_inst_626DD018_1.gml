@@ -1,1 +1,1 @@
-text_arr = ["Instructions:", "XOR the tenths digit of the key to the tenths digit in the matrix, and do the same for the ones place.", "More importantly, the keys are to be read left to right."]
+text_arr = ["Instructions:", "XOR the tenths digit of the key to the tenths digit in the matrix, and so on.", "More importantly, the keys are to be read left to right."]

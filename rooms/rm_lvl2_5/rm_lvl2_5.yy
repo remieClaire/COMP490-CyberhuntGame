@@ -6,7 +6,7 @@
   "inheritCreationOrder":false,
   "inheritLayers":false,
   "instanceCreationOrder":[
-    {"name":"inst_AC9DCC1","path":"rooms/rm_lvl2_5/rm_lvl2_5.yy",},
+    {"name":"rm5Terminal","path":"rooms/rm_lvl2_5/rm_lvl2_5.yy",},
     {"name":"inst_1CEC2544","path":"rooms/rm_lvl2_5/rm_lvl2_5.yy",},
     {"name":"inst_36B6999D","path":"rooms/rm_lvl2_5/rm_lvl2_5.yy",},
     {"name":"inst_2E05BB09","path":"rooms/rm_lvl2_5/rm_lvl2_5.yy",},
@@ -22,7 +22,7 @@
   "isDnd":false,
   "layers":[
     {"$GMRInstanceLayer":"","%Name":"Instances","depth":0,"effectEnabled":true,"effectType":null,"gridX":4,"gridY":4,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
-        {"$GMRInstance":"v4","%Name":"inst_AC9DCC1","colour":4294967295,"frozen":false,"hasCreationCode":true,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_AC9DCC1","objectId":{"name":"obj_terminal","path":"objects/obj_terminal/obj_terminal.yy",},"properties":[
+        {"$GMRInstance":"v4","%Name":"rm5Terminal","colour":4294967295,"frozen":false,"hasCreationCode":true,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"rm5Terminal","objectId":{"name":"obj_terminal","path":"objects/obj_terminal/obj_terminal.yy",},"properties":[
             {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_terminal","path":"objects/obj_terminal/obj_terminal.yy",},"propertyId":{"name":"functional","path":"objects/obj_terminal/obj_terminal.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"True",},
           ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":732.0,"y":444.0,},
         {"$GMRInstance":"v4","%Name":"inst_1CEC2544","colour":4294967295,"frozen":false,"hasCreationCode":true,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_1CEC2544","objectId":{"name":"obj_brain_2","path":"objects/obj_brain_2/obj_brain_2.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":728.0,"y":472.0,},

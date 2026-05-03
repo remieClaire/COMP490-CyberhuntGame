@@ -1,0 +1,1 @@
+text_arr = ["Initiating failsafe sequence...", "Launching puzzle..."]
