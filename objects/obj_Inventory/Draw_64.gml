@@ -1,7 +1,3 @@
-// set depth for level 2 so it appears on top of puzzles
-if (!global.leavePuzzle) {
-	depth = -1000;
-}
 
 draw_set_colour(c_black);
 draw_set_alpha(.75);
