@@ -4,6 +4,15 @@
 event_inherited();
 audio_play_sound(snd_Button_Press, 0, false);
 
+if (obj_newgameconfirmation.visible == true) {
+	exit;	
+}
+
+if (file_exists("save.json")) {
+	obj_newgameconfirmation.visible = true;
+	exit;
+}
+
 /// @DnDAction : YoYo Games.Rooms.Go_To_Room
 /// @DnDVersion : 1
 /// @DnDHash : 5A26D227
