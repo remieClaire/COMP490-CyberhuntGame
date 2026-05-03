@@ -19,6 +19,6 @@ animations =
 set_animation(animations, "idledown");
 
 
-alarm[0] = room_speed * 30; // every 30 seconds
+alarm[0] = room_speed * 15; // every 15 seconds
 
 AddItemToInventory(["Note1", spr_noteHint, "random ahh words that i cant be bothered to explain right here"]);

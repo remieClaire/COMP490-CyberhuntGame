@@ -1,4 +1,3 @@
-/*
 function s_loadGame(){
 	if (!file_exists("save.json")) {
         return false;
@@ -28,4 +27,3 @@ function s_loadGame(){
 
     return true;
 }
-*/
