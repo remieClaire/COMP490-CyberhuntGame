@@ -2,6 +2,8 @@ if (instance_exists(obj_dialogue)) exit; //if dialogue box is present, stop char
 if (instance_exists(obj_miniMenu)) exit;
 if (instance_exists(obj_userInputBox)) exit;
 
+alarm[0] = 30; // every 30 seconds
+
 //------------movement------------
 // uses arrow keys to move
 var _right = keyboard_check(vk_right);
@@ -103,7 +105,6 @@ else {
 	x += _xinput;
 	y += _yinput;
 }
-
 
 
 // Sfx for level 1 computer interaction

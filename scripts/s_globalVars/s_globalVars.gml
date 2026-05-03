@@ -18,6 +18,8 @@ global.last_room = rm_mainMenu;
 global.volume_level = 1;
 //keeps track of levels the character has completed
 global.levels_completed = 0;
+//keep track if intro is finished or not
+global.introDone = false;
 
 //------------level 2------------
 //keeps track of which stage the player is on in level 2

@@ -28,6 +28,10 @@ if (room == rm_introScene_1) {
 
 // Level 1
 if (room == rm_lvl1) {
+	// set character's coordinates when entering
+	obj_character.x = 568;
+	obj_character.y = 216;
+	
 	// spawns dialogue object and door closing sounth
 	audio_play_sound(snd_Door_Close, 0, false);
 	with (instance_create_depth(0, 0, -999, obj_dialogue)) {
