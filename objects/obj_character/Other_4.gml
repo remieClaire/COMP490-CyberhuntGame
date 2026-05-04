@@ -1,9 +1,35 @@
 global.item_currently_active = "game"; 
 sprite_index = global.currentcharasprite;
 
-if (s_loadGame()) {
+level2_inner_rooms = [rm_lvl2NEW, rm_lvl2_1, rm_lvl2_2, rm_lvl2_3, rm_lvl2_4, rm_lvl2_5, rm_lvl2_6, rm_lvl2_7, rm_lvl2_8];
+var _inner_rooms = false;
+
+// prevent respawning from happening if in any of the level 2 inner rooms
+for (var c = 0; c < array_length(level2_inner_rooms); c++) {
+	if (room == level2_inner_rooms[c]) {
+		_inner_rooms = true;
+	}
+}
+
+// overwrite position if character is in any of the inner rooms
+// if not in the inner rooms, load character position like normal
+if (!(_inner_rooms) && s_loadGame()) {
+	show_debug_message("not in inner rooms, loading data")
 	obj_character.x = global.save_data.player_x;
 	obj_character.y = global.save_data.player_y;
+}
+// otherwise, set position to entrance maker
+else if (_inner_rooms) {
+	show_debug_message("setting position...")
+	if (room == rm_lvl2NEW) {
+		obj_character.x = asset_get_index("entr" + string(global.puzzleSequence) + "_main").x;
+		obj_character.y = asset_get_index("entr" + string(global.puzzleSequence) + "_main").y;
+	}
+	else {
+		obj_character.x = obj_entrance.x;
+		obj_character.y = obj_entrance.y;
+	}
+	
 }
 
 forbidden_rooms = [rm_mainMenu, rm_settings, rm_charSelect, rm_levelSelect];
