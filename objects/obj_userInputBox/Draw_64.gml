@@ -3,9 +3,9 @@ draw_set_font(f_pauseSilver);
 fontSize = font_get_size(f_pauseSilver);
 buffer = fontSize;
 
-startX = x - sprite_get_width(spr_inputSelect)/2;
-startY = y;
 
+startX = display_get_gui_width() / 2 - sprite_get_width(spr_inputSelect) / 2;
+startY = display_get_gui_height() / 2;
 
 var _charCount = 1;
 
@@ -27,17 +27,21 @@ for (var yy = 0; yy < yLetters; yy++) {
 		var letter = a_letters[xx, yy];
 		
 		// draw the letter
-		var drawX = startX + (xx * (fontSize * 2)) + 32;
-		var drawY = startY + (yy * (fontSize + buffer));
+		
+		var drawX = startX + (xx * (fontSize * 2)) - (sprite_get_width(spr_userInputBox)*2.5);
+		var drawY = startY + (yy * (fontSize + buffer)) - (sprite_get_height(spr_userInputBox)*2);
+
+
 		
 		// align letters
 		draw_set_halign(fa_left);
 		draw_set_valign(fa_top);
 		draw_text(drawX, drawY, letter);
 		
+		
 		var cursorX = drawX - 48;
 		var cursorY = drawY - 8;
-		
+	
 		// display cursor
 		if (xx == gridX && yy == gridY) draw_sprite_ext(spr_inputSelect, -1, cursorX, cursorY, 3, 3, 0, c_white, 1);
 		
