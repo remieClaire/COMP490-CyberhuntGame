@@ -14,13 +14,13 @@ for (var c = 0; c < array_length(level2_inner_rooms); c++) {
 // overwrite position if character is in any of the inner rooms
 // if not in the inner rooms, load character position like normal
 if (!(_inner_rooms) && s_loadGame()) {
-	show_debug_message("not in inner rooms, loading data")
+	
 	obj_character.x = global.save_data.player_x;
 	obj_character.y = global.save_data.player_y;
 }
 // otherwise, set position to entrance maker
 else if (_inner_rooms) {
-	show_debug_message("setting position...")
+	
 	if (room == rm_lvl2NEW) {
 		obj_character.x = asset_get_index("entr" + string(global.puzzleSequence) + "_main").x;
 		obj_character.y = asset_get_index("entr" + string(global.puzzleSequence) + "_main").y;
@@ -94,9 +94,12 @@ else if (room == rm_lvl2NEW && global.puzzleSequence == 1) {
 			addText("[Added instruction notes to inventory]");
 		}
 	
+		
 		// add note to player's inventory
 		var _lvl2_info = ["*Puzzle Instructions", spr_noteHint, "Shift to confirm choice.\nEnter to submit final answer.\nQ to quit. (Note that your progress will not save)"];
 		AddItemToInventory(_lvl2_info);
+		
+		
 	
 	}
 	

@@ -32,6 +32,8 @@ if (room == rm_lvl2_8) {
 			}
 			//add the note to inventory
 			AddItemToInventory(lvl2_part8_note);
+			
+	
 		}
 
 	});

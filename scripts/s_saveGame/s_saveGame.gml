@@ -18,5 +18,4 @@ function s_saveGame() {
     file_text_write_string(file, json);
     file_text_close(file);
 
-    show_debug_message("Saved: " + json);
 }
