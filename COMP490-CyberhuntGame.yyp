@@ -52,7 +52,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.14.4.222",
+    "IDEVersion":"2024.14.4.221",
   },
   "name":"COMP490-CyberhuntGame",
   "resources":[
@@ -202,6 +202,7 @@
     {"id":{"name":"s_grid_to_array","path":"scripts/s_grid_to_array/s_grid_to_array.yy",},},
     {"id":{"name":"s_loadGame","path":"scripts/s_loadGame/s_loadGame.yy",},},
     {"id":{"name":"s_lvl2Scripts","path":"scripts/s_lvl2Scripts/s_lvl2Scripts.yy",},},
+    {"id":{"name":"s_ManageCharacter","path":"scripts/s_ManageCharacter/s_ManageCharacter.yy",},},
     {"id":{"name":"s_saveGame","path":"scripts/s_saveGame/s_saveGame.yy",},},
     {"id":{"name":"s_testingScripts","path":"scripts/s_testingScripts/s_testingScripts.yy",},},
     {"id":{"name":"snd_Aquarium_Interact","path":"sounds/snd_Aquarium_Interact/snd_Aquarium_Interact.yy",},},

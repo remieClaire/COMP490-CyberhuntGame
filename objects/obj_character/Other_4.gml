@@ -104,3 +104,10 @@ else if (room == rm_lvl2NEW && global.puzzleSequence == 1) {
 	}
 	
 }
+
+else if (room == rm_lvl3) {
+	obj_character.x = 568;
+	obj_character.y = 216;
+}
+
+show_debug_message("alarm on room start: " + string(alarm[0]));
