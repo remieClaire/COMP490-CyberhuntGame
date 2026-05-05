@@ -1,6 +1,8 @@
 correct = checkAnswer(correctSubArr);
 	
 if (correct) {
+	
+	audio_play_sound(snd_Correct_Answer, 0, false);
 		
 	global.puzzleSequence = 7;
 	correct = false;
@@ -13,4 +15,7 @@ if (correct) {
 	
 	resetCamera();
 	playerView();
+}
+else {
+	audio_play_sound(snd_Wrong_Answer, 0, false);
 }

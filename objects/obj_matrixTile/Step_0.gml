@@ -117,10 +117,12 @@ if (submit && filled) {
 			break;
 	}
 }
+/*
 else if (submit && !filled) {
 	// play sound
 	audio_play_sound(snd_invalidChoice, 10, false);
 }
+*/
 
 //------------misc. cases------------
 //for repopulating matrices if player picks up from the middle of a sequence

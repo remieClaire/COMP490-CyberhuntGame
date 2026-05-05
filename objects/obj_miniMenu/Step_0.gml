@@ -51,11 +51,13 @@ if (keyboard_check_pressed(vk_enter)) {
 	if (correct) {
 		description = "Correct!"
 		alarm[0] = 100;
+		audio_play_sound(snd_Correct_Answer, 0, false);
 		global.puzzleSequence = 2;
 
 	}
 	// if incorrect but not keypress from spawning puzzle
 	else if (!correct && !spawn) {
+		audio_play_sound(snd_Wrong_Answer, 0, false);
 		description = "Try again"
 		alarm[1] = 100;
 	}

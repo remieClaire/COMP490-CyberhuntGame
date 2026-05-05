@@ -2,6 +2,8 @@ correct = checkAnswer(correctShiftArr);
 	
 if (correct) {
 	
+	audio_play_sound(snd_Correct_Answer, 0, false);
+	
 	global.puzzleSequence = 6;
 	correct = false;
 	resetBoolean(); //reset matrix state
@@ -12,4 +14,7 @@ if (correct) {
 	
 	resetCamera();
 	playerView();
+}
+else {
+	audio_play_sound(snd_Wrong_Answer, 0, false);
 }
