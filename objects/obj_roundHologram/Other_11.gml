@@ -17,3 +17,4 @@ x_input = _cam_x + (_cam_w / 2) - 78;
 y_input = _cam_y + (_cam_h / 2) - 74;
 
 instance_create_depth(x_input, y_input, -999, obj_userInputBox);
+

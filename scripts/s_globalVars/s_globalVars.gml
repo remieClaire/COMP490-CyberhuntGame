@@ -20,6 +20,9 @@ global.volume_level = 1;
 global.levels_completed = 0;
 //keep track if intro is finished or not
 global.introDone = false;
+//keeps track of character position
+global.player_x = 0;
+global.player_y = 0;
 
 //------------level 2------------
 //keeps track of which stage the player is on in level 2

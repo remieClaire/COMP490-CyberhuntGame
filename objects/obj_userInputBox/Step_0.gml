@@ -78,6 +78,7 @@ else if (pOK) {
 	if (pEnter) {
 		if (currentName == answer) {
 			audio_play_sound(snd_Correct_Answer, 0, false);
+			global.levels_completed = 1;
 			fadeToRoom(rm_lvl2NEW, 70, c_black);
 			
 		}
