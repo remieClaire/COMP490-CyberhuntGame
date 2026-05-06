@@ -96,6 +96,8 @@ else if (pDelete) {
 else if (pOK) {
 	if (pEnter) {
 		if (currentName == answer) {
+			audio_play_sound(snd_Correct_Answer, 0, false);
+			global.levels_completed = 2;
 			fadeToRoom(rm_lvl3, 70, c_black);
 		}
 	}
