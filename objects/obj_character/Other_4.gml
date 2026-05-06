@@ -72,9 +72,10 @@ if (room == rm_lvl1) {
 // Level 2
 else if (room == rm_lvl2NEW && global.puzzleSequence == 1) {
 	// set x & y coordinates of character upon spawning in
-	obj_character.x = 160;
-	obj_character.y = 366;
-	
+	if (!s_loadGame()) {
+		obj_character.x = 160;
+		obj_character.y = 366;
+	}
 	var _claimed = false;
 	// check to make sure note is not in inventory already
 	for (var i = 0; i < ds_grid_width(global.AllItems); i++) {
