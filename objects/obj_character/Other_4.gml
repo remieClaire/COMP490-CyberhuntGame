@@ -22,8 +22,8 @@ if (!(_inner_rooms) && s_loadGame()) {
 else if (_inner_rooms) {
 	
 	if (room == rm_lvl2NEW) {
-		obj_character.x = asset_get_index("entr" + string(global.puzzleSequence) + "_main").x;
-		obj_character.y = asset_get_index("entr" + string(global.puzzleSequence) + "_main").y;
+		obj_character.x = 159;
+		obj_character.y = 368;
 	}
 	else {
 		obj_character.x = obj_entrance.x;
@@ -110,5 +110,3 @@ else if (room == rm_lvl3) {
 	obj_character.x = 568;
 	obj_character.y = 216;
 }
-
-show_debug_message("alarm on room start: " + string(alarm[0]));
