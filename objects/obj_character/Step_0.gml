@@ -2,7 +2,7 @@ if (instance_exists(obj_dialogue)) exit; //if dialogue box is present, stop char
 if (instance_exists(obj_miniMenu)) exit;
 if (instance_exists(obj_userInputBox)) exit;
 
-alarm[0] = 30; // every 30 seconds
+//alarm[0] = 30; // every 30 seconds
 
 //------------movement------------
 // uses arrow keys to move
@@ -122,3 +122,5 @@ if (!near && sound_playing) {
     audio_stop_sound(sound_instance);
     sound_instance = -1;
 }
+
+s_saveGame();
