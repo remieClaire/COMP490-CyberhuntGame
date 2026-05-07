@@ -9,3 +9,7 @@ decrypt_answer = "adleman"
 visible = false;
 
 depth = -10;
+
+response = "";
+keyboard_string = "";
+
