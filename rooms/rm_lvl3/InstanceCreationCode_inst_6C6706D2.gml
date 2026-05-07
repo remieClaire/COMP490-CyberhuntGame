@@ -1,0 +1,1 @@
+text_arr = ["perhaps these objects and their quantities are important"]
