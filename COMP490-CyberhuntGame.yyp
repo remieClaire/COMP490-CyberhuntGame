@@ -259,6 +259,7 @@
     {"id":{"name":"spr_cabinetFront","path":"sprites/spr_cabinetFront/spr_cabinetFront.yy",},},
     {"id":{"name":"spr_cabinetSide","path":"sprites/spr_cabinetSide/spr_cabinetSide.yy",},},
     {"id":{"name":"spr_chair_3","path":"sprites/spr_chair_3/spr_chair_3.yy",},},
+    {"id":{"name":"spr_clipboard","path":"sprites/spr_clipboard/spr_clipboard.yy",},},
     {"id":{"name":"spr_column1","path":"sprites/spr_column1/spr_column1.yy",},},
     {"id":{"name":"spr_column2","path":"sprites/spr_column2/spr_column2.yy",},},
     {"id":{"name":"spr_column3","path":"sprites/spr_column3/spr_column3.yy",},},
