@@ -5,9 +5,9 @@ if (obj_newgameconfirmation.visible == true) {
 }
 
 if (global.levels_completed == 0) {
-	//room_goto(rm_lvl1);
+	room_goto(rm_lvl1);
 
 } else {
-	//room_goto(global.target_room);
+	room_goto(global.target_room);
 }
-room_goto(rm_lvl3);
+//room_goto(rm_lvl3);

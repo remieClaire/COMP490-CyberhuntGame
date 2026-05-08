@@ -106,7 +106,7 @@ else {
 	y += _yinput;
 }
 
-
+sound_playing = false;
 // Sfx for level 1 computer interaction
 var near = (room == rm_lvl1 && point_distance(x, y, obj_wallLongDecor.x, obj_wallLongDecor.y) < 15);
 
