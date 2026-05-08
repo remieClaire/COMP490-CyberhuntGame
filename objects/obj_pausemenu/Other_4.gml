@@ -5,3 +5,4 @@ s_loadGame();
 if (!instance_exists(obj_character)) {
 	s_ManageCharacter();
 }
+

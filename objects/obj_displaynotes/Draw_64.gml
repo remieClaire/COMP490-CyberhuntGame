@@ -19,7 +19,7 @@ draw_text_ext(width / 6,
 draw_text_ext(width / 6, 
 			  height / 2,
 			  current_text,
-			  25, 
+			  35, 
 			  textWidth + 5);
 			  
 if (obj_Inventory.visible == false) {
