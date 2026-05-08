@@ -1,4 +1,3 @@
-/*
 function s_saveGame() {
     var save_data = {
         player_x: obj_character.x,
@@ -19,6 +18,4 @@ function s_saveGame() {
     file_text_write_string(file, json);
     file_text_close(file);
 
-    show_debug_message("Saved: " + json);
 }
-*/

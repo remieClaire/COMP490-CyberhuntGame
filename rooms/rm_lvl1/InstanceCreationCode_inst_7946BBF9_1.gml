@@ -1,0 +1,1 @@
+text_arr = ["I have bright colors and wave on a pole,", "Representing a land is my only goal.", "I’m made of cloth and hang in the air,", "You’ll find me waiting almost everywhere.", "Look at the walls and search the space,", "How many of me are in this place?"]

@@ -343,8 +343,12 @@ if (currentState == cutSceneStates.Active) {
 			charDialogue(["Alright, I'm going in."])
 			break;
 		case 100: // fade to black
+			// reset so anims work 
 			global.inCutScene = false;
-			fadeToRoom(rm_lvl1, 60, c_black);
+			obj_character.image_speed = 1;
+			
+			global.introDone = true;
+			fadeToRoom(rm_lvl1, 70, c_black);
 			break;
 	}
 }

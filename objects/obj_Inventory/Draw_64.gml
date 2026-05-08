@@ -1,3 +1,4 @@
+
 draw_set_colour(c_black);
 draw_set_alpha(.75);
 draw_rectangle(0, 0, room_width, room_height, false);
@@ -59,6 +60,8 @@ for (var i = 0; i < ds_grid_width(global.AllItems); i++) {
 		
 		// and if clicked
 		if (mouse_check_button_pressed(mb_left) && visible == true) {
+			// add note sound effect
+			audio_play_sound(snd_Note, 0, false);
 			// set note content visibility to true
 			obj_displaynotes.visible = true;
 			obj_displaynotes.current_title = global.AllItems[# i, Item.title];

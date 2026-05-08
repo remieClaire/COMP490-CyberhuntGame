@@ -1,0 +1,1 @@
+text_arr = ["L...Lau...", "Launc...puz..le..."]

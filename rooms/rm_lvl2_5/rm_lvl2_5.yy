@@ -6,7 +6,7 @@
   "inheritCreationOrder":false,
   "inheritLayers":false,
   "instanceCreationOrder":[
-    {"name":"inst_AC9DCC1","path":"rooms/rm_lvl2_5/rm_lvl2_5.yy",},
+    {"name":"rm5Terminal","path":"rooms/rm_lvl2_5/rm_lvl2_5.yy",},
     {"name":"inst_1CEC2544","path":"rooms/rm_lvl2_5/rm_lvl2_5.yy",},
     {"name":"inst_36B6999D","path":"rooms/rm_lvl2_5/rm_lvl2_5.yy",},
     {"name":"inst_2E05BB09","path":"rooms/rm_lvl2_5/rm_lvl2_5.yy",},
@@ -18,11 +18,14 @@
     {"name":"inst_1F4455AB","path":"rooms/rm_lvl2_5/rm_lvl2_5.yy",},
     {"name":"inst_2A401C42","path":"rooms/rm_lvl2_5/rm_lvl2_5.yy",},
     {"name":"entr_5","path":"rooms/rm_lvl2_5/rm_lvl2_5.yy",},
+    {"name":"inst_530F8DAF","path":"rooms/rm_lvl2_5/rm_lvl2_5.yy",},
+    {"name":"inst_1318E352","path":"rooms/rm_lvl2_5/rm_lvl2_5.yy",},
+    {"name":"inst_1332B57C","path":"rooms/rm_lvl2_5/rm_lvl2_5.yy",},
   ],
   "isDnd":false,
   "layers":[
     {"$GMRInstanceLayer":"","%Name":"Instances","depth":0,"effectEnabled":true,"effectType":null,"gridX":4,"gridY":4,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
-        {"$GMRInstance":"v4","%Name":"inst_AC9DCC1","colour":4294967295,"frozen":false,"hasCreationCode":true,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_AC9DCC1","objectId":{"name":"obj_terminal","path":"objects/obj_terminal/obj_terminal.yy",},"properties":[
+        {"$GMRInstance":"v4","%Name":"rm5Terminal","colour":4294967295,"frozen":false,"hasCreationCode":true,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"rm5Terminal","objectId":{"name":"obj_terminal","path":"objects/obj_terminal/obj_terminal.yy",},"properties":[
             {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_terminal","path":"objects/obj_terminal/obj_terminal.yy",},"propertyId":{"name":"functional","path":"objects/obj_terminal/obj_terminal.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"True",},
           ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":732.0,"y":444.0,},
         {"$GMRInstance":"v4","%Name":"inst_1CEC2544","colour":4294967295,"frozen":false,"hasCreationCode":true,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_1CEC2544","objectId":{"name":"obj_brain_2","path":"objects/obj_brain_2/obj_brain_2.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":728.0,"y":472.0,},
@@ -32,6 +35,9 @@
         {"$GMRInstance":"v4","%Name":"inst_2E05BB09","colour":4294967295,"frozen":false,"hasCreationCode":true,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_2E05BB09","objectId":{"name":"obj_wallLongDecor","path":"objects/obj_wallLongDecor/obj_wallLongDecor.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":680.0,"y":240.0,},
         {"$GMRInstance":"v4","%Name":"inst_4ACFD1D7","colour":4294967295,"frozen":false,"hasCreationCode":true,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_4ACFD1D7","objectId":{"name":"obj_longWindow","path":"objects/obj_longWindow/obj_longWindow.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":716.0,"y":240.0,},
         {"$GMRInstance":"v4","%Name":"inst_2A401C42","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_2A401C42","objectId":{"name":"obj_rm5Control","path":"objects/obj_rm5Control/obj_rm5Control.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":836.0,"y":284.0,},
+        {"$GMRInstance":"v4","%Name":"inst_530F8DAF","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_530F8DAF","objectId":{"name":"obj_displaynotes","path":"objects/obj_displaynotes/obj_displaynotes.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":852.0,"y":284.0,},
+        {"$GMRInstance":"v4","%Name":"inst_1318E352","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_1318E352","objectId":{"name":"obj_Inventory","path":"objects/obj_Inventory/obj_Inventory.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":868.0,"y":284.0,},
+        {"$GMRInstance":"v4","%Name":"inst_1332B57C","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_1332B57C","objectId":{"name":"obj_pausemenu","path":"objects/obj_pausemenu/obj_pausemenu.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":884.0,"y":284.0,},
       ],"layers":[],"name":"Instances","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRAssetLayer":"","%Name":"Assets_1","assets":[
         {"$GMRSpriteGraphic":"v1","%Name":"graphic_4327C326","animationSpeed":1.0,"colour":4294967295,"frozen":false,"headPosition":0.0,"ignore":false,"inheritedItemId":null,"inheritItemSettings":false,"name":"graphic_4327C326","resourceType":"GMRSpriteGraphic","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"spriteId":{"name":"spr_floorTile2","path":"sprites/spr_floorTile2/spr_floorTile2.yy",},"x":744.0,"y":488.0,},

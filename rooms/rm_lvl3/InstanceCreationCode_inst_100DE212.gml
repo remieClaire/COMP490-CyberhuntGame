@@ -1,0 +1,1 @@
+text_arr = ["You notice something hidden underneath the table...", "You discovered a note!"]

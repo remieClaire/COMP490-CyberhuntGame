@@ -2,6 +2,8 @@ hover_m = 0;
 selected = 0;
 firstOptionChosen = false;
 
+spawn = true;
+
 //set gui size so that box scales according to camera size
 display_set_gui_size(
 	camera_get_view_width(view_camera[0]), 

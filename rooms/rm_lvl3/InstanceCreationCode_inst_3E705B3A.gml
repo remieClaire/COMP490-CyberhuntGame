@@ -1,0 +1,1 @@
+text_arr = ["Never forget that day 7/7/7777"]

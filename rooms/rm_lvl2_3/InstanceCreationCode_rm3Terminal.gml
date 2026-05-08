@@ -1,0 +1,1 @@
+text_arr = ["Key detected... Refusal to terminate.", "Launching puzzle..."]

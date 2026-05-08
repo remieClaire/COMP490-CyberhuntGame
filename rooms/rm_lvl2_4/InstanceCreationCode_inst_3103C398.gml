@@ -1,0 +1,1 @@
+text_arr = ["Mixing the columns will require the use of Galois Field multiplication. Please consult your lab-appointed notebooks if you get lost in the process."];

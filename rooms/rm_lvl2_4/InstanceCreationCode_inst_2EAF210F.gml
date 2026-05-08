@@ -1,0 +1,1 @@
+text_arr = ["The screen glitches out horribly."]

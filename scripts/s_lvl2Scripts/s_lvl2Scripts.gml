@@ -10,6 +10,9 @@ function checkAnswer(_arr2) {
 			pass = false;
 			obj_matrixTile.blockArr[i].boolean = false;
 		}	
+		else if (string_trim(obj_matrixTile.blockArr[i].value) == string_trim(arr2[i])) {
+			obj_matrixTile.blockArr[i].boolean = true;
+		}
 	}
 	return pass;
 }
@@ -80,6 +83,7 @@ function playerView() {
 	draw_set_font(global.font_textb);
 	var _background = layer_background_get_id("Background");
 	layer_background_sprite(_background, spr_levelBackground_dark);
+	
 }
 
 function seqManager() {
@@ -91,9 +95,7 @@ function seqManager() {
 					event_user(0);
 				}
 			}
-			else {
-				show_debug_message("you cant do this puzzle yet!");
-			}
+			else {}
 			break;
 		//------------rm 2------------
 		case rm_lvl2_2:
@@ -102,9 +104,7 @@ function seqManager() {
 					event_user(0);
 				}
 			}
-			else {
-				show_debug_message("you cant do this puzzle yet!");
-			}
+			else {}
 			break;
 		//------------rm 3------------
 		case rm_lvl2_3:
@@ -113,20 +113,15 @@ function seqManager() {
 					event_user(0);		
 				}
 			}
-			else {
-				show_debug_message("you cant do this puzzle yet!");
-			}
+			else {}
 			break;
-		//------------rm 5------------
 		case rm_lvl2_5:
 			if (global.puzzleSequence == 5) {
 				with (obj_rm5Control) {
 					event_user(0);		
 				}
 			}
-			else {
-				show_debug_message("you cant do this puzzle yet!");
-			}
+			else {}
 			break;
 		//------------rm 6------------
 		case rm_lvl2_6:
@@ -135,9 +130,7 @@ function seqManager() {
 					event_user(0);		
 				}
 			}
-			else {
-				show_debug_message("you cant do this puzzle yet!");
-			}
+			else {}
 			break;
 		//------------rm 7------------
 		case rm_lvl2_7:
@@ -146,9 +139,7 @@ function seqManager() {
 					event_user(0);		
 				}
 			}
-			else {
-				show_debug_message("you cant do this puzzle yet!");
-			}
+			else {}
 			break;
 		//------------rm 8------------
 		case rm_lvl2_8:
@@ -157,9 +148,7 @@ function seqManager() {
 					event_user(0);		
 				}
 			}
-			else {
-				show_debug_message("you cant do this puzzle yet!");
-			}
+			else {}
 			break;
 	}
 }
@@ -183,7 +172,7 @@ function Dial(_obj_id, _value) constructor {
 //------------event 1: reverse engineer------------
 //creates mini menu that player must unscramble
 function miniMenu(_x, _y, _options, _description = -1){
-	
+
 	with (instance_create_layer(_x, _y, "Instances", obj_miniMenu)) {
 		options = _options;
 		description = _description;
@@ -237,14 +226,12 @@ function stateMatrix(_x1, _y1) {
 
 //------------event 3: XOR key 1------------
 function showChart() {
-	show_debug_message("show chart called")
 	// change camera
 	var _cam = view_get_camera(3);
 	
     view_set_camera(0, _cam);
     camera_apply(_cam);
 	
-	show_debug_message("cam set");
 	
 	// disable all objects
 	instance_deactivate_object(obj_objInteraction);

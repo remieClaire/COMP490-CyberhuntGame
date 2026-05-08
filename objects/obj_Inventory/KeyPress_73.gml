@@ -18,7 +18,7 @@ if (visible == true) {
 } else {
 	
 	//otherwise, resume movement
-	if (instance_exists(obj_character)) obj_character.my_speed = 2;
+	if (instance_exists(obj_character)) obj_character.my_speed = 1;
 	
 	// set the item currently active to game
 	global.item_currently_active = "game";

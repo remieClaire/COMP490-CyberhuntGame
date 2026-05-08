@@ -1,0 +1,1 @@
+text_arr = ["Wow. I love the view."]

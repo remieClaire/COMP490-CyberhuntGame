@@ -1,0 +1,1 @@
+text_arr = ["Remember, Galois Field multiplication must be carried out in base 2, not base 10.", "Please consult your lab-appointed notebooks if you ever get lost."]

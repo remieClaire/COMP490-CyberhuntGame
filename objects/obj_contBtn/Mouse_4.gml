@@ -1,7 +1,13 @@
+audio_play_sound(snd_Button_Press, 0, false);
+
+if (obj_newgameconfirmation.visible == true) {
+	exit;	
+}
+
 if (global.levels_completed == 0) {
-	//DELETE 
-	room_goto(rm_lvl2NEW);
-	//exit;	
+	room_goto(rm_lvl1);
+
 } else {
 	room_goto(global.target_room);
 }
+//room_goto(rm_lvl3);

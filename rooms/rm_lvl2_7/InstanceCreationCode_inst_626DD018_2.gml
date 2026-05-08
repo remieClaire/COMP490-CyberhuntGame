@@ -1,1 +1,1 @@
-text_arr = ["Instructions:", "Please go to the corresponding box that deposited your first set of keys."]
+text_arr = ["Instructions:", "Just like we practiced with the first set of keys, recruits."]

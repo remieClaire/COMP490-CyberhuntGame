@@ -1,7 +1,8 @@
 sprite_index = global.currentcharasprite; //set char sprite based on player
 
-my_speed = 2;	//walking speed
+my_speed = 1;	//walking speed
 objects = [obj_wall, obj_objInteraction]; //array of objects to check for collision
+footstep_sound_cooldown = 0;
 
 //animation frames
 animations = 
@@ -19,6 +20,6 @@ animations =
 set_animation(animations, "idledown");
 
 
-alarm[0] = room_speed * 30; // every 30 seconds
+alarm[0] = 30; // every 30 seconds
 
-AddItemToInventory(["Note1", spr_noteHint, "random ahh words that i cant be bothered to explain right here"]);
+//AddItemToInventory(["Note1", spr_noteHint, "random ahh words that i cant be bothered to explain right here"]);

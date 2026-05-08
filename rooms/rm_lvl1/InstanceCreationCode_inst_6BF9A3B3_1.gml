@@ -1,0 +1,1 @@
+text_arr = ["Huh. These fish are dead.", "I wonder how long they've been like this."]

@@ -1,0 +1,1 @@
+text_arr = ["What the heck is this?"]

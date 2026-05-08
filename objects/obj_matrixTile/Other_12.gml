@@ -1,9 +1,10 @@
-correct = true
-//checkAnswer(correctInputArr); //check if user input is correct
+correct = checkAnswer(correctInputArr); //check if user input is correct
 
 
 //------------check answer------------
 if (correct) { //if answer is correct
+	
+	audio_play_sound(snd_Correct_Answer, 0, false);
 		
 	global.puzzleSequence = 3;
 	correct = false; //reset correct
@@ -16,4 +17,7 @@ if (correct) { //if answer is correct
 	resetCamera();
 	playerView();
 		
+}
+else {
+	audio_play_sound(snd_Wrong_Answer, 0, false);
 }

@@ -1,0 +1,1 @@
+text_arr = ["What a weird looking plant."]

@@ -3,6 +3,13 @@
 /// @DnDHash : 792E531C
 event_inherited();
 
+/// @DnDAction : YoYo Games.Audio.Play_Audio
+/// @DnDVersion : 1.1
+/// @DnDHash : 1ACB2569
+/// @DnDArgument : "soundid" "snd_Button_Press"
+/// @DnDSaveInfo : "soundid" "snd_Button_Press"
+audio_play_sound(snd_Button_Press, 0, 0, 1.0, undefined, 1.0);
+
 /// @DnDAction : YoYo Games.Rooms.Go_To_Room
 /// @DnDVersion : 1
 /// @DnDHash : 5A26D227

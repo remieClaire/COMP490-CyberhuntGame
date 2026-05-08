@@ -1,0 +1,1 @@
+text_arr = ["A dusty notebook lies on top of it.", "Almost all of the pages have been ripped out."]

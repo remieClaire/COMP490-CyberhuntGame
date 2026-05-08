@@ -1,4 +1,5 @@
 event_inherited();
+audio_play_sound(snd_Button_Press, 0, false);
 
 //set char sprite
 global.currentcharasprite = spr_alienChar2;

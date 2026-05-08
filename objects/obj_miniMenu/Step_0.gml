@@ -1,3 +1,9 @@
+// if player wants to leave puzzle
+if (global.puzzleSequence == 1 && global.leavePuzzle) {
+	// destroy self
+	instance_destroy();
+}
+
 hover_m += keyboard_check_pressed(vk_down) - keyboard_check_pressed(vk_up); //down: +1, up: -1
 
 
@@ -24,6 +30,7 @@ if (keyboard_check_pressed(vk_shift)) {
 //Confirm & check player choices
 var correct = true;
 if (keyboard_check_pressed(vk_enter)) {
+	
 	var correct_options =
 	[
 		["Add Key"],
@@ -33,23 +40,26 @@ if (keyboard_check_pressed(vk_enter)) {
 		["Add Final Key"]
 	];
 	
-	
+	// go through array and check
 	for (j=0; j<optionsCount; j++) {
 		if (options[j][0] != correct_options[j][0]) {
 			correct = false;
 			break;
 		}
 	}
-	
+	// if correct answer
 	if (correct) {
 		description = "Correct!"
 		alarm[0] = 100;
+		audio_play_sound(snd_Correct_Answer, 0, false);
 		global.puzzleSequence = 2;
 
 	}
-	else {
+	// if incorrect but not keypress from spawning puzzle
+	else if (!correct && !spawn) {
+		audio_play_sound(snd_Wrong_Answer, 0, false);
 		description = "Try again"
 		alarm[1] = 100;
 	}
-		
+
 }

@@ -1,0 +1,1 @@
+text_arr = ["At least these chair are comfortable."]

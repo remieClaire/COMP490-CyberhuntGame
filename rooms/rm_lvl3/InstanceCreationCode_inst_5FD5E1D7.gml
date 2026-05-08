@@ -1,0 +1,1 @@
+text_arr = ["Yet another hidden note... they really liked leaving things around", "You discovered a note!"]

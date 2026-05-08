@@ -1,0 +1,1 @@
+text_arr = ["Message booted.", "Loading puzzle..."]
