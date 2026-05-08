@@ -107,6 +107,6 @@ else if (room == rm_lvl2NEW && global.puzzleSequence == 1) {
 }
 
 else if (room == rm_lvl3) {
-	obj_character.x = 568;
-	obj_character.y = 216;
+	obj_character.x = 824;
+	obj_character.y = 168;
 }
