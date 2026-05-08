@@ -22,5 +22,5 @@
   "resourceVersion":"2.0",
   "sampleRate":44100,
   "soundFile":"snd_Footstep.ogg",
-  "volume":0.75,
+  "volume":0.2,
 }
