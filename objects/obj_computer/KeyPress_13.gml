@@ -1,7 +1,7 @@
 if (response == encrypt_answer) {
 	encrypted_message = decrypt_message;
 } else {
-	audio_play_sound(snd_Wrong_Answer, 10, false);
+	//audio_play_sound(snd_Wrong_Answer, 10, false);
 }
 
 if (response == decrypt_answer) {
